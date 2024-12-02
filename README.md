@@ -12,20 +12,28 @@
 
 ## Steps to run this project:
 
+1. Clone the repository:
+
 ```bash
 git clone https://github.com/AmaanNaseh/kisan-kranti.git
 ```
+
+2. Open the project main directory
 
 ```bash
 cd kisan-kranti
 ```
 
+3. Install dependencies
+
 ```bash
 npm install
 ```
+
+4. Start the development server
 
 ```bash
 npm run start
 ```
 
-### Open: http://localhost:3000
+5. Access website at: http://localhost:3000
