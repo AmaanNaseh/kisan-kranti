@@ -14,13 +14,18 @@
 
 ```bash
 git clone https://github.com/AmaanNaseh/kisan-kranti.git
+```
 
+```bash
 cd kisan-kranti
+```
 
+```bash
 npm install
+```
 
+```bash
 npm run start
-
 ```
 
 ### Open: http://localhost:3000
