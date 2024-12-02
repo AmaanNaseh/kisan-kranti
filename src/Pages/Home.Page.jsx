@@ -354,59 +354,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="my-10 md:my-20 lg:my-32">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="bg-[#163A1C] mb-8 px-4 py-2 rounded-lg text-white font-bold text-center text-3xl lg:text-5xl">
-            Kisan E-Dukaan
-          </h1>
-        </div>
-        <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
-          <a
-            href="https://kisan-kranti-e-dukaan.vercel.app/signup"
-            target="_blank"
-            rel="noreferrer"
-            className="decoration-none text-black"
-          >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[80px] h-[80px]">
-                <img src={SignupIcon} alt="..." className="w-full h-full" />
-              </div>
-
-              <h1 className=" text-black font-bold text-center">Signup</h1>
-            </div>
-          </a>
-          <a
-            href="https://kisan-kranti-e-dukaan.vercel.app/login"
-            target="_blank"
-            rel="noreferrer"
-            className="decoration-none text-black"
-          >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[80px] h-[80px]">
-                <img src={LoginIcon} alt="..." className="w-full h-full" />
-              </div>
-
-              <h1 className=" text-black font-bold text-center">Login</h1>
-            </div>
-          </a>
-          <a
-            href="https://kisan-kranti-e-dukaan.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="decoration-none text-black"
-          >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[80px] h-[80px]">
-                <img src={MarketIcon} alt="..." className="w-full h-full" />
-              </div>
-
-              <h1 className=" text-black font-bold text-center">E-Dukaan</h1>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div className="my-10">
+      <div className="my-10 md:my-20">
         <div className="flex flex-col items-center justify-center my-10">
           <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl mb-4 lg:text-5xl">
             Kisan Seva Kendra
@@ -478,6 +426,58 @@ const HomePage = () => {
               <h1 className=" text-black font-bold text-center">FAQs</h1>
             </div>
           </Link>
+        </div>
+      </div>
+
+      <div className="my-10 md:my-20 lg:my-32">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="bg-[#163A1C] mb-8 px-4 py-2 rounded-lg text-white font-bold text-center text-3xl lg:text-5xl">
+            Kisan E-Dukaan
+          </h1>
+        </div>
+        <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
+          <a
+            href="https://kisan-kranti-e-dukaan.vercel.app/signup"
+            target="_blank"
+            rel="noreferrer"
+            className="decoration-none text-black"
+          >
+            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <div className="w-[80px] h-[80px]">
+                <img src={SignupIcon} alt="..." className="w-full h-full" />
+              </div>
+
+              <h1 className=" text-black font-bold text-center">Signup</h1>
+            </div>
+          </a>
+          <a
+            href="https://kisan-kranti-e-dukaan.vercel.app/login"
+            target="_blank"
+            rel="noreferrer"
+            className="decoration-none text-black"
+          >
+            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <div className="w-[80px] h-[80px]">
+                <img src={LoginIcon} alt="..." className="w-full h-full" />
+              </div>
+
+              <h1 className=" text-black font-bold text-center">Login</h1>
+            </div>
+          </a>
+          <a
+            href="https://kisan-kranti-e-dukaan.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="decoration-none text-black"
+          >
+            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <div className="w-[80px] h-[80px]">
+                <img src={MarketIcon} alt="..." className="w-full h-full" />
+              </div>
+
+              <h1 className=" text-black font-bold text-center">E-Dukaan</h1>
+            </div>
+          </a>
         </div>
       </div>
 

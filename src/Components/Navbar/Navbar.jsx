@@ -144,6 +144,18 @@ const Navbar = () => {
                     Developers
                   </li>
                 </Link>
+
+                <a
+                  href="https://github.com/AmaanNaseh/kisan-kranti"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="decoration-none text-black"
+                >
+                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                    Software
+                  </li>
+                </a>
+
                 <a
                   href="https://www.youtube.com"
                   target="_blank"
@@ -151,7 +163,17 @@ const Navbar = () => {
                   className="decoration-none text-black"
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    See Video Tutorial
+                    How to Use? (Hindi)
+                  </li>
+                </a>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="decoration-none text-black"
+                >
+                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                    How to Use? (English)
                   </li>
                 </a>
                 <a
@@ -290,6 +312,18 @@ const Navbar = () => {
                     Developers
                   </li>
                 </Link>
+
+                <a
+                  href="https://github.com/AmaanNaseh/kisan-kranti"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="decoration-none text-black"
+                >
+                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                    Software
+                  </li>
+                </a>
+
                 <a
                   href="https://www.youtube.com"
                   target="_blank"
@@ -297,7 +331,17 @@ const Navbar = () => {
                   className="decoration-none text-black"
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    See Video Tutorial
+                    How to Use? (Hindi)
+                  </li>
+                </a>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="decoration-none text-black"
+                >
+                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                    How to Use? (English)
                   </li>
                 </a>
                 <a

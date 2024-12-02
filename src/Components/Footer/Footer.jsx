@@ -27,6 +27,15 @@ const Footer = () => {
               <Link to={"/developers"} className="hover:scale-110">
                 Developers
               </Link>
+
+              <a
+                href="https://github.com/AmaanNaseh/kisan-kranti"
+                target="_blank"
+                rel="noreferrer"
+                className="decoration-none text-black hover:scale-110"
+              >
+                Software
+              </a>
             </div>
             <div className="flex flex-col items-center gap-4">
               <h1 className="font-bold text-xl">Resources</h1>
@@ -36,7 +45,15 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <p>How to use ?</p>
+                <p>How to Use? (Hindi)</p>
+              </a>
+              <a
+                className="decoration-none hover:scale-110 cursor-pointer"
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>How to Use? (English)</p>
               </a>
               <a
                 href={BrochureHindi}
