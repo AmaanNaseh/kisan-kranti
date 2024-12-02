@@ -12,12 +12,15 @@
 
 ## Steps to run this project:
 
-##### git clone https://github.com/AmaanNaseh/kisan-kranti.git
+```bash
+git clone https://github.com/AmaanNaseh/kisan-kranti.git
 
-##### cd kisan-kranti
+cd kisan-kranti
 
-##### npm install
+npm install
 
-##### npm run start
+npm run start
 
-##### Access http://localhost:3000
+```
+
+### Open: http://localhost:3000

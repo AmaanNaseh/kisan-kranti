@@ -41,7 +41,7 @@ const Footer = () => {
               <h1 className="font-bold text-xl">Resources</h1>
               <a
                 className="decoration-none hover:scale-110 cursor-pointer"
-                href="https://www.youtube.com"
+                href="https://youtu.be/QwbhA1V4NrI"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
               <a
                 className="decoration-none hover:scale-110 cursor-pointer"
-                href="https://www.youtube.com"
+                href="https://youtu.be/LVCE_83GQlY"
                 target="_blank"
                 rel="noreferrer"
               >

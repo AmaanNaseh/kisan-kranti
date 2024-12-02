@@ -157,7 +157,7 @@ const Navbar = () => {
                 </a>
 
                 <a
-                  href="https://www.youtube.com"
+                  href="https://youtu.be/QwbhA1V4NrI"
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
@@ -167,7 +167,7 @@ const Navbar = () => {
                   </li>
                 </a>
                 <a
-                  href="https://www.youtube.com"
+                  href="https://youtu.be/LVCE_83GQlY"
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
@@ -325,7 +325,7 @@ const Navbar = () => {
                 </a>
 
                 <a
-                  href="https://www.youtube.com"
+                  href="https://youtu.be/QwbhA1V4NrI"
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
@@ -335,7 +335,7 @@ const Navbar = () => {
                   </li>
                 </a>
                 <a
-                  href="https://www.youtube.com"
+                  href="https://youtu.be/LVCE_83GQlY"
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
