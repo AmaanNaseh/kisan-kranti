@@ -46,7 +46,7 @@ const Navbar = () => {
               <p className="block py-2 px-4 hover:bg-green-500">Features</p>
               <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1">
                 <a
-                  href="http://127.0.0.1:5000/"
+                  href="http://3.7.20.210/"
                   className="decoration-none text-black"
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
@@ -213,7 +213,7 @@ const Navbar = () => {
               {/* Dropdown Menu on Hover */}
               <ul className="absolute left-0 top-full bg-white shadow-lg text-black w-64 rounded-lg p-2 space-y-1 hidden group-hover:block">
                 <a
-                  href="http://127.0.0.1:5000/"
+                  href="http://3.7.20.210/"
                   className="decoration-none text-black"
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
