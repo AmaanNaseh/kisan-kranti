@@ -437,7 +437,7 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
           <a
-            href="https://kisan-kranti-e-dukaan.netlify.app/signup"
+            href="https://kisan-kranti-e-dukaan.netlify.app"
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
@@ -451,7 +451,7 @@ const HomePage = () => {
             </div>
           </a>
           <a
-            href="https://kisan-kranti-e-dukaan.netlify.app/login"
+            href="https://kisan-kranti-e-dukaan.netlify.app"
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
