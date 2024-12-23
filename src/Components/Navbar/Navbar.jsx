@@ -99,7 +99,7 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <a
-                  href="https://kisan-kranti-e-dukaan.vercel.app/"
+                  href="https://kisan-kranti-e-dukaan.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
@@ -266,7 +266,7 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <a
-                  href="https://kisan-kranti-e-dukaan.vercel.app/"
+                  href="https://kisan-kranti-e-dukaan.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
