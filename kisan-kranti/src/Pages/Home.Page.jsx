@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 
+import { Flask_Backend_API } from "../Config/Config";
+
 import heroPoster from "../Assets/Homepage/HeroPoster.png";
 import SoilHealthIcon from "../Assets/Homepage/Soil_Health_Icon.png";
 import ClimateIcon from "../Assets/Homepage/Climate_Icon.png";
@@ -199,7 +201,7 @@ const HomePage = () => {
             {/* Second div */}
             <div className="flex flex-col items-center gap-1">
               <a
-                href="http://52.66.104.178/"
+                href={Flask_Backend_API}
                 className="decoration-none text-black"
               >
                 <div className="flex flex-col items-center justify-center gap-2 w-[350px] h-[150px] lg:w-[400px] lg:h-[200px] bg-[#C6FFD2] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
@@ -272,10 +274,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col items-center gap-16 m-8 p-8 md:hidden">
-            <a
-              href="http://52.66.104.178/"
-              className="decoration-none text-black"
-            >
+            <a href={Flask_Backend_API} className="decoration-none text-black">
               <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#C6FFD2] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
                 <div className="w-[100px] h-[100px] px-auto">
                   <img

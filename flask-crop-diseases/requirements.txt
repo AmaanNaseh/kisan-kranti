@@ -2,6 +2,7 @@ tensorflow
 keras
 numpy
 scipy
+pillow
 Flask
 Flask-Cors
 Werkzeug

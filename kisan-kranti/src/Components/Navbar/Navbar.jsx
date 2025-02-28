@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Flask_Backend_API } from "../../Config/Config";
+
 import BrochureHindi from "../../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
 import { Link } from "react-router-dom";
@@ -46,7 +48,7 @@ const Navbar = () => {
               <p className="block py-2 px-4 hover:bg-green-500">Features</p>
               <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1">
                 <a
-                  href="http://52.66.104.178/"
+                  href={Flask_Backend_API}
                   className="decoration-none text-black"
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
@@ -213,7 +215,7 @@ const Navbar = () => {
               {/* Dropdown Menu on Hover */}
               <ul className="absolute left-0 top-full bg-white shadow-lg text-black w-64 rounded-lg p-2 space-y-1 hidden group-hover:block">
                 <a
-                  href="http://52.66.104.178/"
+                  href={Flask_Backend_API}
                   className="decoration-none text-black"
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
