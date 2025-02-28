@@ -38,15 +38,15 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } lg:hidden absolute top-[124px] left-0 w-full bg-green-700 text-white p-4 space-y-4`}
+            } lg:hidden absolute top-[62px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
           >
             <Link to={"/"}>
               <p className="block py-2 px-4 hover:bg-green-500">Home</p>
             </Link>
 
-            <div className="group">
+            <div className="group text-sm">
               <p className="block py-2 px-4 hover:bg-green-500">Features</p>
-              <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1">
+              <ul className="bg-white text-black text-sm shadow-lg mt-2 rounded-lg p-2 space-y-1">
                 <a
                   href={Flask_Backend_API}
                   className="decoration-none text-black"
@@ -138,26 +138,9 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="group">
+            <div className="group text-sm">
               <p className="block py-2 px-4 hover:bg-green-500">About</p>
-              <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1">
-                <Link to={"/developers"}>
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    Developers
-                  </li>
-                </Link>
-
-                <a
-                  href="https://github.com/AmaanNaseh/kisan-kranti"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    Software
-                  </li>
-                </a>
-
+              <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1 text-sm">
                 <a
                   href="https://youtu.be/QwbhA1V4NrI"
                   target="_blank"

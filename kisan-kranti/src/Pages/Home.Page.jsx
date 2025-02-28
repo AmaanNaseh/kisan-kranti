@@ -441,7 +441,7 @@ const HomePage = () => {
             rel="noreferrer"
             className="decoration-none text-black"
           >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+            <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={SignupIcon} alt="..." className="w-full h-full" />
               </div>
@@ -455,7 +455,7 @@ const HomePage = () => {
             rel="noreferrer"
             className="decoration-none text-black"
           >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+            <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={LoginIcon} alt="..." className="w-full h-full" />
               </div>
@@ -469,7 +469,7 @@ const HomePage = () => {
             rel="noreferrer"
             className="decoration-none text-black"
           >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+            <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={MarketIcon} alt="..." className="w-full h-full" />
               </div>
