@@ -9,6 +9,11 @@ of crop diseases, treatment and management along with commercialization of their
 
 ## Live Website: https://kisan-kranti.vercel.app
 
+## Youtube Video (Project Demonstration) :
+
+- English : https://youtu.be/LVCE_83GQlY
+- Hindi : https://youtu.be/QwbhA1V4NrI
+
 ## Tech stack
 
 ![Image](https://github.com/user-attachments/assets/c01aa50d-dce4-4d64-a998-6091468a181b)
