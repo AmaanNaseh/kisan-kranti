@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f1db;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+}
+
+#google_translate_element {
+  background-color: #88c273;
+  padding: 8px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: large;
+  font-weight: 600;
+  display: none;
+}

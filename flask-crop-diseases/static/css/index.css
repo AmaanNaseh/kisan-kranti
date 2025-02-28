@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbf8ef;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background-color: #0b6419;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+#google_translate_element {
+  background-color: #88c273;
+  padding: 8px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: large;
+  font-weight: 600;
+  display: none;
+}
+
+.hero__poster {
+  width: 100%;
+  height: 112px;
+  position: relative;
+}
+
+.hero__poster img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__poster h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(22, 58, 28, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: fit-content;
+}
+
+.leaf__box,
+.pest__box,
+.seed__box {
+  margin-top: 40px;
+}
+
+.title {
+  background: #163a1c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 25px;
+  margin-top: 10px;
+  margin-left: 40px;
+  border-radius: 8px;
+  max-width: fit-content;
+}
+
+.crop__box {
+  background-color: #88c273;
+  margin: 10px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-column-gap: 12px;
+  grid-row-gap: 24px;
+  margin-top: 20px;
+  gap: 24px;
+  padding: 24px 32px;
+  border-radius: 12px;
+}
+
+.crop__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.crop__card:hover {
+  scale: 1.1;
+  border: 2px solid black;
+}
+
+.crop__img__container {
+  width: 100px;
+  height: 100px;
+  background: #9edf9c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.crop__img__container img {
+  width: 85%;
+}
+
+@media (min-width: 768px) {
+  .hero__poster {
+    height: 320px;
+  }
+
+  .hero__poster h1 {
+    font-size: 50px;
+    padding: 20px;
+  }
+}

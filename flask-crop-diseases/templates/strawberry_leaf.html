@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Leaf</title>
+    <link rel="shortcut icon" href="../static/assets/favicons/strawberry.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="google_translate_element"></div>
+    </nav>
+
+    <div class="main__box">
+        <div class="prediction">
+            <button onclick="speak('desc0')" class="speak__btn">How to use ?</button>
+            <h3 style="margin-bottom: 15px; color: red" class="desc0">Please upload image of crop, preferably similar to
+                example provided alongside then click
+                "CHECK DISEASE" button to
+                predict crop health status.
+            </h3>
+
+            <div class="hero__images_container">
+                <div class="uploaded__image__container" id="imgBox">
+                    <img src="" alt="plant image" class="uploaded__image" id="imgId">
+                </div>
+                <div class="preview__image__container">
+                    <p>Preview Images (preferred for better accuracy)</p>
+                    <img src="" class="preview__image" id="previewImg" alt="dataset image">
+                </div>
+            </div>
+
+            <form method="POST" class="main__form" id="imgForm" onsubmit="handleSubmit(event)">
+                <input type="file" name="imgData" id="imgData" accept="image/png, image/jpeg, image/jpg"
+                    class="input__image" onchange="getAns()">
+                <button class="main__btn" type="submit">CHECK DISEASE</button>
+            </form>
+
+            <div class="loader__container" id="loaderImg">
+            </div>
+
+            {% if result %}
+            <div class="prediction__result__container" id="resultContainer">
+                <h3 class="prediction__result" id="result">{{ result }}</h3>
+            </div>
+            {% endif %}
+
+            <div class="report__generator__container">
+                <p>To generate crop report <span><a href="https://kisan-kranti.vercel.app/crop-report-generator"
+                            target="_blank" rel="noreferrer">click here</a></span> or go to Home > Crop Report Generator
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/strawberry_leaf.js">
+    </script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', includedLanguages: 'hi,en' },
+                'google_translate_element'
+            );
+            document.getElementById('google_translate_element').style.display = 'block';
+        } 
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
