@@ -14,8 +14,8 @@ const categories = [
     name: "Animal food items",
     imageUrl: animalFoodIcon,
   },
-  { href: "/fertilizers", name: "Fertilizers", imageUrl: fertilizerIcon },
   { href: "/Soil Products", name: "Soil Products", imageUrl: soilProductIcon },
+  { href: "/fertilizers", name: "Fertilizers", imageUrl: fertilizerIcon },
   { href: "/pesticides", name: "Pesticides", imageUrl: pesticideIcon },
   { href: "/Other Items", name: "Other Items", imageUrl: otherItemsIcon },
 ];

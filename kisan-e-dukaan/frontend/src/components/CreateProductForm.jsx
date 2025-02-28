@@ -4,12 +4,19 @@ import { PlusCircle, Upload, Loader } from "lucide-react";
 import { useProductStore } from "../stores/useProductStore";
 
 const categories = [
-  "fertilizers",
   "Animal Food Items",
   "Soil Products",
-  "Other Items",
+  "fertilizers",
   "pesticides",
+  "Other Items",
 ];
+
+const capitalizeCategory = (category) => {
+  return category
+    .split(" ") // Split the string by spaces
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter of each word
+    .join(" "); // Join the words back together
+};
 
 const CreateProductForm = () => {
   const [newProduct, setNewProduct] = useState({
@@ -152,7 +159,7 @@ const CreateProductForm = () => {
             <option value="">Select a category</option>
             {categories.map((category) => (
               <option key={category} value={category}>
-                {category}
+                {capitalizeCategory(category)}
               </option>
             ))}
           </select>

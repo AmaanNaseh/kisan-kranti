@@ -108,7 +108,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col md:flex-row flex-wrap lg:flex-col items-center justify-center gap-10 py-10">
             <Link to={"/brochure"}>
-              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
                 <div className="w-[80px] h-[80px]">
                   <img src={BrochureIcon} alt="..." className="w-full h-full" />
                 </div>
@@ -436,12 +436,12 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
           <a
-            href={E_Dukaan_Frontend_API}
+            href={`${E_Dukaan_Frontend_API}/signup`}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
           >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={SignupIcon} alt="..." className="w-full h-full" />
               </div>
@@ -450,12 +450,12 @@ const HomePage = () => {
             </div>
           </a>
           <a
-            href={E_Dukaan_Frontend_API}
+            href={`${E_Dukaan_Frontend_API}/login`}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
           >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={LoginIcon} alt="..." className="w-full h-full" />
               </div>
@@ -464,12 +464,12 @@ const HomePage = () => {
             </div>
           </a>
           <a
-            href="https://kisan-kranti-e-dukaan.netlify.app/"
+            href={E_Dukaan_Frontend_API}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
           >
-            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px] bg-[#F1EF82] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+            <div className="flex items-center justify-evenly gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={MarketIcon} alt="..." className="w-full h-full" />
               </div>
