@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { Backend_API } from "./Config";
+import { E_Dukaan_Backend_API } from "./Config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: Backend_API,
+        target: E_Dukaan_Backend_API,
       },
     },
     port: "5174",
