@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+
 import TemperatureIcon from "../Assets/Climate_Page/Temperature.png";
 import RainfallIcon from "../Assets/Climate_Page/Rainfall.png";
 import WindIcon from "../Assets/Climate_Page/Wind.png";
@@ -43,7 +42,6 @@ const WeatherForecastPage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-[75vh] my-20">
         <div className="flex flex-col items-center justify-center my-8">
           <button
@@ -231,7 +229,6 @@ const WeatherForecastPage = () => {
           ""
         )}
       </div>
-      <Footer />
     </>
   );
 };

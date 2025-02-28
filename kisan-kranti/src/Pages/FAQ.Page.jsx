@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ChatbotIcon from "../Assets/FAQ/Chatbot_Icon.png";
 import BackArrow from "../Assets/FAQ/BackArrow.png";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 
 const FAQPage = () => {
   useEffect(() => {
@@ -21,7 +19,6 @@ const FAQPage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="bg-[#c6ffd2] p-10 md:px-20 min-h-[100vh] my-12">
         <div>
           <div className="flex flex-col items-center">
@@ -1070,7 +1067,6 @@ const FAQPage = () => {
           )}
         </div>
       </div>
-      <Footer />
     </>
   );
 };

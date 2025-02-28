@@ -2,8 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { CropDataset } from "../Dataset/CropDataset";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+
 import Logo from "../Assets/Navbar/Logo.jpg";
 import MedicineCalculator from "../Components/MedicineCalculator/MedicineCalculator";
 
@@ -1789,7 +1788,6 @@ const CropReportPage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-[75vh] my-16">
         <div className="flex flex-col md:flex-row flex-wrap items-center justify-evenly gap-10 my-12">
           <div>
@@ -2461,7 +2459,6 @@ const CropReportPage = () => {
           <MedicineCalculator />
         </div>
       </div>
-      <Footer />
     </>
   );
 };

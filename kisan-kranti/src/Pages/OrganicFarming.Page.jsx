@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 
 const OrganicFarmingPage = () => {
   useEffect(() => {
@@ -15,8 +13,6 @@ const OrganicFarmingPage = () => {
 
   return (
     <>
-      <Navbar />
-
       <div className="min-h-[100vh] my-12 md:my-20">
         <div>
           <h1 className="font-bold text-5xl text-center my-2">
@@ -814,7 +810,6 @@ const OrganicFarmingPage = () => {
           ""
         )}
       </div>
-      <Footer />
     </>
   );
 };

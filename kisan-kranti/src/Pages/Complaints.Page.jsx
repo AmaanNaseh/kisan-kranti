@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 
 const ComplaintsPage = () => {
   useEffect(() => {
@@ -12,8 +10,6 @@ const ComplaintsPage = () => {
 
   return (
     <>
-      <Navbar />
-
       <div className="my-10">
         <h1 className="text-center font-bold text-5xl">
           Complaint Logging System
@@ -94,7 +90,6 @@ const ComplaintsPage = () => {
           </div>
         </form>
       </div>
-      <Footer />
     </>
   );
 };

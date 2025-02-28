@@ -1,13 +1,10 @@
 import React from "react";
 import BrochureHindi from "../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../Assets/Brochure/Brochure_English.pdf";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 
 const BrochurePage = () => {
   return (
     <>
-      <Navbar />
       <div className="flex items-center gap-4 my-10">
         <div className="w-[49%] h-[100vh]">
           <iframe
@@ -26,7 +23,6 @@ const BrochurePage = () => {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 };

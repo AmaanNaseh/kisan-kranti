@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 
 import { AIArchitectureDataset } from "../Dataset/AIArchitectureDataset";
 
@@ -729,7 +727,6 @@ const AIArchitecturePage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="flex items-center justify-center my-10">
         <h1 className="bg-[#436F29] text-white px-4 py-2 rounded-lg font-bold text-2xl md:text-3xl lg:tex-5xl mt-4">
           Leaf
@@ -2344,7 +2341,6 @@ const AIArchitecturePage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

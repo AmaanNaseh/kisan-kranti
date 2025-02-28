@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+
 import TopArrow from "../Assets/FAQ/TopArrow.png";
 
 const CropPricePage = () => {
@@ -34,7 +33,6 @@ const CropPricePage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="min-h-[75vh] my-10 py-10 px-12" name="cropPricePageTop">
         <div className="flex flex-col items-center justify-center">
           <button
@@ -111,7 +109,6 @@ const CropPricePage = () => {
           ""
         )}
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 
 import { E_Dukaan_Frontend_API, Flask_Backend_API } from "../Config/Config";
 
@@ -62,7 +60,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="w-full h-28 md:h-80 relative">
         <img src={heroPoster} alt="..." className="w-full h-full" />
         <h1 className="absolute text-center z-20 p-2 text-white mix-blend-multiply bg-green-700 text-3xl md:text-5xl lg:text-7xl font-bold top-[15%] left-[50%] translate-x-[-50%] translate-y-[-15%]">
@@ -568,8 +565,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

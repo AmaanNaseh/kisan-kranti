@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+
 import SchemesPoster from "../Assets/Schemes_Page/Schemes Poster.jpg";
 import SchemesImg from "../Assets/Schemes_Page/Schemes.jpg";
 import DonationImg from "../Assets/Schemes_Page/Donation.png";
@@ -13,8 +12,6 @@ const SchemesPage = () => {
 
   return (
     <>
-      <Navbar />
-
       <div className=" w-full h-[300px] flex flex-col justify-center items-center p-4 py-8 my-10">
         <img src={SchemesPoster} alt="..." className=" w-full h-full" />
       </div>
@@ -203,7 +200,6 @@ const SchemesPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

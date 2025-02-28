@@ -11,8 +11,6 @@ import MaizeCircle from "../Assets/Plant_Inventory_Page/MaizeCircle.jpg";
 import SugarcaneCircle from "../Assets/Plant_Inventory_Page/SugarcaneCircle.jpeg";
 import WheatCircle from "../Assets/Plant_Inventory_Page/WheatCircle.jpg";
 
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 import IndiaMap from "../Components/IndiaMap/IndiaMap";
 
 const PlantInventoryPage = () => {
@@ -22,8 +20,6 @@ const PlantInventoryPage = () => {
 
   return (
     <>
-      <Navbar />
-
       <div className="flex flex-col justify-center items-center my-12 md:my-20">
         <IndiaMap />
       </div>
@@ -461,7 +457,6 @@ const PlantInventoryPage = () => {
           );
         })}
       </div>
-      <Footer />
     </>
   );
 };
