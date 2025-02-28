@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { Backend_API } from "./Config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://kisan-kranti-e-dukaan-xdgn.onrender.com",
+        target: Backend_API,
       },
     },
   },
