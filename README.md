@@ -22,12 +22,12 @@ of crop diseases, treatment and management along with commercialization of their
 
 ## Developers
 
-- <a href="https://github.com/AmaanNaseh">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Amaan Naseh</a>
-- <a href="https://github.com/priyanshu-git-hub">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Priyanshu</a>
-- <a href="https://github.com/dhruvtaneja19">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Dhruv Taneja</a>
-- <a href="https://github.com/Ad72828">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Aditya Choudhary</a>
-- <a href="https://github.com/teena-718b732b9">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Teena</a>
-- <a href="https://github.com/ankitredhat">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Ankit Gupta</a>
+- <a href="https://github.com/AmaanNaseh">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Amaan Naseh</a>
+- <a href="https://github.com/priyanshu-git-hub">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Priyanshu</a>
+- <a href="https://github.com/dhruvtaneja19">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Dhruv Taneja</a>
+- <a href="https://github.com/Ad72828">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Aditya Choudhary</a>
+- <a href="https://github.com/teena-718b732b9">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Teena</a>
+- <a href="https://github.com/ankitredhat">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Ankit Gupta</a>
 
 <br />
 
