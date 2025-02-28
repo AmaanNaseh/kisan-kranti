@@ -11,5 +11,6 @@ export default defineConfig({
         target: Backend_API,
       },
     },
+    port: "5174",
   },
 });
