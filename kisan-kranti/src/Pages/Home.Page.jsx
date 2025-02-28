@@ -105,7 +105,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col md:flex-row flex-wrap lg:flex-col items-center justify-center gap-10 py-10">
             <Link to={"/brochure"}>
-              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px] bg-[#F8ED8C]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
                 <div className="w-[80px] h-[80px]">
                   <img src={BrochureIcon} alt="..." className="w-full h-full" />
                 </div>
