@@ -1,4 +1,4 @@
-# KISAN KRANTI
+# ![Image](https://github.com/user-attachments/assets/3afd8881-a5e0-4b55-aa8b-5a78aa498ea3) KISAN KRANTI
 
 <p align="justify">
 Kisan-Kranti is a mobile and web-based application that provides end-to-end solution to Indian farmers for early detection
