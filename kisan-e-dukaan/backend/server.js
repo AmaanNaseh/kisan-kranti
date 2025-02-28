@@ -10,11 +10,14 @@ import couponRoutes from "./routes/coupon.route.js";
 
 import analyticsRoutes from "./routes/analytics.route.js";
 
+import cors from "cors";
+
 import { connectDB } from "./lib/db.js";
 
 dotenv.config();
 
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
