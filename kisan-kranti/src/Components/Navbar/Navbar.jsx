@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Flask_Backend_API } from "../../Config/Config";
+import { E_Dukaan_Frontend_API, Flask_Backend_API } from "../../Config/Config";
 
 import BrochureHindi from "../../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
@@ -101,7 +101,7 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <a
-                  href="https://kisan-kranti-e-dukaan.netlify.app/"
+                  href={E_Dukaan_Frontend_API}
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
@@ -268,7 +268,7 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <a
-                  href="https://kisan-kranti-e-dukaan.netlify.app/"
+                  href={E_Dukaan_Frontend_API}
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"

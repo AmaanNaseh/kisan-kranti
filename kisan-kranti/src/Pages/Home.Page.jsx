@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 
-import { Flask_Backend_API } from "../Config/Config";
+import { E_Dukaan_Frontend_API, Flask_Backend_API } from "../Config/Config";
 
 import heroPoster from "../Assets/Homepage/HeroPoster.png";
 import SoilHealthIcon from "../Assets/Homepage/Soil_Health_Icon.png";
@@ -436,7 +436,7 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
           <a
-            href="https://kisan-kranti-e-dukaan.netlify.app"
+            href={E_Dukaan_Frontend_API}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
@@ -450,7 +450,7 @@ const HomePage = () => {
             </div>
           </a>
           <a
-            href="https://kisan-kranti-e-dukaan.netlify.app"
+            href={E_Dukaan_Frontend_API}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
