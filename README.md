@@ -33,7 +33,7 @@ git clone https://github.com/AmaanNaseh/kisan-kranti.git
 cd kisan-kranti
 ```
 
-### (i) AI Driven Crop Disease
+#### (i) AI Driven Crop Disease
 
 ```bash
 cd flask-crop-diseases
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### (ii) Market Page - Backend
+#### (ii) Market Page - Backend
 
 ```bash
 cd kisan-e-dukaan/backend
@@ -61,7 +61,7 @@ npm install
 npm run dev
 ```
 
-### (iii) Market Page - Frontend
+#### (iii) Market Page - Frontend
 
 ```bash
 cd kisan-e-dukaan/frontend
@@ -75,7 +75,7 @@ npm install
 npm run dev
 ```
 
-### (iv) Main Frontend
+#### (iv) Main Frontend
 
 ```bash
 cd kisan-kranti
