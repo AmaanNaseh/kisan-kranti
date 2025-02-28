@@ -20,7 +20,7 @@ of crop diseases, treatment and management along with commercialization of their
 
 <br />
 
-## Developers
+## 👥 Developers
 
 - <a href="https://github.com/AmaanNaseh">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Amaan Naseh</a>
 - <a href="https://github.com/priyanshu-git-hub">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Priyanshu</a>
