@@ -20,6 +20,17 @@ of crop diseases, treatment and management along with commercialization of their
 
 <br />
 
+## Developers
+
+- <a href="https://github.com/AmaanNaseh">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Amaan Naseh</a>
+- <a href="https://github.com/priyanshu-git-hub">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Priyanshu</a>
+- <a href="https://github.com/dhruvtaneja19">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Dhruv Taneja</a>
+- <a href="https://github.com/Ad72828">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Aditya Choudhary</a>
+- <a href="https://github.com/teena-718b732b9">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Teena</a>
+- <a href="https://github.com/ankitredhat">[Image](https://github.com/user-attachments/assets/0c382c40-ef69-4fbb-a42a-3eb61e16233e) Ankit Gupta</a>
+
+<br />
+
 ## 💻 Tech stack
 
 ![Image](https://github.com/user-attachments/assets/c01aa50d-dce4-4d64-a998-6091468a181b)
