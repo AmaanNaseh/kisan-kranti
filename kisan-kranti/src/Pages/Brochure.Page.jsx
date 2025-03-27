@@ -5,8 +5,8 @@ import BrochureEnglish from "../Assets/Brochure/Brochure_English.pdf";
 const BrochurePage = () => {
   return (
     <>
-      <div className="flex items-center gap-4 my-10">
-        <div className="w-[49%] h-[100vh]">
+      <div className="flex flex-col lg:flex-row items-center gap-4 my-10 mx-4">
+        <div className="h-[500px] lg:w-[49%] lg:h-[100vh]">
           <iframe
             src={BrochureHindi}
             title="Hindi Brochure"
@@ -14,7 +14,7 @@ const BrochurePage = () => {
             height={"100%"}
           />
         </div>
-        <div className="w-[49%] h-[100vh]">
+        <div className="h-[500px] lg:w-[49%] lg:h-[100vh]">
           <iframe
             src={BrochureEnglish}
             title="English"
