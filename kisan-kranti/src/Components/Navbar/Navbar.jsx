@@ -5,6 +5,7 @@ import BrochureHindi from "../../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
 import { Link } from "react-router-dom";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import InstallButton from "../InstallButton/InstallButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,12 +39,11 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } lg:hidden absolute top-[62px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
+            } lg:hidden absolute top-[105px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
           >
             <Link to={"/"}>
               <p className="block py-2 px-4 hover:bg-green-500">Home</p>
             </Link>
-
             <div className="group text-sm">
               <p className="block py-2 px-4 hover:bg-green-500">Features</p>
               <ul className="bg-white text-black text-sm shadow-lg mt-2 rounded-lg p-2 space-y-1">
@@ -137,8 +137,8 @@ const Navbar = () => {
                 </Link>
               </ul>
             </div>
-
-            <div className="group text-sm">
+            <InstallButton />
+            {/* <div className="group text-sm">
               <p className="block py-2 px-4 hover:bg-green-500">About</p>
               <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1 text-sm">
                 <a
@@ -180,7 +180,7 @@ const Navbar = () => {
                   </li>
                 </a>
               </ul>
-            </div>
+            </div> */}
           </div>
           {/* Large Screens */}
           <ul className="hidden lg:flex flex-row justify-center items-center gap-4 text-3xl font-thin list-none">
@@ -348,6 +348,9 @@ const Navbar = () => {
                   </li>
                 </a>
               </ul>
+            </li>
+            <li>
+              <InstallButton />
             </li>
           </ul>
         </div>
