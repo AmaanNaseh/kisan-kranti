@@ -14,7 +14,7 @@ of crop diseases, treatment and management along with commercialization of their
 - English : https://youtu.be/LVCE_83GQlY
 - Hindi : https://youtu.be/QwbhA1V4NrI
 
-## Project Overview/Features
+## 📱 Project Overview/Features
 
 - AI Driven Crop Disease Prediction
 - Crop Health Report Generation
@@ -28,13 +28,11 @@ of crop diseases, treatment and management along with commercialization of their
 - FAQs and our brochure
 - Offline Installation of Mobile App in any device
 
+![Image](https://github.com/user-attachments/assets/c3155d79-deb4-41e1-bf48-b9180291de48)
+
 ## 💻 Tech stack
 
 ![Image](https://github.com/user-attachments/assets/c01aa50d-dce4-4d64-a998-6091468a181b)
-
-## 📱 Software Overview
-
-![Image](https://github.com/user-attachments/assets/c3155d79-deb4-41e1-bf48-b9180291de48)
 
 ## 🔗 Dependencies
 
