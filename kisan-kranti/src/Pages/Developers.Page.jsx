@@ -51,7 +51,7 @@ const DevelopersPage = () => {
             </a>
           </div>
         </div>
-        <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
+        {/* <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
               src={TeenaImg}
@@ -83,7 +83,7 @@ const DevelopersPage = () => {
               <img src={LinkedinIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
@@ -152,7 +152,7 @@ const DevelopersPage = () => {
             </a>
           </div>
         </div>
-        <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
+        {/* <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
               src={AnkitImg}
@@ -185,7 +185,7 @@ const DevelopersPage = () => {
               <img src={LinkedinIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
