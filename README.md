@@ -63,13 +63,23 @@ git clone https://github.com/AmaanNaseh/kisan-kranti.git
 cd kisan-kranti
 ```
 
+#### Setup Virtual Environment on Python 3.7.8 :
+
+VS Code : Ctrl + Shift + P > Select Python Interpreter > Create Virtual Environment > VENV > Python 3.7.8 > Tick requirements.txt > OK > Activate by running following commands.
+
+```bash
+.venv/scripts/activate
+```
+
+```bash
+set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 #### (i) AI Driven Crop Disease
 
 ```bash
 cd flask-crop-diseases
 ```
-
-Select Python Interpreter > Python 3.7.8
 
 ```bash
 pip install -r requirements.txt
