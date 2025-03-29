@@ -14,14 +14,19 @@ of crop diseases, treatment and management along with commercialization of their
 - English : https://youtu.be/LVCE_83GQlY
 - Hindi : https://youtu.be/QwbhA1V4NrI
 
-## 👥 Developers
+## Project Overview/Features
 
-- <a href="https://github.com/AmaanNaseh">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Amaan Naseh</a>
-- <a href="https://github.com/priyanshu-git-hub">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Priyanshu</a>
-- <a href="https://github.com/dhruvtaneja19">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Dhruv Taneja</a>
-- <a href="https://github.com/Ad72828">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Aditya Choudhary</a>
-<!-- - <a href="https://github.com/teena-718b732b9">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Teena</a>
-- <a href="https://github.com/ankitredhat">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Ankit Gupta</a> -->
+- AI Driven Crop Disease Prediction
+- Crop Health Report Generation
+- Kisan E-Dukaan for Farmer's Economic Growth
+- Kisan E-Mitra : 24x7 AI Chatbot
+- Weather Insights for Crops
+- Live Crop Prices in different regions of India
+- Organic Farming tutorials
+- Complaint Logging System
+- Plant inventory for botanists
+- FAQs and our brochure
+- Offline Installation of Mobile App in any device
 
 ## 💻 Tech stack
 
@@ -124,6 +129,15 @@ npm run dev
 - We will build a hardware for farmers to install it in their farm lands for real-time insights
 - We will enhance security of AI models
 - We will try to use Blockchain for enhancing e-commerce experience
+
+## 👥 Developers
+
+- <a href="https://github.com/AmaanNaseh">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Amaan Naseh</a>
+- <a href="https://github.com/priyanshu-git-hub">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Priyanshu</a>
+- <a href="https://github.com/dhruvtaneja19">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Dhruv Taneja</a>
+- <a href="https://github.com/Ad72828">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Aditya Choudhary</a>
+<!-- - <a href="https://github.com/teena-718b732b9">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Teena</a>
+- <a href="https://github.com/ankitredhat">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Ankit Gupta</a> -->
 
 ## Project Preview
 
