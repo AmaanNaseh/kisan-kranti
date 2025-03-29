@@ -7,18 +7,12 @@ of crop diseases, treatment and management along with commercialization of their
 
 <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" >![License](https://img.shields.io/badge/License-Creative%20Commons%20BY--NC%204.0-brightgreen) </a>
 
-<br />
-
 ## 🌐 Live Website: https://kisan-kranti.vercel.app
-
-<br />
 
 ## 🎬 Youtube Video (Project Demonstration) :
 
 - English : https://youtu.be/LVCE_83GQlY
 - Hindi : https://youtu.be/QwbhA1V4NrI
-
-<br />
 
 ## 👥 Developers
 
@@ -29,25 +23,17 @@ of crop diseases, treatment and management along with commercialization of their
 <!-- - <a href="https://github.com/teena-718b732b9">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Teena</a>
 - <a href="https://github.com/ankitredhat">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Ankit Gupta</a> -->
 
-<br />
-
 ## 💻 Tech stack
 
 ![Image](https://github.com/user-attachments/assets/c01aa50d-dce4-4d64-a998-6091468a181b)
-
-<br />
 
 ## 📱 Software Overview
 
 ![Image](https://github.com/user-attachments/assets/c3155d79-deb4-41e1-bf48-b9180291de48)
 
-<br />
-
 ## 🔗 Dependencies
 
 #### Note: Make sure you have installed <a href="https://git-scm.com/downloads">Git</a>, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://nodejs.org/en/download">Node.js</a> and <a href="https://www.python.org/downloads/release/python-378/">Python (3.7.8 Recommended)</a> in your system
-
-<br />
 
 ## 🚀 Steps to run this project:
 
@@ -133,15 +119,11 @@ npm run dev
 
 #### Access website at: http://localhost:5173
 
-<br />
-
 ## 🎯 Future Plans
 
 - We will build a hardware for farmers to install it in their farm lands for real-time insights
 - We will enhance security of AI models
 - We will try to use Blockchain for enhancing e-commerce experience
-
-<br />
 
 ## Project Preview
 
