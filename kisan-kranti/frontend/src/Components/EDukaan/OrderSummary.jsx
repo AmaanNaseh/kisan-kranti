@@ -1,37 +1,31 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MoveRight } from "lucide-react";
-import { loadStripe } from "@stripe/stripe-js";
-
 import { useCartStore } from "../../Stores/useCartStore";
-import axios from "../../lib/axios";
-
-const stripePromise = loadStripe(
-  "pk_test_51KZYccCoOZF2UhtOwdXQl3vcizup20zqKqT9hVUIsVzsdBrhqbUI2fE0ZdEVLdZfeHjeyFXtqaNsyCJCmZWnjNZa00PzMAjlcL"
-);
 
 const OrderSummary = () => {
-  const { total, subtotal, coupon, isCouponApplied, cart } = useCartStore();
+  const { total, subtotal, coupon, isCouponApplied, cart, purchase } =
+    useCartStore();
+  const navigate = useNavigate();
 
   const savings = subtotal - total;
   const formattedSubtotal = subtotal.toFixed(2);
   const formattedTotal = total.toFixed(2);
   const formattedSavings = savings.toFixed(2);
 
-  const handlePayment = async () => {
-    const stripe = await stripePromise;
-    const res = await axios.post("/edukaan/payments/create-checkout-session", {
-      products: cart,
-      couponCode: coupon ? coupon.code : null,
-    });
-
-    const session = res.data;
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.id,
-    });
-
-    if (result.error) {
-      console.error("Error:", result.error);
+  const handlePlaceOrder = async () => {
+    try {
+      const order = await purchase(); // ✅ now returns orderId + total
+      if (order?.orderId) {
+        navigate(
+          `/edukaan/purchase-success?orderId=${order.orderId}&total=${order.total}`
+        );
+      } else {
+        navigate("/edukaan/purchase-cancel");
+      }
+    } catch (err) {
+      console.error("Order failed", err);
+      navigate("/edukaan/purchase-cancel");
     }
   };
 
@@ -74,6 +68,7 @@ const OrderSummary = () => {
               </dd>
             </dl>
           )}
+
           <dl className="flex items-center justify-between gap-4 border-t border-gray-600 pt-2">
             <dt className="text-base font-bold text-white">Total</dt>
             <dd className="text-base font-bold text-emerald-400">
@@ -86,9 +81,9 @@ const OrderSummary = () => {
           className="flex w-full items-center justify-center rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={handlePayment}
+          onClick={handlePlaceOrder}
         >
-          Proceed to Checkout
+          Place Order
         </motion.button>
 
         <div className="flex items-center justify-center gap-2">
@@ -105,4 +100,5 @@ const OrderSummary = () => {
     </motion.div>
   );
 };
+
 export default OrderSummary;

@@ -1,26 +1,56 @@
 import express from "express";
-import { adminRoute, protectRoute } from "../middleware/auth.middleware.js";
-import { getAnalyticsData, getDailySalesData } from "../controllers/analytics.controller.js";
+import { protect, adminOnly } from "../middleware/auth.js";
+import User from "../models/User.js";
+import Product from "../models/Product.js";
+import Order from "../models/Order.js";
 
 const router = express.Router();
 
-router.get("/", protectRoute, adminRoute, async (req, res) => {
-	try {
-		const analyticsData = await getAnalyticsData();
+// GET /api/edukaan/analytics
+router.get("/", protect, adminOnly, async (_req, res) => {
+  const [users, products, salesAgg] = await Promise.all([
+    User.countDocuments(),
+    Product.countDocuments(),
+    Order.aggregate([
+      {
+        $group: {
+          _id: null,
+          totalSales: { $sum: 1 },
+          totalRevenue: { $sum: "$total" },
+        },
+      },
+    ]),
+  ]);
 
-		const endDate = new Date();
-		const startDate = new Date(endDate.getTime() - 7 * 24 * 60 * 60 * 1000);
+  const totals = salesAgg[0] || { totalSales: 0, totalRevenue: 0 };
 
-		const dailySalesData = await getDailySalesData(startDate, endDate);
+  // last 7 days daily sales
+  const last7 = await Order.aggregate([
+    {
+      $group: {
+        _id: { $dateToString: { date: "$createdAt", format: "%Y-%m-%d" } },
+        sales: { $sum: 1 },
+        revenue: { $sum: "$total" },
+      },
+    },
+    { $sort: { _id: 1 } },
+  ]);
 
-		res.json({
-			analyticsData,
-			dailySalesData,
-		});
-	} catch (error) {
-		console.log("Error in analytics route", error.message);
-		res.status(500).json({ message: "Server error", error: error.message });
-	}
+  const dailySalesData = last7.map((d) => ({
+    name: d._id,
+    sales: d.sales,
+    revenue: d.revenue,
+  }));
+
+  res.json({
+    analyticsData: {
+      users,
+      products,
+      totalSales: totals.totalSales,
+      totalRevenue: totals.totalRevenue,
+    },
+    dailySalesData,
+  });
 });
 
 export default router;

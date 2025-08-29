@@ -432,12 +432,7 @@ const HomePage = () => {
           </h1>
         </div>
         <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
-          <a
-            href={`/edukaan/signup`}
-            target="_blank"
-            rel="noreferrer"
-            className="decoration-none text-black"
-          >
+          <Link to={"/edukaan/signup"}>
             <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={SignupIcon} alt="..." className="w-full h-full" />
@@ -445,13 +440,8 @@ const HomePage = () => {
 
               <h1 className=" text-black font-bold text-center">Signup</h1>
             </div>
-          </a>
-          <a
-            href={`/edukaan/login`}
-            target="_blank"
-            rel="noreferrer"
-            className="decoration-none text-black"
-          >
+          </Link>
+          <Link to={"/edukaan/login"}>
             <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={LoginIcon} alt="..." className="w-full h-full" />
@@ -459,13 +449,8 @@ const HomePage = () => {
 
               <h1 className=" text-black font-bold text-center">Login</h1>
             </div>
-          </a>
-          <a
-            href="/edukaan"
-            target="_blank"
-            rel="noreferrer"
-            className="decoration-none text-black"
-          >
+          </Link>
+          <Link to={"/edukaan"}>
             <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
               <div className="w-[80px] h-[80px]">
                 <img src={MarketIcon} alt="..." className="w-full h-full" />
@@ -473,7 +458,7 @@ const HomePage = () => {
 
               <h1 className=" text-black font-bold text-center">E-Dukaan</h1>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
 

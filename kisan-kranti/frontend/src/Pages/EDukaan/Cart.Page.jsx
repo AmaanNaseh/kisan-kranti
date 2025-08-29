@@ -15,6 +15,7 @@ const CartPage = () => {
     <div className="py-8 md:py-16">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <div className="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+          {/* Left Section - Cart Items */}
           <motion.div
             className="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl"
             initial={{ opacity: 0, x: -20 }}
@@ -33,6 +34,7 @@ const CartPage = () => {
             {cart.length > 0 && <PeopleAlsoBought />}
           </motion.div>
 
+          {/* Right Section - Summary & Coupon */}
           {cart.length > 0 && (
             <motion.div
               className="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full"
@@ -42,6 +44,7 @@ const CartPage = () => {
             >
               <OrderSummary />
               <GiftCouponCard />
+              {/* 🔥 Removed duplicate Place Order button (already in OrderSummary) */}
             </motion.div>
           )}
         </div>
@@ -49,6 +52,7 @@ const CartPage = () => {
     </div>
   );
 };
+
 export default CartPage;
 
 const EmptyCartUI = () => (
@@ -59,7 +63,7 @@ const EmptyCartUI = () => (
     transition={{ duration: 0.5 }}
   >
     <ShoppingCart className="h-24 w-24 text-gray-300" />
-    <h3 className="text-2xl font-semibold ">Your cart is empty</h3>
+    <h3 className="text-2xl font-semibold">Your cart is empty</h3>
     <p className="text-gray-400">
       Looks like you {"haven't"} added anything to your cart yet.
     </p>

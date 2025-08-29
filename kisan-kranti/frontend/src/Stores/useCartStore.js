@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import axios from "../lib/axios";
+import axiosInstance from "../lib/axios";
 import { toast } from "react-hot-toast";
 
 export const useCartStore = create((set, get) => ({
@@ -11,15 +11,16 @@ export const useCartStore = create((set, get) => ({
 
   getMyCoupon: async () => {
     try {
-      const response = await axios.get("/coupons");
+      const response = await axiosInstance.get("/coupons");
       set({ coupon: response.data });
     } catch (error) {
       console.error("Error fetching coupon:", error);
     }
   },
+
   applyCoupon: async (code) => {
     try {
-      const response = await axios.post("/coupons/validate", { code });
+      const response = await axiosInstance.post("/coupons/validate", { code });
       set({ coupon: response.data, isCouponApplied: true });
       get().calculateTotals();
       toast.success("Coupon applied successfully");
@@ -27,6 +28,7 @@ export const useCartStore = create((set, get) => ({
       toast.error(error.response?.data?.message || "An error occurred");
     }
   },
+
   removeCoupon: () => {
     set({ coupon: null, isCouponApplied: false });
     get().calculateTotals();
@@ -35,7 +37,7 @@ export const useCartStore = create((set, get) => ({
 
   getCartItems: async () => {
     try {
-      const res = await axios.get("/cart");
+      const res = await axiosInstance.get("/cart");
       set({ cart: res.data });
       get().calculateTotals();
     } catch (error) {
@@ -43,53 +45,62 @@ export const useCartStore = create((set, get) => ({
       toast.error(error.response?.data?.message || "An error occurred");
     }
   },
-  clearCart: async () => {
+
+  clearCart: () => {
     set({ cart: [], coupon: null, total: 0, subtotal: 0 });
   },
+
   addToCart: async (product) => {
     try {
-      await axios.post("/cart", { productId: product._id });
+      await axiosInstance.post("/cart", { productId: product._id });
       toast.success("Product added to cart");
 
       set((prevState) => {
         const existingItem = prevState.cart.find(
-          (item) => item._id === product._id
+          (item) => item.product === product._id
         );
         const newCart = existingItem
           ? prevState.cart.map((item) =>
-              item._id === product._id
+              item.product === product._id
                 ? { ...item, quantity: item.quantity + 1 }
                 : item
             )
-          : [...prevState.cart, { ...product, quantity: 1 }];
+          : [
+              ...prevState.cart,
+              { ...product, product: product._id, quantity: 1 },
+            ];
         return { cart: newCart };
       });
+
       get().calculateTotals();
     } catch (error) {
       toast.error(error.response?.data?.message || "An error occurred");
     }
   },
+
   removeFromCart: async (productId) => {
-    await axios.delete(`/cart`, { data: { productId } });
+    await axiosInstance.delete(`/cart`, { data: { productId } });
     set((prevState) => ({
-      cart: prevState.cart.filter((item) => item._id !== productId),
+      cart: prevState.cart.filter((item) => item.product !== productId),
     }));
     get().calculateTotals();
   },
+
   updateQuantity: async (productId, quantity) => {
     if (quantity === 0) {
       get().removeFromCart(productId);
       return;
     }
 
-    await axios.put(`/cart/${productId}`, { quantity });
+    await axiosInstance.put(`/cart/${productId}`, { quantity });
     set((prevState) => ({
       cart: prevState.cart.map((item) =>
-        item._id === productId ? { ...item, quantity } : item
+        item.product === productId ? { ...item, quantity } : item
       ),
     }));
     get().calculateTotals();
   },
+
   calculateTotals: () => {
     const { cart, coupon } = get();
     const subtotal = cart.reduce(
@@ -104,5 +115,24 @@ export const useCartStore = create((set, get) => ({
     }
 
     set({ subtotal, total });
+  },
+
+  purchase: async () => {
+    try {
+      const res = await axiosInstance.post("/orders/checkout"); // backend creates order
+      toast.success("Order placed successfully!");
+
+      // clear cart locally
+      set({ cart: [], subtotal: 0, total: 0 });
+
+      // return order details for frontend
+      return {
+        orderId: res.data.orderId,
+        total: res.data.total,
+      };
+    } catch (err) {
+      toast.error(err.response?.data?.message || "Failed to place order");
+      throw err;
+    }
   },
 }));

@@ -7,7 +7,6 @@ const FeaturedProducts = ({ featuredProducts }) => {
   const [itemsPerPage, setItemsPerPage] = useState(4);
 
   const products = Array.isArray(featuredProducts) ? featuredProducts : [];
-
   const { addToCart } = useCartStore();
 
   useEffect(() => {
@@ -23,16 +22,14 @@ const FeaturedProducts = ({ featuredProducts }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex + itemsPerPage);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex - itemsPerPage);
-  };
+  const nextSlide = () => setCurrentIndex((prev) => prev + itemsPerPage);
+  const prevSlide = () => setCurrentIndex((prev) => prev - itemsPerPage);
 
   const isStartDisabled = currentIndex === 0;
-  const isEndDisabled = currentIndex >= featuredProducts.length - itemsPerPage;
+  const isEndDisabled = currentIndex >= products.length - itemsPerPage;
+
+  // ✅ Don’t render anything if there are no featured products
+  if (!products.length) return null;
 
   return (
     <div className="py-12">
@@ -72,8 +69,7 @@ const FeaturedProducts = ({ featuredProducts }) => {
                       </p>
                       <button
                         onClick={() => addToCart(product)}
-                        className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2 px-4 rounded transition-colors duration-300 
-												flex items-center justify-center"
+                        className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2 px-4 rounded transition-colors duration-300 flex items-center justify-center"
                       >
                         <ShoppingCart className="w-5 h-5 mr-2" />
                         Add to Cart
@@ -84,6 +80,7 @@ const FeaturedProducts = ({ featuredProducts }) => {
               ))}
             </div>
           </div>
+
           <button
             onClick={prevSlide}
             disabled={isStartDisabled}
@@ -112,4 +109,5 @@ const FeaturedProducts = ({ featuredProducts }) => {
     </div>
   );
 };
+
 export default FeaturedProducts;

@@ -33,6 +33,7 @@ import { useCartStore } from "./Stores/useCartStore";
 
 import EDukaanNavbar from "./Components/EDukaan/Navbar";
 import EDukaanLoadingSpinner from "./Components/EDukaan/LoadingSpinner";
+import EdukaanUserDashboardPage from "./Pages/EDukaan/UserDashboard.Page";
 
 const App = () => {
   const location = useLocation();
@@ -58,7 +59,9 @@ const App = () => {
     getCartItems();
   }, [getCartItems, user]);
 
-  if (checkingAuth) return <EDukaanLoadingSpinner />;
+  if (checkingAuth && location.pathname.startsWith("/edukaan")) {
+    return <EDukaanLoadingSpinner />;
+  }
 
   return (
     <>
@@ -79,15 +82,29 @@ const App = () => {
                 <Route
                   path="/edukaan/signup"
                   element={
-                    !user ? <EDukaanSignUpPage /> : <Navigate to="/edukaan" />
+                    checkingAuth ? (
+                      <EDukaanLoadingSpinner />
+                    ) : !user ? (
+                      <EDukaanSignUpPage />
+                    ) : (
+                      <Navigate to="/edukaan" />
+                    )
                   }
                 />
+
                 <Route
                   path="/edukaan/login"
                   element={
-                    !user ? <EDukaanLoginPage /> : <Navigate to="/edukaan" />
+                    checkingAuth ? (
+                      <EDukaanLoadingSpinner />
+                    ) : !user ? (
+                      <EDukaanLoginPage />
+                    ) : (
+                      <Navigate to="/edukaan" />
+                    )
                   }
                 />
+
                 <Route
                   path="/edukaan/secret-dashboard"
                   element={
@@ -98,6 +115,18 @@ const App = () => {
                     )
                   }
                 />
+
+                <Route
+                  path="/edukaan/user-dashboard"
+                  element={
+                    user ? (
+                      <EdukaanUserDashboardPage />
+                    ) : (
+                      <Navigate to="/edukaan/login" />
+                    )
+                  }
+                />
+
                 <Route
                   path="/edukaan/category/:category"
                   element={<EDukaanCategoryPage />}
@@ -112,6 +141,7 @@ const App = () => {
                     )
                   }
                 />
+
                 <Route
                   path="/edukaan/purchase-success"
                   element={

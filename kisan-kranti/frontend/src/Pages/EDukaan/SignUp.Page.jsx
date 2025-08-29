@@ -19,7 +19,8 @@ const SignUpPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signup(formData);
+    const { confirmPassword, ...data } = formData;
+    signup(data);
   };
 
   return (

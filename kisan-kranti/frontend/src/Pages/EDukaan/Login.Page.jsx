@@ -17,7 +17,7 @@ const LoginPage = () => {
       alert("Please enter all fields");
       return;
     }
-    login(email, password); // Pass role to signup function
+    login({ email, password });
   };
 
   return (

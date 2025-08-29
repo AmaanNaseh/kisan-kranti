@@ -1,8 +1,12 @@
 import { XCircle, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 const PurchaseCancelPage = () => {
+  const [searchParams] = useSearchParams();
+  const orderId = searchParams.get("orderId");
+  const total = searchParams.get("total");
+
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <motion.div
@@ -19,7 +23,10 @@ const PurchaseCancelPage = () => {
             Purchase Cancelled
           </h1>
           <p className="text-gray-300 text-center mb-6">
-            Your order has been cancelled. No charges have been made.
+            Your order {orderId ? `#${orderId}` : ""} has been cancelled.{" "}
+            {total
+              ? `Refund of ₹${total} will not be charged.`
+              : "No charges have been made."}
           </p>
           <div className="bg-gray-700 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-400 text-center">

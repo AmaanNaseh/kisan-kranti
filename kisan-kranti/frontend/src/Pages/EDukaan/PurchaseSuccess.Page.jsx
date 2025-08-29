@@ -1,44 +1,28 @@
 import { ArrowRight, CheckCircle, HandHeart } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import Confetti from "react-confetti";
-
 import { useCartStore } from "../../Stores/useCartStore";
-import axios from "../../lib/axios";
 
 const PurchaseSuccessPage = () => {
-  const [isProcessing, setIsProcessing] = useState(true);
   const { clearCart } = useCartStore();
-  const [error, setError] = useState(null);
+
+  const [searchParams] = useSearchParams();
+
+  const [orderId, setOrderId] = useState(null);
+  const [total, setTotal] = useState(null);
+  const [isProcessing, setIsProcessing] = useState(true);
 
   useEffect(() => {
-    const handleCheckoutSuccess = async (sessionId) => {
-      try {
-        await axios.post("/edukaan/payments/checkout-success", {
-          sessionId,
-        });
-        clearCart();
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setIsProcessing(false);
-      }
-    };
-
-    const sessionId = new URLSearchParams(window.location.search).get(
-      "session_id"
-    );
-    if (sessionId) {
-      handleCheckoutSuccess(sessionId);
-    } else {
-      setIsProcessing(false);
-      setError("No session ID found in the URL");
-    }
-  }, [clearCart]);
+    const id = searchParams.get("orderId");
+    const t = searchParams.get("total");
+    if (id) setOrderId(id);
+    if (t) setTotal(t);
+    clearCart();
+    setIsProcessing(false);
+  }, [searchParams, clearCart]);
 
   if (isProcessing) return "Processing...";
-
-  if (error) return `Error: ${error}`;
 
   return (
     <div className="h-screen flex items-center justify-center px-4">
@@ -63,16 +47,16 @@ const PurchaseSuccessPage = () => {
           <p className="text-gray-300 text-center mb-2">
             Thank you for your order. {"We're"} processing it now.
           </p>
-          <p className="text-emerald-400 text-center text-sm mb-6">
-            Check your email for order details and updates.
+          <p className="text-emerald-400 text-center text-sm mb-2">
+            {orderId ? `Order ID: #${orderId}` : "Order confirmed"}
           </p>
+          {total && (
+            <p className="text-gray-300 text-center text-sm mb-6">
+              Total Paid: ₹{total}
+            </p>
+          )}
+
           <div className="bg-gray-700 rounded-lg p-4 mb-6">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-400">Order number</span>
-              <span className="text-sm font-semibold text-emerald-400">
-                #12345
-              </span>
-            </div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-gray-400">Estimated delivery</span>
               <span className="text-sm font-semibold text-emerald-400">
