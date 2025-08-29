@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { E_Dukaan_Frontend_API, Flask_Backend_API } from "../Config/Config";
+import { Flask_Backend_API } from "../Config/Config";
 
 import heroPoster from "../Assets/Homepage/HeroPoster.png";
 import SoilHealthIcon from "../Assets/Homepage/Soil_Health_Icon.png";
@@ -433,7 +433,7 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
           <a
-            href={`${E_Dukaan_Frontend_API}/signup`}
+            href={`/edukaan/signup`}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
@@ -447,7 +447,7 @@ const HomePage = () => {
             </div>
           </a>
           <a
-            href={`${E_Dukaan_Frontend_API}/login`}
+            href={`/edukaan/login`}
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"
@@ -461,7 +461,7 @@ const HomePage = () => {
             </div>
           </a>
           <a
-            href={E_Dukaan_Frontend_API}
+            href="/edukaan"
             target="_blank"
             rel="noreferrer"
             className="decoration-none text-black"

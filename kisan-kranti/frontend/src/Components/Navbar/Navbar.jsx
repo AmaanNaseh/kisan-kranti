@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { E_Dukaan_Frontend_API, Flask_Backend_API } from "../../Config/Config";
+import { Flask_Backend_API } from "../../Config/Config";
 
 import BrochureHindi from "../../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
@@ -100,16 +100,11 @@ const Navbar = () => {
                     Complain to Pradhan
                   </li>
                 </Link>
-                <a
-                  href={E_Dukaan_Frontend_API}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
+                <Link to={"/edukaan"}>
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Kisan E-Dukaan
                   </li>
-                </a>
+                </Link>
                 <Link to={"/brochure"}>
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Brochure
@@ -250,16 +245,11 @@ const Navbar = () => {
                     Complain to Pradhan
                   </li>
                 </Link>
-                <a
-                  href={E_Dukaan_Frontend_API}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
+                <Link to={"/edukaan"}>
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Kisan E-Dukaan
                   </li>
-                </a>
+                </Link>
                 <Link to={"/brochure"}>
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Brochure

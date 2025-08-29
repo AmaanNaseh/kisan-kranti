@@ -24,3 +24,9 @@ body {
   font-weight: 600;
   display: none;
 }
+
+body.edukaan-theme {
+  background-color: #111827; /* same as bg-gray-900 */
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
