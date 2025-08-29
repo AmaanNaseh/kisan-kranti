@@ -1,5 +1,5 @@
 import axios from "axios";
-import { E_Dukaan_Backend_API } from "../../Config";
+import { E_Dukaan_Backend_API } from "../Config/Config";
 
 const axiosInstance = axios.create({
   baseURL:
