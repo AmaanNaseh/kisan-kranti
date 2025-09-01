@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import { useUserStore } from "../../Stores/useUserStore";
 import { useCartStore } from "../../Stores/useCartStore";
 
+import BackArrow from "../../Assets/FAQ/BackArrow.png";
+
 const Navbar = () => {
   const { user, logout } = useUserStore();
   const isAdmin = user?.role === "admin";
@@ -19,12 +21,21 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-lg z-40 transition-all duration-300 border-b border-emerald-800">
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-wrap flex-col md:flex-row justify-between gap-4 py-2 md:py-1 md:gap-0 items-center">
-          <Link
-            to="/edukaan"
-            className="text-2xl font-bold text-emerald-400 items-center space-x-2 flex hover:scale-105"
-          >
-            Kisan E-Dukaan
-          </Link>
+          <div className="flex items-center justify-center gap-5">
+            <Link
+              to="/"
+              className="bg-emerald-400 hover:scale-105 rounded-full"
+            >
+              <img src={BackArrow} alt="Back" className="w-[25px] h-[25px]" />
+            </Link>
+
+            <Link
+              to="/edukaan"
+              className="text-2xl font-bold text-emerald-400 items-center space-x-2 flex hover:scale-105"
+            >
+              Kisan E-Dukaan
+            </Link>
+          </div>
 
           <nav className="flex flex-wrap items-center gap-4">
             {user && (
