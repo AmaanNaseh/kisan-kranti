@@ -39,7 +39,7 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } lg:hidden absolute top-[105px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
+            } lg:hidden absolute top-[60px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
           >
             <Link to={"/"}>
               <p className="block py-2 px-4 hover:bg-green-500">Home</p>
@@ -299,7 +299,7 @@ const Navbar = () => {
                   </li>
                 </a>
 
-                <a
+                {/* <a
                   href="https://youtu.be/QwbhA1V4NrI"
                   target="_blank"
                   rel="noreferrer"
@@ -318,7 +318,7 @@ const Navbar = () => {
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     How to Use? (English)
                   </li>
-                </a>
+                </a> */}
                 <a
                   href={BrochureHindi}
                   download="Kisan_Kranti_Brochure_Hindi.pdf"

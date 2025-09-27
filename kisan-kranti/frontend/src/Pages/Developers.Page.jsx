@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 
 import AmaanImg from "../Assets/DevelopersPage/Amaan.jpg";
-import TeenaImg from "../Assets/DevelopersPage/Teena.jpg";
+import DiptiImg from "../Assets/DevelopersPage/Dipti.png";
 import PriyanshuImg from "../Assets/DevelopersPage/Priyanshu.jpg";
 import DhruvImg from "../Assets/DevelopersPage/Dhruv.jpg";
-import AnkitImg from "../Assets/DevelopersPage/Ankit.jpg";
+import TousifImg from "../Assets/DevelopersPage/Tousif.jpg";
 import AdityaImg from "../Assets/DevelopersPage/Aditya.jpg";
 import GithubIcon from "../Assets/DevelopersPage/Github.png";
 import LinkedinIcon from "../Assets/DevelopersPage/Linkedin.png";
@@ -51,23 +51,23 @@ const DevelopersPage = () => {
             </a>
           </div>
         </div>
-        {/* <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
+        <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
-              src={TeenaImg}
+              src={DiptiImg}
               className="rounded-full w-full"
               alt="developer"
             />
           </div>
           <p className="p-4 mt-[20%] md:mt-0 md:ml-[20%] lg:ml-[15%] text-[#FFFFFF] font-semibold text-justify">
-            Hey, I’m Teena! Let’s be real—farmers have it tough, and the farming
+            Hey, I’m Dipti! Let’s be real—farmers have it tough, and the farming
             industry isn’t exactly a walk in the park. So, we thought, why not
             develop an app to help our Kisan community? because they deserve
             nothing less than the best! I expertise
           </p>
           <div className="flex flex-wrap my-3 gap-8">
             <a
-              href="https://github.com/teena-718b732b9"
+              href="https://github.com/Diptisingh031"
               className="decoration-none hover:scale-[1.25] hover:border-white hover:border-[2px] p-2"
               target="_blank"
               rel="noreferrer"
@@ -75,7 +75,7 @@ const DevelopersPage = () => {
               <img src={GithubIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
             <a
-              href="https://linkedin.com/in/TeenaSingh4640"
+              href="https://www.linkedin.com/in/dipti-singh031"
               className="decoration-none hover:scale-[1.25] hover:border-white hover:border-[2px] p-2"
               target="_blank"
               rel="noreferrer"
@@ -83,7 +83,7 @@ const DevelopersPage = () => {
               <img src={LinkedinIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
           </div>
-        </div> */}
+        </div>
         <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
@@ -152,24 +152,24 @@ const DevelopersPage = () => {
             </a>
           </div>
         </div>
-        {/* <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
+        <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img
-              src={AnkitImg}
+              src={TousifImg}
               className="rounded-full w-full"
               alt="developer"
             />
           </div>
           <p className="p-4 mt-[20%] md:mt-0 md:ml-[20%] lg:ml-[15%] text-[#FFFFFF] font-semibold text-justify">
-            Hey! I’m Ankit. In the Kisan Kranti team, I design and implement key
-            features that deliver critical agricultural data to farmers. I
+            Hey! I’m Tousif. In the Kisan Kranti team, I design and implement
+            key features that deliver critical agricultural data to farmers. I
             ensure the platform is both user-friendly and reliable, for which I
             have deployed the segments of this website in multiple stages for
             everyone to access !
           </p>
           <div className="flex flex-wrap my-3 gap-8">
             <a
-              href="https://github.com/ankitredhat"
+              href="https://github.com/ansari-tousif/"
               className="decoration-none hover:scale-[1.25] hover:border-white hover:border-[2px] p-2"
               target="_blank"
               rel="noreferrer"
@@ -177,7 +177,7 @@ const DevelopersPage = () => {
               <img src={GithubIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
             <a
-              href="https://linkedin.com/in/ankit-gupta-936843323"
+              href="https://www.linkedin.com/in/tousif-ansari-3899ab212/"
               className="decoration-none hover:scale-[1.25] hover:border-white hover:border-[2px] p-2"
               target="_blank"
               rel="noreferrer"
@@ -185,7 +185,7 @@ const DevelopersPage = () => {
               <img src={LinkedinIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
           </div>
-        </div> */}
+        </div>
         <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">
           <div className="w-[105px] md:w-[150px] bg-[#0B6419] p-[6px] flex items-center justify-center absolute left-[50%] translate-x-[-50%] top-[-15%] md:left-0 md:top-[50%] md:translate-y-[-50%] md:translate-x-[-30%]">
             <img

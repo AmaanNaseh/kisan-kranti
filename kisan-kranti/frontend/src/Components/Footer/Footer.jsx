@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center gap-4">
               <h1 className="font-bold text-xl">Resources</h1>
-              <a
+              {/* <a
                 className="decoration-none hover:scale-110 cursor-pointer"
                 href="https://youtu.be/QwbhA1V4NrI"
                 target="_blank"
@@ -54,7 +54,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <p>How to Use? (English)</p>
-              </a>
+              </a> */}
               <a
                 href={BrochureHindi}
                 download="Kisan_Kranti_Brochure_Hindi.pdf"
