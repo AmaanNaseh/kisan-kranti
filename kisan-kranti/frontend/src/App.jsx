@@ -1,9 +1,15 @@
 import React, { useEffect } from "react";
 import { Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+
+// Navbar & Footer
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 
+// Shortcut Components
+import IVRforNavigation from "./Components/Shortcuts/IVRforNavigation";
+
+// Pages
 import HomePage from "./Pages/Home.Page";
 import SchemesPage from "./Pages/Schemes.Page";
 import OrganicFarmingPage from "./Pages/OrganicFarming.Page";
@@ -200,6 +206,9 @@ const App = () => {
           <Footer />
         </>
       )}
+
+      {/* Common in All Pages */}
+      <IVRforNavigation />
     </>
   );
 };
