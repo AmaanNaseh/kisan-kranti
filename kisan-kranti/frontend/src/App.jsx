@@ -14,7 +14,7 @@ import HomePage from "./Pages/Home.Page";
 import SchemesPage from "./Pages/Schemes.Page";
 import OrganicFarmingPage from "./Pages/OrganicFarming.Page";
 import ComplaintsPage from "./Pages/Complaints.Page";
-import PlantInventoryPage from "./Pages/PlantInventory.Page";
+import CropSelectionPage from "./Pages/CropSelection.Page";
 import FAQPage from "./Pages/FAQ.Page";
 import BrochurePage from "./Pages/Brochure.Page";
 import Developers from "./Pages/Developers.Page";
@@ -192,7 +192,7 @@ const App = () => {
                 path="/weather-forecast"
                 element={<WeatherForecastPage />}
               />
-              <Route path="/plant-inventory" element={<PlantInventoryPage />} />
+              <Route path="/crop-selection" element={<CropSelectionPage />} />
               <Route path="/schemes" element={<SchemesPage />} />
               <Route path="/organic-farming" element={<OrganicFarmingPage />} />
               <Route path="/complaints" element={<ComplaintsPage />} />

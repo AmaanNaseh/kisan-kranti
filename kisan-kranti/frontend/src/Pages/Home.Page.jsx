@@ -97,6 +97,7 @@ const HomePage = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row my-10">
+        {/* Left Div : About Section */}
         <div className="lg:w-[25%] px-8">
           <div className="flex flex-col items-center justify-center">
             <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl">
@@ -144,12 +145,17 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
+
+        {/* Right Div : Farmer's Corner */}
+
         <div className="lg:w-[70%] flex flex-col items-center justify-center relative">
           <div className="flex flex-col items-center justify-center">
             <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl mb-4 lg:text-4xl">
               Farmer's Corner
             </h1>
           </div>
+
+          {/* Big Screens */}
           <img
             src={VtLine}
             className="w-[2px] h-[95%] absolute left-0 hidden lg:block"
@@ -163,11 +169,26 @@ const HomePage = () => {
           />
 
           <div className="hidden md:flex items-center justify-center lg:ml-[5%] my-10 gap-1">
-            {/* first div */}
+            {/* first Vertical div */}
             <div className="flex flex-col items-center gap-1">
-              <Link to={"/weather-forecast"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[125px] lg:w-[200px] lg:h-[175px] bg-[#A5E6F2] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <Link to={"/crop-selection"}>
+                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[125px] lg:w-[200px] lg:h-[175px] bg-[#389347] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
                   <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
+                    <img
+                      src={PlantInventoryIcon}
+                      alt="..."
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <h1 className=" text-black font-bold text-center">
+                    Crop Selection
+                  </h1>
+                </div>
+              </Link>
+
+              <Link to={"/weather-forecast"}>
+                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[175px] lg:w-[200px] lg:h-[225px] hover:border-[2px] bg-[#A5E6F2] hover:border-black hover:animate-zoomAnimation">
+                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
                     <img
                       src={ClimateIcon}
                       alt="..."
@@ -179,23 +200,9 @@ const HomePage = () => {
                   </h1>
                 </div>
               </Link>
-
-              <Link to={"/live-crop-price"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[175px] lg:w-[200px] lg:h-[225px] hover:border-[2px] bg-[#EEF199] hover:border-black hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
-                    <img
-                      src={BuyFertilizerIcon}
-                      alt="..."
-                      className="w-full h-full"
-                    />
-                  </div>
-                  <h1 className=" text-black font-bold text-center">
-                    Live Crop Price
-                  </h1>
-                </div>
-              </Link>
             </div>
-            {/* Second div */}
+
+            {/* Second Vertical div */}
             <div className="flex flex-col items-center gap-1">
               <a
                 href={Flask_Backend_API}
@@ -216,61 +223,102 @@ const HomePage = () => {
                 </div>
               </a>
 
-              <Link to={"/crop-report-generator"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[350px] h-[150px] lg:w-[400px] lg:h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
-                    <img
-                      src={CropReportIcon}
-                      alt="..."
-                      className="w-full h-full"
-                    />
-                  </div>
+              <div className="flex gap-2">
+                <Link to={"/crop-report-generator"}>
+                  <div className="flex flex-col items-center justify-center gap-2 w-[170px] h-[150px] lg:w-[195px] lg:h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
+                    <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
+                      <img
+                        src={CropReportIcon}
+                        alt="..."
+                        className="w-full h-full"
+                      />
+                    </div>
 
-                  <h1 className=" text-black font-bold text-center ">
-                    Crop Report Generator
-                  </h1>
-                </div>
-              </Link>
+                    <h1 className=" text-black font-bold text-center ">
+                      Crop Report Generator
+                    </h1>
+                  </div>
+                </Link>
+
+                <a
+                  href="https://www.google.com/maps/search/agronomist+near+me"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="decoration-none text-black"
+                >
+                  <div className="flex flex-col items-center justify-center gap-2 w-[170px] h-[150px] lg:w-[195px] lg:h-[200px] bg-[#F59D9D] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
+                    <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
+                      <img
+                        src={CheckupIcon}
+                        alt="..."
+                        className="w-full h-full"
+                      />
+                    </div>
+
+                    <h1 className=" text-black font-bold text-center ">
+                      Crop Health Checkup
+                    </h1>
+                  </div>
+                </a>
+              </div>
             </div>
+
             {/* Third div */}
             <div className="flex flex-col items-center gap-1">
-              <Link to={"/plant-inventory"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[175px] lg:w-[200px] lg:h-[225px] bg-[#389347] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+              <Link to={"/live-crop-price"}>
+                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[175px] lg:w-[200px] lg:h-[225px] bg-[#EEF199] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
                   <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
                     <img
-                      src={PlantInventoryIcon}
+                      src={BuyFertilizerIcon}
                       alt="..."
                       className="w-full h-full"
                     />
                   </div>
                   <h1 className=" text-black font-bold text-center">
-                    Plant Inventory
+                    Live Crop Price
                   </h1>
                 </div>
               </Link>
-              <a
-                href="https://www.google.com/maps/search/agronomist+near+me"
-                target="_blank"
-                rel="noreferrer"
-                className="decoration-none text-black"
-              >
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[125px] lg:w-[200px] lg:h-[175px] bg-[#F59D9D] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+
+              <Link to={"/edukaan"}>
+                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[125px] lg:w-[200px] lg:h-[175px] bg-[#ffd700] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
                   <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
-                    <img
-                      src={CheckupIcon}
-                      alt="..."
-                      className="w-full h-full"
-                    />
+                    <img src={MarketIcon} alt="..." className="w-full h-full" />
                   </div>
                   <h1 className=" text-black font-bold text-center">
-                    Crop Health Checkup
+                    E-Dukaan
                   </h1>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
+          {/* Small Screens */}
           <div className="flex flex-col items-center gap-16 m-8 p-8 md:hidden">
+            <Link to={"/crop-selection"}>
+              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+                <div className="w-[100px] h-[100px]">
+                  <img
+                    src={PlantInventoryIcon}
+                    alt="..."
+                    className="w-full h-full"
+                  />
+                </div>
+                <h1 className=" text-black font-bold text-center">
+                  Crop Selection
+                </h1>
+              </div>
+            </Link>
+            <Link to={"/weather-forecast"}>
+              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#A5E6F2] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+                <div className="w-[100px] h-[100px] px-auto">
+                  <img src={ClimateIcon} alt="..." className="w-full h-full" />
+                </div>
+                <h1 className=" text-black font-bold text-center">
+                  Weather Forecast
+                </h1>
+              </div>
+            </Link>
             <a href={Flask_Backend_API} className="decoration-none text-black">
               <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#C6FFD2] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
                 <div className="w-[100px] h-[100px] px-auto">
@@ -286,41 +334,17 @@ const HomePage = () => {
                 </h1>
               </div>
             </a>
-            <Link to={"/weather-forecast"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#A5E6F2] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px] px-auto">
-                  <img src={ClimateIcon} alt="..." className="w-full h-full" />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Weather Forecast
-                </h1>
-              </div>
-            </Link>
-            <Link to={"/plant-inventory"}>
+            <Link to={"/crop-report-generator"}>
               <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px]">
+                <div className="w-[100px] h-[100px] px-auto">
                   <img
-                    src={PlantInventoryIcon}
+                    src={CropReportIcon}
                     alt="..."
                     className="w-full h-full"
                   />
                 </div>
                 <h1 className=" text-black font-bold text-center">
-                  Plant Inventory
-                </h1>
-              </div>
-            </Link>
-            <Link to={"/organic-farming"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] hover:border-[2px] bg-[#EEF199] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px]">
-                  <img
-                    src={OrganicFarmingIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Learn Organic Farming
+                  Crop Report Generator
                 </h1>
               </div>
             </Link>
@@ -337,13 +361,26 @@ const HomePage = () => {
                 </h1>
               </div>
             </a>
-
-            <Link to={"/faqs"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#F59D9D] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px]">
-                  <img src={FAQIcon} alt="..." className="w-full h-full" />
+            <Link to={"/live-crop-price"}>
+              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#EEF199] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+                <div className="w-[100px] h-[100px] px-auto">
+                  <img
+                    src={BuyFertilizerIcon}
+                    alt="..."
+                    className="w-full h-full"
+                  />
                 </div>
-                <h1 className=" text-black font-bold text-center">FAQs</h1>
+                <h1 className=" text-black font-bold text-center">
+                  Live Crop Price
+                </h1>
+              </div>
+            </Link>
+            <Link to={"/edukaan"}>
+              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#ffd700] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
+                <div className="w-[100px] h-[100px] px-auto">
+                  <img src={MarketIcon} alt="..." className="w-full h-full" />
+                </div>
+                <h1 className=" text-black font-bold text-center">E-Dukaan</h1>
               </div>
             </Link>
           </div>

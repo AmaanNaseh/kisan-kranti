@@ -226,7 +226,7 @@ const IVRforNavigation = () => {
             {count === 1 ? (
               <input
                 type="number"
-                className="md:hidden w-[50px] p-1 text-center text-black border-b-[2px] border-black"
+                className="lg:hidden w-[50px] p-1 text-center text-black border-b-[2px] border-black"
                 onChange={() => {
                   setCount(0);
                 }}
@@ -255,18 +255,6 @@ const IVRforNavigation = () => {
                 सहायता
               </div>
             </div>
-
-            {count === 1 ? (
-              <input
-                type="number"
-                className="md:hidden w-[50px] p-1 text-center text-black border-b-[2px] border-black"
-                onChange={() => {
-                  setCount(0);
-                }}
-              />
-            ) : (
-              ""
-            )}
           </div>
         </div>
       ) : (
