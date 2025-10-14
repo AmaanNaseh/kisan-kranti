@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Barley } from "../Dataset/Barley";
 import { Chickpea } from "../Dataset/Chickpea";
 import { Maize } from "../Dataset/Maize";
@@ -11,6 +11,7 @@ import MaizeCircle from "../Assets/Plant_Inventory_Page/MaizeCircle.jpg";
 import SugarcaneCircle from "../Assets/Plant_Inventory_Page/SugarcaneCircle.jpeg";
 import WheatCircle from "../Assets/Plant_Inventory_Page/WheatCircle.jpg";
 
+import LiveMap from "../Components/LiveMap/LiveMap";
 import IndiaMap from "../Components/IndiaMap/IndiaMap";
 
 const CropSelectionPage = () => {
@@ -23,6 +24,8 @@ const CropSelectionPage = () => {
       <div className="flex flex-col justify-center items-center my-12 md:my-20">
         <IndiaMap />
       </div>
+
+      <LiveMap />
 
       <h1 className="my-12 mt-24 md:mt-40 md:my-20 text-center font-bold text-3xl lg:text-5xl">
         Plant Inventory for Botanists
