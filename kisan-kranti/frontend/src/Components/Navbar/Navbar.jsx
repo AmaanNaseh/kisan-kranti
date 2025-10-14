@@ -46,7 +46,7 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } lg:hidden absolute top-[60px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
+            } lg:hidden absolute top-[61px] md:top-[62px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
           >
             <Link to={"/"}>
               <p className="block py-2 px-4 hover:bg-green-500">Home</p>
@@ -223,7 +223,7 @@ const Navbar = () => {
 
               {/* Dropdown Menu on Hover */}
               <div
-                className={`absolute w-full left-0 top-full bg-white shadow-lg text-black p-10 min-h-[400px] ${
+                className={`absolute w-full left-0 top-[75px] bg-white shadow-lg text-black p-10 min-h-[400px] ${
                   isVisible
                     ? "flex items-center justify-center gap-12"
                     : "hidden"
