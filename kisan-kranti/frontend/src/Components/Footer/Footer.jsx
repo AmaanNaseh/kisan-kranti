@@ -155,12 +155,6 @@ const Footer = () => {
               <a href={BrochureHindi} download>
                 Brochure (Hindi)
               </a>
-              <Link
-                to="/crop-report-generator"
-                className="text-white/90 hover:text-white text-base transition-colors duration-300"
-              >
-                Health Reports
-              </Link>
             </motion.div>
 
             {/* Quick Links */}
@@ -182,8 +176,10 @@ const Footer = () => {
                 Crop Selection
               </Link>
 
-              <a href={Flask_Backend_API} target="_blank" rel="noreferrer"
-                
+              <a
+                href={Flask_Backend_API}
+                target="_blank"
+                rel="noreferrer"
                 className="text-white/90 hover:text-white text-base transition-colors duration-300"
               >
                 Crop Disease Prediction
