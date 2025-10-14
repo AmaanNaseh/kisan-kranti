@@ -223,7 +223,7 @@ const Navbar = () => {
 
               {/* Dropdown Menu on Hover */}
               <div
-                className={`absolute w-full left-0 top-[75px] bg-white shadow-lg text-black p-10 min-h-[400px] ${
+                className={`absolute w-full left-0 top-[77px] bg-white shadow-lg text-black p-10 min-h-[400px] ${
                   isVisible
                     ? "flex items-center justify-center gap-12"
                     : "hidden"
