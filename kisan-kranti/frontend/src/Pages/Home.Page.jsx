@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import { Flask_Backend_API } from "../Config/Config";
 
-import heroPoster from "../Assets/Homepage/HeroPoster.png";
+import heroPoster from "../Assets/Homepage/KisanBg1.jpg";
 import SoilHealthIcon from "../Assets/Homepage/Soil_Health_Icon.png";
 import ClimateIcon from "../Assets/Homepage/Climate_Icon.png";
 import CheckupIcon from "../Assets/Homepage/Crop_Health_Icon.png";
@@ -15,15 +16,11 @@ import ComplaintIcon from "../Assets/Homepage/Complaint_Icon.png";
 import ChatbotIcon from "../Assets/Homepage/Chatbot_Icon.png";
 import FAQIcon from "../Assets/Homepage/FAQIcon.jpg";
 import PhoneIcon from "../Assets/Homepage/Phone.png";
-import HeaderBg from "../Assets/Homepage/header_background.png";
 import BrochureIcon from "../Assets/Homepage/Disclaimer.png";
 import DevelopersIcon from "../Assets/Homepage/Developers.png";
 import AIArchitectureIcon from "../Assets/Homepage/AIArchitecture.png";
-import VtLine from "../Assets/Homepage/VtLine.png";
-import HzLine from "../Assets/Homepage/HzLine.png";
 import SignupIcon from "../Assets/Homepage/SignupIcon.png";
 import LoginIcon from "../Assets/Homepage/LoginIcon.png";
-import ContactBg from "../Assets/Homepage/ContactBg.png";
 import MsgIcon from "../Assets/Homepage/MsgIcon.png";
 import CropReportIcon from "../Assets/Homepage/ReportIcon.png";
 import BuyFertilizerIcon from "../Assets/Homepage/Buy_Fertilizer_Icon.png";
@@ -60,529 +57,622 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="w-full h-28 md:h-80 relative">
-        <img src={heroPoster} alt="..." className="w-full h-full" />
-        <h1 className="absolute text-center z-20 p-2 text-white mix-blend-multiply bg-green-700 text-3xl md:text-5xl lg:text-7xl font-bold top-[15%] left-[50%] translate-x-[-50%] translate-y-[-15%]">
-          KISAN KRANTI
-        </h1>
-      </div>
-
-      <div className="w-full relative mb-10">
-        <img
-          src={HeaderBg}
-          className="cover z-[-1] w-full h-full"
-          alt="header background"
-        />
-
-        <h1 className="absolute text-xl z-10 text-white md:text-3xl lg:text-7xl font-bold text-center left-[50%] translate-x-[-50%] top-[1%]">
-          What we Provide?
-        </h1>
-
-        <div className="w-[200px] md:w-[300px] lg:w-[500px] absolute top-[54%] translate-y-[-54%] right-0 lg:left-[50%] lg:translate-x-[-50%]">
-          <img src={PhoneIcon} alt="phone icon" />
+      {/* Hero Section - Split Screen Design */}
+      <div className="w-full min-h-[650px] lg:min-h-[750px] bg-gradient-to-br from-[#0d5c2a] via-[#1B7D3A] to-[#2a9d4e] relative overflow-hidden">
+        {/* Animated Bubble Effects */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(15)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute rounded-full bg-white/10 animate-float"
+              style={{
+                width: `${Math.random() * 100 + 50}px`,
+                height: `${Math.random() * 100 + 50}px`,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 4}s`,
+                animationDuration: `${Math.random() * 6 + 8}s`,
+              }}
+            />
+          ))}
         </div>
 
-        <h1 className="absolute md:py-2 md:px-5 rounded-lg lg:max-w-[440px] my-1 p-1 bg-white text-black text-[8px] md:text-lg lg:text-2xl font-bold left-1 top-[20%] lg:left-[5%] lg:top-[25%]">
-          Crop Disease Prediction
-        </h1>
-        <h1 className="absolute md:py-2 md:px-5 rounded-lg lg:max-w-[440px] my-1 p-1 bg-white text-black text-[8px] md:text-lg lg:text-2xl font-bold left-1 top-[40%] lg:left-[5%] lg:top-[50%]">
-          Crop Health Report Generation
-        </h1>
-        <h1 className="absolute md:py-2 md:px-5 rounded-lg lg:max-w-[440px] my-1 p-1 bg-white text-black text-[8px] md:text-lg lg:text-2xl font-bold left-1 top-[60%] lg:left-[65%] lg:top-[25%]">
-          E-Dukaan for Kisan Business
-        </h1>
-        <h1 className="absolute md:py-2 md:px-5 rounded-lg lg:max-w-[440px] my-1 p-1 bg-white text-black text-[8px] md:text-lg lg:text-2xl font-bold left-1 top-[80%] lg:left-[65%] lg:top-[50%]">
-          24x7 Chatbot
-        </h1>
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
+            {/* Left Content */}
+            <motion.div
+              className="flex flex-col justify-center space-y-8 lg:space-y-10 text-left z-10"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              {/* Badge */}
+              <motion.div
+                className="inline-flex items-center gap-2 bg-green-900/30 backdrop-blur-sm px-6 py-3 rounded-full w-fit border border-green-500/20 shadow-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+              >
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <span className="text-white font-semibold text-base">
+                  Empowering 10,000+ Farmers
+                </span>
+              </motion.div>
+
+              {/* Main Heading */}
+              <motion.div
+                className="space-y-6"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+              >
+                <h1 className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white leading-none tracking-tight">
+                  किसान
+                  <br />
+                  <span className="italic font-light text-white/95">
+                    Kranti
+                  </span>
+                </h1>
+                <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed max-w-2xl font-normal">
+                  Revolutionizing Agriculture with AI-Powered Solutions for
+                  Better Yields and Sustainable Farming
+                </p>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div
+                className="flex flex-col sm:flex-row gap-5 justify-start items-start"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link
+                    to="/crop-selection"
+                    className="inline-flex items-center justify-center gap-3 bg-white text-[#1B7D3A] px-10 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-all duration-300 shadow-xl hover:shadow-2xl group"
+                  >
+                    Get Started
+                    <svg
+                      className="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </Link>
+                </motion.div>
+                <motion.button
+                  className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/15 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                  </svg>
+                  Watch Demo
+                </motion.button>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Image */}
+            <motion.div
+              className="relative flex items-center justify-center lg:justify-end"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            >
+              <motion.div
+                className="relative w-full max-w-[700px] lg:max-w-[800px] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/10"
+                whileHover={{ scale: 1.02, rotate: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                <img
+                  src={heroPoster}
+                  alt="Indian Farmer with Ox"
+                  className="w-full h-[400px] lg:h-[500px] object-cover"
+                />
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row my-10">
-        {/* Left Div : About Section */}
-        <div className="lg:w-[25%] px-8">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl">
-              About Kisan Kranti
-            </h1>
+      {/* What We Provide */}
+
+      <h2 className="mt-20 hidden lg:block text-3xl font-bold text-[#163A1C] text-center">
+        We provide end-to-end solution for a crop in 4 stages
+      </h2>
+      <div className="hidden lg:flex items-center justify-center gap-60 relative">
+        <div className="w-[450px] lg:w-[600px]">
+          <img src={PhoneIcon} alt="Phone" className="w-full" />
+        </div>
+
+        {/* Arrows */}
+        <div className="absolute left-[48%] flex flex-col items-center justify-center gap-[110px]">
+          <div className="w-[300px] h-[4px] bg-[#389347] relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
           </div>
-          <div className="flex flex-col md:flex-row flex-wrap lg:flex-col items-center justify-center gap-10 py-10">
-            <Link to={"/brochure"}>
-              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px] bg-[#F8ED8C]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[80px] h-[80px]">
-                  <img src={BrochureIcon} alt="..." className="w-full h-full" />
-                </div>
-                <h1 className=" text-black font-bold text-center">Brochure</h1>
-              </div>
-            </Link>
 
-            <Link to={"/developers"}>
-              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px] bg-[#EAB5C9] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[80px] h-[80px]">
-                  <img
-                    src={DevelopersIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Developers
-                </h1>
-              </div>
-            </Link>
+          <div className="w-[300px] h-[4px] bg-[#389347] relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
+          </div>
 
-            <Link to={"/ai-architecture"}>
-              <div className="flex items-center justify-evenly gap-2 min-w-[300px] w-full h-[100px] bg-[#A5E6F2] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[80px] h-[80px]">
-                  <img
-                    src={AIArchitectureIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  AI Architecture
-                </h1>
-              </div>
-            </Link>
+          <div className="w-[300px] h-[4px] bg-[#389347] relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
+          </div>
+
+          <div className="w-[300px] h-[4px] bg-[#389347] relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
           </div>
         </div>
 
-        {/* Right Div : Farmer's Corner */}
-
-        <div className="lg:w-[70%] flex flex-col items-center justify-center relative">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl mb-4 lg:text-4xl">
-              Farmer's Corner
-            </h1>
+        <div className="flex flex-col items-center justify-center gap-5 lg:gap-10 text-lg md:text-2xl lg:text-4xl font-bold text-white">
+          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+            <h3 className="text-center text-base font-semibold text-white">
+              Crop Selection
+            </h3>
           </div>
+          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+            <h3 className="text-center text-base font-semibold text-white">
+              Crop Growth
+            </h3>
+          </div>
+          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+            <h3 className="text-center text-base font-semibold text-white">
+              Crop Treatment
+            </h3>
+          </div>
+          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+            <h3 className="text-center text-base font-semibold text-white">
+              Crop Marketing
+            </h3>
+          </div>
+        </div>
+      </div>
 
-          {/* Big Screens */}
-          <img
-            src={VtLine}
-            className="w-[2px] h-[95%] absolute left-0 hidden lg:block"
-            alt="line"
-          />
-
-          <img
-            src={HzLine}
-            className="w-[90%] h-[2px] absolute bottom-0 hidden lg:block"
-            alt="line"
-          />
-
-          <div className="hidden md:flex items-center justify-center lg:ml-[5%] my-10 gap-1">
-            {/* first Vertical div */}
-            <div className="flex flex-col items-center gap-1">
-              <Link to={"/crop-selection"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[125px] lg:w-[200px] lg:h-[175px] bg-[#389347] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
+      {/* Main Content Section */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* About Section - Sidebar */}
+          <div className="lg:col-span-1">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#163A1C] mb-6 text-center lg:text-left">
+              About Us
+            </h2>
+            <div className="flex flex-col gap-4">
+              <Link to={"/brochure"}>
+                <div className="group flex items-center gap-4 p-4 bg-[#F8ED8C] rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <div className="w-14 h-14 flex-shrink-0">
                     <img
-                      src={PlantInventoryIcon}
-                      alt="..."
-                      className="w-full h-full"
+                      src={BrochureIcon}
+                      alt="Brochure"
+                      className="w-full h-full object-contain"
                     />
                   </div>
-                  <h1 className=" text-black font-bold text-center">
+                  <h3 className="text-base font-semibold text-gray-800">
+                    Brochure
+                  </h3>
+                </div>
+              </Link>
+
+              <Link to={"/developers"}>
+                <div className="group flex items-center gap-4 p-4 bg-[#EAB5C9] rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <div className="w-14 h-14 flex-shrink-0">
+                    <img
+                      src={DevelopersIcon}
+                      alt="Developers"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base font-semibold text-gray-800">
+                    Developers
+                  </h3>
+                </div>
+              </Link>
+
+              <Link to={"/ai-architecture"}>
+                <div className="group flex items-center gap-4 p-4 bg-[#A5E6F2] rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <div className="w-14 h-14 flex-shrink-0">
+                    <img
+                      src={AIArchitectureIcon}
+                      alt="AI Architecture"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-base font-semibold text-gray-800">
+                    AI Architecture
+                  </h3>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Farmer's Corner - Main Content */}
+          <div className="lg:col-span-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#163A1C] mb-6 text-center lg:text-left">
+              Farmer's Corner
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link to={"/crop-selection"}>
+                <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
+                    <img
+                      src={PlantInventoryIcon}
+                      alt="Crop Selection"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-center text-base font-semibold text-white">
                     Crop Selection
-                  </h1>
+                  </h3>
                 </div>
               </Link>
 
               <Link to={"/weather-forecast"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[175px] lg:w-[200px] lg:h-[225px] hover:border-[2px] bg-[#A5E6F2] hover:border-black hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
+                <div className="group bg-[#A5E6F2] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
                     <img
                       src={ClimateIcon}
-                      alt="..."
-                      className="w-full h-full"
+                      alt="Weather Forecast"
+                      className="w-full h-full object-contain"
                     />
                   </div>
-                  <h1 className=" text-black font-bold text-center">
+                  <h3 className="text-center text-base font-semibold text-gray-800">
                     Weather Forecast
-                  </h1>
+                  </h3>
                 </div>
               </Link>
-            </div>
 
-            {/* Second Vertical div */}
-            <div className="flex flex-col items-center gap-1">
-              <a
-                href={Flask_Backend_API}
-                className="decoration-none text-black"
-              >
-                <div className="flex flex-col items-center justify-center gap-2 w-[350px] h-[150px] lg:w-[400px] lg:h-[200px] bg-[#C6FFD2] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
+              <a href={Flask_Backend_API} className="block">
+                <div className="group bg-[#C6FFD2] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
                     <img
                       src={SoilHealthIcon}
-                      alt="..."
-                      className="w-full h-full"
+                      alt="Crop Disease Prediction"
+                      className="w-full h-full object-contain"
                     />
                   </div>
-
-                  <h1 className=" text-black font-bold text-center ">
+                  <h3 className="text-center text-base font-semibold text-gray-800">
                     Crop Disease Prediction
-                  </h1>
+                  </h3>
                 </div>
               </a>
 
-              <div className="flex gap-2">
-                <Link to={"/crop-report-generator"}>
-                  <div className="flex flex-col items-center justify-center gap-2 w-[170px] h-[150px] lg:w-[195px] lg:h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
-                    <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
-                      <img
-                        src={CropReportIcon}
-                        alt="..."
-                        className="w-full h-full"
-                      />
-                    </div>
-
-                    <h1 className=" text-black font-bold text-center ">
-                      Crop Report Generator
-                    </h1>
-                  </div>
-                </Link>
-
-                <a
-                  href="https://www.google.com/maps/search/agronomist+near+me"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
-                  <div className="flex flex-col items-center justify-center gap-2 w-[170px] h-[150px] lg:w-[195px] lg:h-[200px] bg-[#F59D9D] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
-                    <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px] px-auto">
-                      <img
-                        src={CheckupIcon}
-                        alt="..."
-                        className="w-full h-full"
-                      />
-                    </div>
-
-                    <h1 className=" text-black font-bold text-center ">
-                      Crop Health Checkup
-                    </h1>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            {/* Third div */}
-            <div className="flex flex-col items-center gap-1">
-              <Link to={"/live-crop-price"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[175px] lg:w-[200px] lg:h-[225px] bg-[#EEF199] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
+              <Link to={"/crop-report-generator"}>
+                <div className="group bg-[#B9DEA6] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
                     <img
-                      src={BuyFertilizerIcon}
-                      alt="..."
-                      className="w-full h-full"
+                      src={CropReportIcon}
+                      alt="Crop Report Generator"
+                      className="w-full h-full object-contain"
                     />
                   </div>
-                  <h1 className=" text-black font-bold text-center">
+                  <h3 className="text-center text-base font-semibold text-gray-800">
+                    Crop Report Generator
+                  </h3>
+                </div>
+              </Link>
+
+              <a
+                href="https://www.google.com/maps/search/agronomist+near+me"
+                target="_blank"
+                rel="noreferrer"
+                className="block"
+              >
+                <div className="group bg-[#F59D9D] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
+                    <img
+                      src={CheckupIcon}
+                      alt="Crop Health Checkup"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-center text-base font-semibold text-gray-800">
+                    Crop Health Checkup
+                  </h3>
+                </div>
+              </a>
+
+              <Link to={"/live-crop-price"}>
+                <div className="group bg-[#EEF199] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
+                    <img
+                      src={BuyFertilizerIcon}
+                      alt="Live Crop Price"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-center text-base font-semibold text-gray-800">
                     Live Crop Price
-                  </h1>
+                  </h3>
                 </div>
               </Link>
 
               <Link to={"/edukaan"}>
-                <div className="flex flex-col items-center justify-center gap-2 w-[150px] h-[125px] lg:w-[200px] lg:h-[175px] bg-[#ffd700] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                  <div className="w-[75px] h-[75px] lg:w-[100px] lg:h-[100px]">
-                    <img src={MarketIcon} alt="..." className="w-full h-full" />
+                <div className="group bg-[#ffd700] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
+                    <img
+                      src={MarketIcon}
+                      alt="E-Dukaan"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                  <h1 className=" text-black font-bold text-center">
+                  <h3 className="text-center text-base font-semibold text-gray-800">
                     E-Dukaan
-                  </h1>
+                  </h3>
                 </div>
               </Link>
             </div>
           </div>
-
-          {/* Small Screens */}
-          <div className="flex flex-col items-center gap-16 m-8 p-8 md:hidden">
-            <Link to={"/crop-selection"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px]">
-                  <img
-                    src={PlantInventoryIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Crop Selection
-                </h1>
-              </div>
-            </Link>
-            <Link to={"/weather-forecast"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#A5E6F2] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px] px-auto">
-                  <img src={ClimateIcon} alt="..." className="w-full h-full" />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Weather Forecast
-                </h1>
-              </div>
-            </Link>
-            <a href={Flask_Backend_API} className="decoration-none text-black">
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#C6FFD2] hover:border-[2px] hover:border-black hover:cursor-pointer hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px] px-auto">
-                  <img
-                    src={SoilHealthIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-
-                <h1 className=" text-black font-bold text-center ">
-                  Crop Disease Prediction
-                </h1>
-              </div>
-            </a>
-            <Link to={"/crop-report-generator"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#B9DEA6] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px] px-auto">
-                  <img
-                    src={CropReportIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Crop Report Generator
-                </h1>
-              </div>
-            </Link>
-            <a
-              href="https://www.google.com/maps/search/agronomist+near+me"
-              className="decoration-none text-black"
-            >
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#389347] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px]">
-                  <img src={CheckupIcon} alt="..." className="w-full h-full" />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Crop Health Checkup
-                </h1>
-              </div>
-            </a>
-            <Link to={"/live-crop-price"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#EEF199] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px] px-auto">
-                  <img
-                    src={BuyFertilizerIcon}
-                    alt="..."
-                    className="w-full h-full"
-                  />
-                </div>
-                <h1 className=" text-black font-bold text-center">
-                  Live Crop Price
-                </h1>
-              </div>
-            </Link>
-            <Link to={"/edukaan"}>
-              <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] bg-[#ffd700] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-                <div className="w-[100px] h-[100px] px-auto">
-                  <img src={MarketIcon} alt="..." className="w-full h-full" />
-                </div>
-                <h1 className=" text-black font-bold text-center">E-Dukaan</h1>
-              </div>
-            </Link>
-          </div>
         </div>
       </div>
 
-      <div className="my-10 md:my-20">
-        <div className="flex flex-col items-center justify-center my-10">
-          <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl mb-4 lg:text-5xl">
+      {/* Kisan Seva Kendra Section */}
+      <div className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#163A1C] mb-12">
             Kisan Seva Kendra
-          </h1>
-        </div>
-        <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-8 md:gap-12 md:px-12">
-          <Link to={"/schemes"}>
-            <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[100px] h-[100px]">
-                <img
-                  src={GovtSchemesIcon}
-                  alt="..."
-                  className="w-full h-full"
-                />
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <Link to={"/schemes"}>
+              <div className="group bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-green-200">
+                <div className="w-20 h-20 mx-auto mb-4">
+                  <img
+                    src={GovtSchemesIcon}
+                    alt="Kisan Welfare Schemes"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-center text-sm font-semibold text-gray-800">
+                  Kisan Welfare Schemes
+                </h3>
               </div>
-              <h1 className=" text-black font-bold text-center">
-                Kisan Welfare Schemes
-              </h1>
-            </div>
-          </Link>
+            </Link>
 
-          <Link to={"/complaints"}>
-            <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[100px] h-[100px]">
-                <img src={ComplaintIcon} alt="..." className="w-full h-full" />
+            <Link to={"/complaints"}>
+              <div className="group bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-orange-200">
+                <div className="w-20 h-20 mx-auto mb-4">
+                  <img
+                    src={ComplaintIcon}
+                    alt="Complain to Pradhan"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-center text-sm font-semibold text-gray-800">
+                  Complain to Pradhan
+                </h3>
               </div>
-              <h1 className=" text-black font-bold text-center">
-                Complain to Pradhan
-              </h1>
-            </div>
-          </Link>
+            </Link>
 
-          <Link to={"/organic-farming"}>
-            <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[100px] h-[100px]">
-                <img
-                  src={OrganicFarmingIcon}
-                  alt="..."
-                  className="w-full h-full"
-                />
+            <Link to={"/organic-farming"}>
+              <div className="group bg-gradient-to-br from-lime-50 to-lime-100 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-lime-200">
+                <div className="w-20 h-20 mx-auto mb-4">
+                  <img
+                    src={OrganicFarmingIcon}
+                    alt="Learn Organic Farming"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-center text-sm font-semibold text-gray-800">
+                  Learn Organic Farming
+                </h3>
               </div>
-              <h1 className=" text-black font-bold text-center">
-                Learn Organic Farming
-              </h1>
-            </div>
-          </Link>
+            </Link>
 
-          <a
-            href="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/10/20/07/20241020074834-6ZC6PNEK.json"
-            className="decoration-none text-black"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[100px] h-[100px]">
-                <img src={ChatbotIcon} alt="..." className="w-full h-full" />
+            <a
+              href="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/10/20/07/20241020074834-6ZC6PNEK.json"
+              target="_blank"
+              rel="noreferrer"
+              className="block"
+            >
+              <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-200">
+                <div className="w-20 h-20 mx-auto mb-4">
+                  <img
+                    src={ChatbotIcon}
+                    alt="Kisan-Mate Chatbot"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-center text-sm font-semibold text-gray-800">
+                  Kisan-Mate (Chatbot)
+                </h3>
               </div>
-              <h1 className=" text-black font-bold text-center">
-                Kisan-Mate (Chatbot)
-              </h1>
-            </div>
-          </a>
+            </a>
 
-          <Link to={"/faqs"}>
-            <div className="flex flex-col items-center justify-center gap-2 w-[200px] h-[200px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[100px] h-[100px]">
-                <img src={FAQIcon} alt="..." className="w-full h-full" />
+            <Link to={"/faqs"}>
+              <div className="group bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-purple-200">
+                <div className="w-20 h-20 mx-auto mb-4">
+                  <img
+                    src={FAQIcon}
+                    alt="FAQs"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-center text-sm font-semibold text-gray-800">
+                  FAQs
+                </h3>
               </div>
-              <h1 className=" text-black font-bold text-center">FAQs</h1>
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      <div className="my-10 md:my-20 lg:my-32">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="bg-[#163A1C] mb-8 px-4 py-2 rounded-lg text-white font-bold text-center text-3xl lg:text-5xl">
-            Kisan E-Dukaan
-          </h1>
-        </div>
-        <div className="flex flex-col items-center gap-10 lg:justify-evenly lg:flex-row my-10">
-          <Link to={"/edukaan/signup"}>
-            <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px] hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[80px] h-[80px]">
-                <img src={SignupIcon} alt="..." className="w-full h-full" />
-              </div>
-
-              <h1 className=" text-black font-bold text-center">Signup</h1>
-            </div>
-          </Link>
-          <Link to={"/edukaan/login"}>
-            <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[80px] h-[80px]">
-                <img src={LoginIcon} alt="..." className="w-full h-full" />
-              </div>
-
-              <h1 className=" text-black font-bold text-center">Login</h1>
-            </div>
-          </Link>
-          <Link to={"/edukaan"}>
-            <div className="flex items-center justify-evenly py-16 gap-2 min-w-[300px] h-[100px]  hover:border-[2px] hover:border-black hover:animate-zoomAnimation">
-              <div className="w-[80px] h-[80px]">
-                <img src={MarketIcon} alt="..." className="w-full h-full" />
-              </div>
-
-              <h1 className=" text-black font-bold text-center">E-Dukaan</h1>
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      <div className="my-10 mt-12">
-        <div className="flex flex-col items-center justify-center mb-8">
-          <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl lg:text-5xl">
-            Connect with Us
-          </h1>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-evenly md:gap-16 my-12">
-          <div className="md:basis-[32%]">
-            <div className="flex flex-wrap items-center justify-evenly my-7">
-              <h1 className="bg-[#163A1C] px-4 py-2 rounded-lg text-white font-bold text-center text-3xl">
-                Send us a message
-              </h1>
-              <img
-                src={MsgIcon}
-                className="w-[50px] md:w-[75px]"
-                alt="message icon"
-              />
-            </div>
-            <p className="text-justify my-2">
-              We warmly invite you to connect with us through our contact form
-              or the details provided below. Your insights, inquiries, and
-              suggestions are deeply valued, inspiring us to continually enhance
-              our services and better serve the needs of our vibrant community.
-            </p>
+            </Link>
           </div>
-          <div className="relative">
-            <div className="mx-auto my-2 w-[350px] md:w-[400px]">
-              <img
-                src={ContactBg}
-                className="w-full h-full bg-cover opacity-95"
-                alt="contact background"
-              />
+        </div>
+      </div>
+
+      {/* Kisan E-Dukaan Section */}
+      <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#163A1C] mb-12">
+          Kisan E-Dukaan
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <Link to={"/edukaan/signup"}>
+            <div className="group bg-gradient-to-br from-green-100 to-green-200 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-green-300">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img
+                  src={SignupIcon}
+                  alt="Signup"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-center text-xl font-bold text-gray-800">
+                Signup
+              </h3>
+              <p className="text-center text-sm text-gray-600 mt-2">
+                Create your account
+              </p>
             </div>
-            <div className="absolute left-[50%] translate-x-[-50%] top-[45%] translate-y-[-50%] flex flex-col items-center justify-center my-10">
-              <form
-                onSubmit={onSubmit}
-                className="flex flex-col items-start justify-center gap-4"
-              >
-                <label
-                  className="text-xl font-semibold text-white"
-                  htmlFor="name"
-                >
-                  Enter Name:
-                </label>
-                <input
-                  className="mx-auto px-4 py-2"
-                  type="text"
-                  name="name"
-                  required
+          </Link>
+
+          <Link to={"/edukaan/login"}>
+            <div className="group bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-300">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img
+                  src={LoginIcon}
+                  alt="Login"
+                  className="w-full h-full object-contain"
                 />
-                <label
-                  className="text-xl font-semibold text-white"
-                  htmlFor="email"
-                >
-                  Enter Email:
-                </label>
-                <input
-                  className="mx-auto px-4 py-2"
-                  type="email"
-                  name="email"
-                  required
+              </div>
+              <h3 className="text-center text-xl font-bold text-gray-800">
+                Login
+              </h3>
+              <p className="text-center text-sm text-gray-600 mt-2">
+                Access your account
+              </p>
+            </div>
+          </Link>
+
+          <Link to={"/edukaan"}>
+            <div className="group bg-gradient-to-br from-yellow-100 to-yellow-200 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-yellow-300">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img
+                  src={MarketIcon}
+                  alt="E-Dukaan"
+                  className="w-full h-full object-contain"
                 />
-                <label
-                  className="text-xl font-semibold text-white"
-                  htmlFor="message"
-                >
-                  Enter your message:
-                </label>
-                <textarea
-                  className="resize-none mx-auto px-6 py-2"
-                  name="message"
-                  rows={5}
-                  required
-                ></textarea>
+              </div>
+              <h3 className="text-center text-xl font-bold text-gray-800">
+                E-Dukaan
+              </h3>
+              <p className="text-center text-sm text-gray-600 mt-2">
+                Browse marketplace
+              </p>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Connect with Us Section */}
+      <div className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#163A1C] mb-12">
+            Connect with Us
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Info Section */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="flex items-center gap-4 mb-6">
+                <img src={MsgIcon} className="w-16 h-16" alt="message icon" />
+                <h3 className="text-2xl md:text-3xl font-bold text-[#163A1C]">
+                  Send us a message
+                </h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-justify">
+                We warmly invite you to connect with us through our contact form
+                or the details provided below. Your insights, inquiries, and
+                suggestions are deeply valued, inspiring us to continually
+                enhance our services and better serve the needs of our vibrant
+                community.
+              </p>
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-green-100">
+              <form onSubmit={onSubmit} className="space-y-6">
+                <div>
+                  <label
+                    className="block text-base font-semibold text-gray-700 mb-2"
+                    htmlFor="name"
+                  >
+                    Your Name
+                  </label>
+                  <input
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    className="block text-base font-semibold text-gray-700 mb-2"
+                    htmlFor="email"
+                  >
+                    Your Email
+                  </label>
+                  <input
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    className="block text-base font-semibold text-gray-700 mb-2"
+                    htmlFor="message"
+                  >
+                    Your Message
+                  </label>
+                  <textarea
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-green-500 focus:outline-none transition-colors resize-none"
+                    name="message"
+                    rows={5}
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
 
                 <button
-                  className="mx-auto bg-green-500 hover:bg-green-400 hover:scale-[1.05] border-none outline-none px-4 py-2 text-white font-semibold rounded-md"
+                  className="w-full bg-[#163A1C] hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
                   type="submit"
                 >
                   Send Message
                 </button>
+
+                {result && (
+                  <p className="text-center text-base font-semibold text-green-600 mt-4">
+                    {result}
+                  </p>
+                )}
               </form>
-              <span className="text-lg font-semibold">{result}</span>
             </div>
           </div>
         </div>
