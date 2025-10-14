@@ -23,11 +23,16 @@ function MapView({ location, address }) {
   const zoom = location ? 15 : defaultZoom;
 
   return (
-    <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+    <div className="bg-white rounded-lg shadow-xl overflow-hidden relative z-0">
       <MapContainer
         center={center}
         zoom={zoom}
-        style={{ height: "500px", width: "100%" }}
+        style={{
+          height: "500px",
+          width: "100%",
+          position: "relative",
+          zIndex: 0,
+        }}
         key={
           location ? `${location.latitude}-${location.longitude}` : "default"
         }
