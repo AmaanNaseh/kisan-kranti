@@ -78,7 +78,7 @@ const HomePage = () => {
           ))}
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
             {/* Left Content */}
             <motion.div
@@ -87,25 +87,6 @@ const HomePage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              {/* Badge */}
-              <motion.div
-                className="inline-flex items-center gap-2 bg-green-900/30 backdrop-blur-sm px-6 py-3 rounded-full w-fit border border-green-500/20 shadow-lg"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.6 }}
-              >
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <span className="text-white font-semibold text-base">
-                  Empowering 10,000+ Farmers
-                </span>
-              </motion.div>
-
               {/* Main Heading */}
               <motion.div
                 className="space-y-6"
@@ -113,14 +94,14 @@ const HomePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                <h1 className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white leading-none tracking-tight">
+                <h1 className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white text-center leading-none tracking-tight">
                   किसान
                   <br />
                   <span className="italic font-light text-white/95">
                     Kranti
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed max-w-2xl font-normal">
+                <p className="text-xl md:text-2xl lg:text-3xl text-white text-center leading-relaxed max-w-2xl font-normal">
                   Revolutionizing Agriculture with AI-Powered Solutions for
                   Better Yields and Sustainable Farming
                 </p>
@@ -128,7 +109,7 @@ const HomePage = () => {
 
               {/* CTA Buttons */}
               <motion.div
-                className="flex flex-col sm:flex-row gap-5 justify-start items-start"
+                className="flex flex-col items-center justify-center md:flex-row gap-5 lg:justify-start lg:items-start"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
