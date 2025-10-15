@@ -16,15 +16,31 @@ of crop diseases, treatment and management along with commercialization of their
 
 ## 📱 Project Overview/Features
 
+### Crop Selection Phase
+
+- Crop Selection Insights
+- Plant inventory for botanists
+
+### Crop Growth Phase
+
+- Weather Insights for Crops
+- Organic Farming tutorials
+
+### Crop Treatment Phase
+
 - AI Driven Crop Disease Prediction
 - Crop Health Report Generation
-- Kisan E-Dukaan for Farmer's Economic Growth
-- Kisan E-Mitra : 24x7 AI Chatbot
-- Weather Insights for Crops
+
+### Crop Marketing Phase
+
 - Live Crop Prices in different regions of India
-- Organic Farming tutorials
+- Kisan E-Dukaan for Farmer's Economic Growth
+
+### Virtual Assistance
+
+- Multi-Lingual and Voice Assistance through IVR
+- Kisan E-Mitra : 24x7 AI Chatbot
 - Complaint Logging System
-- Plant inventory for botanists
 - FAQs and our brochure
 - Offline Installation of Mobile App in any device
 
@@ -139,19 +155,19 @@ npm run dev
 
 ## Project Preview
 
-![Image](https://github.com/user-attachments/assets/d375aa63-dd28-4a6a-a84c-8c645932ff43)
+![Image](https://github.com/user-attachments/assets/9a9b1b90-6dff-4bea-a2ca-ce530ccc930b)
 
 <br />
 
-![Image](https://github.com/user-attachments/assets/2465b3ef-5dbc-446c-b0b5-bde5507d810e)
+![Image](https://github.com/user-attachments/assets/f39495cd-c037-4bdd-9c45-191e89613302)
 
 <br />
 
-![Image](https://github.com/user-attachments/assets/5d7a0a37-b5d3-461c-86aa-b05925973465)
+![Image](https://github.com/user-attachments/assets/df2f08e9-b46f-40ec-8e84-e4e9c90010f2)
 
 <br />
 
-![Image](https://github.com/user-attachments/assets/90c82b0a-f9d1-4778-b8cc-16b6c59059af)
+![Image](https://github.com/user-attachments/assets/658f9930-e126-4f3a-9920-b88a25bfde62)
 
 <br />
 
