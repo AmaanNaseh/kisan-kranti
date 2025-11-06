@@ -17,10 +17,13 @@ const CropPricePage = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // dhruvtaneja19 (gmail same) API key for data.gov.in current daily price various commodities Mandi is being used
+  // old key: 579b464db66ec23bdd0000011cb4948b19304b6360cf41538f21b882
+
   const fetchData = async () => {
     document.getElementById("loader").style.display = "block";
     await fetch(
-      "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd0000011cb4948b19304b6360cf41538f21b882&offset=0&limit=all&format=csv&format=json"
+      "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001784906faa2f94e75444ad1b3f5674668&offset=0&limit=all&format=csv&format=json"
     )
       .then((res) => res.json())
       .then((liveData) => {
