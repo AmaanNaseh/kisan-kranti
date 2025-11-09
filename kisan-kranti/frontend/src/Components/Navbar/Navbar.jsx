@@ -10,6 +10,7 @@ import InstallButton from "../InstallButton/InstallButton";
 import BrochureHindi from "../../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
 import PhoneIcon from "../../Assets/Navbar/Phone.png";
+import GTranslator from "../GTranslator/GTranslator";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +26,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-3">
           <Link to={"/"}>
             <h1 className="text-3xl text-center font-bold text-white hover:scale-[1.15]">
-              किसान Kranti
+              किसान <br className="md:hidden" /> Kranti
             </h1>
           </Link>
+
+          <GTranslator />
 
           {/* Hamburger Icon for Mobile */}
           <div className="lg:hidden">
@@ -44,7 +47,7 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } lg:hidden absolute top-[61px] md:top-[62px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
+            } lg:hidden absolute top-[137px] md:top-[108px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
           >
             <Link to={"/"}>
               <p className="block py-2 px-4 hover:bg-green-500">Home</p>
@@ -221,7 +224,7 @@ const Navbar = () => {
 
               {/* Dropdown Menu on Hover */}
               <div
-                className={`absolute w-full left-0 top-[77px] bg-white shadow-lg text-black p-10 min-h-[400px] ${
+                className={`absolute w-full left-0 top-[108px] bg-white shadow-lg text-black p-10 min-h-[400px] ${
                   isVisible
                     ? "flex items-center justify-center gap-12"
                     : "hidden"
