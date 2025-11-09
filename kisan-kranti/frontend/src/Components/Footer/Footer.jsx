@@ -201,6 +201,9 @@ const Footer = () => {
             </motion.div>
           </div>
 
+          {/* Google Translator */}
+          <div id="google_translate_element" className="my-10 mx-auto"></div>
+
           {/* Bottom Bar */}
           <div className="border-t border-green-700/30 pt-8 mt-12">
             <div className="flex flex-col md:flex-row justify-center items-center gap-2">

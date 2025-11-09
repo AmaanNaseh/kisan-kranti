@@ -29,8 +29,6 @@ const Navbar = () => {
             </h1>
           </Link>
 
-          <div id="google_translate_element"></div>
-
           {/* Hamburger Icon for Mobile */}
           <div className="lg:hidden">
             <button onClick={toggleMenu}>
