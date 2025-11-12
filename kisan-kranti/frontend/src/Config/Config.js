@@ -8,4 +8,5 @@
 
 export const Flask_Backend_API = "/not-deployed";
 export const E_Dukaan_Backend_API = "https://e-dukaan-backend.onrender.com";
-export const Farm_Backend_API = "/not-deployed";
+export const Farm_Backend_API =
+  "https://cropfield-analysis-backend.onrender.com";
