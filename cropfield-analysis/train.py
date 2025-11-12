@@ -20,10 +20,10 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 acc = accuracy_score(y_test, y_pred)
 
-print(f"✅ Model trained. Accuracy: {acc*100:.2f}%")
+print(f"Model trained. Accuracy: {acc*100:.2f}%")
 
 joblib.dump(model, "farm_model.joblib")
-print("💾 Model saved to farm_model.joblib")
+print("Model saved to farm_model.joblib")
 
 # Visualization
 plt.figure(figsize=(6, 4))

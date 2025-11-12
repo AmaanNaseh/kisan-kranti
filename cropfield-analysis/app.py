@@ -41,5 +41,5 @@ def manual():
     return html
 
 if __name__ == "__main__":
-    print("🚀 Running Flask app on http://localhost:8080")
-    app.run(port=8080)
+    print("Application started running")
+    app.run(port=8080, host="0.0.0.0", debug=False)

@@ -23,6 +23,7 @@ import SignupIcon from "../Assets/Homepage/SignupIcon.png";
 import LoginIcon from "../Assets/Homepage/LoginIcon.png";
 import MsgIcon from "../Assets/Homepage/MsgIcon.png";
 import CropReportIcon from "../Assets/Homepage/ReportIcon.png";
+import CropFieldIcon from "../Assets/Homepage/CropField.png";
 import BuyFertilizerIcon from "../Assets/Homepage/Buy_Fertilizer_Icon.png";
 
 const HomePage = () => {
@@ -330,6 +331,21 @@ const HomePage = () => {
                   </div>
                   <h3 className="text-center text-base font-semibold text-gray-800">
                     Weather Forecast
+                  </h3>
+                </div>
+              </Link>
+
+              <Link to={"/cropfield-analysis"}>
+                <div className="group bg-[#E5C18F] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-20 h-20 mx-auto mb-4">
+                    <img
+                      src={CropFieldIcon}
+                      alt="Crop Field Analysis"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-center text-base font-semibold text-gray-800">
+                    Crop Field Analysis
                   </h3>
                 </div>
               </Link>

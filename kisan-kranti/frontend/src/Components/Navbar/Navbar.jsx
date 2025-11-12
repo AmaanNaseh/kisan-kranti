@@ -49,35 +49,69 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             } lg:hidden absolute top-[137px] md:top-[108px] text-sm left-0 w-full bg-green-700 text-white p-4 space-y-4`}
           >
-            <Link to={"/"}>
+            <Link
+              to={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
               <p className="block py-2 px-4 hover:bg-green-500">Home</p>
             </Link>
 
             <div className="group text-sm">
               <p className="block py-2 px-4 hover:bg-green-500">Features</p>
               <ul className="bg-white text-black text-sm shadow-lg mt-2 rounded-lg p-2 space-y-1">
-                <Link to={"/crop-selection"}>
+                <Link
+                  to={"/crop-selection"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Crop Selection
                   </li>
                 </Link>
 
-                <Link to={"/weather-forecast"}>
+                <Link
+                  to={"/weather-forecast"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Weather Forecast
+                  </li>
+                </Link>
+
+                <Link
+                  to={"/cropfield-analysis"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
+                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                    Crop Field Analysis
                   </li>
                 </Link>
 
                 <a
                   href={Flask_Backend_API}
                   className="decoration-none text-black"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Crop Disease Prediction
                   </li>
                 </a>
 
-                <Link to={"/crop-report-generator"}>
+                <Link
+                  to={"/crop-report-generator"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Crop Report Generator
                   </li>
@@ -88,49 +122,87 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                   className="decoration-none text-black"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Crop Health Checkup
                   </li>
                 </a>
 
-                <Link to={"/live-crop-price"}>
+                <Link
+                  to={"/live-crop-price"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Live Crop Price
                   </li>
                 </Link>
 
-                <Link to={"/edukaan"}>
+                <Link
+                  to={"/edukaan"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Kisan E-Dukaan
                   </li>
                 </Link>
 
-                <Link to={"/schemes"}>
+                <Link
+                  to={"/schemes"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Kisan Welfare Schemes
                   </li>
                 </Link>
 
-                <Link to={"/complaints"}>
+                <Link
+                  to={"/complaints"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Complain to Pradhan
                   </li>
                 </Link>
 
-                <Link to={"/organic-farming"}>
+                <Link
+                  to={"/organic-farming"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Learn Organic Farming
                   </li>
                 </Link>
 
-                <Link to={"/brochure"}>
+                <Link
+                  to={"/brochure"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Brochure
                   </li>
                 </Link>
 
-                <Link to={"/ai-architecture"}>
+                <Link
+                  to={"/ai-architecture"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     AI Architecture
                   </li>
@@ -140,12 +212,20 @@ const Navbar = () => {
                   className="decoration-none text-black"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                 >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     Chatbot
                   </li>
                 </a>
-                <Link to={"/faqs"}>
+                <Link
+                  to={"/faqs"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                     FAQs
                   </li>
@@ -246,6 +326,12 @@ const Navbar = () => {
                       <Link to={"/weather-forecast"}>
                         <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
                           Weather Forecast
+                        </li>
+                      </Link>
+
+                      <Link to={"/cropfield-analysis"}>
+                        <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                          Crop Field Analysis
                         </li>
                       </Link>
 

@@ -63,7 +63,7 @@ def generate_data(n=1000):
         data.append(sample)
     df = pd.DataFrame(data)
     df.to_excel("sensor_data.xlsx", index=False)
-    print("✅ sensor_data.xlsx generated with", len(df), "rows")
+    print("sensor_data.xlsx generated with", len(df), "rows")
 
 if __name__ == "__main__":
     if os.path.exists("sensor_data.xlsx"):

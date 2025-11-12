@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { Farm_Backend_API } from "../Config/Config";
 
-export default function FarmAnalysis() {
+export default function CropfieldAnalysis() {
   const [form, setForm] = useState({
     temperature: "",
     humidity: "",
@@ -269,7 +269,7 @@ export default function FarmAnalysis() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-900 relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
       {/* Digital Grid Background */}
       <div className="absolute inset-0 opacity-20">
         <div
@@ -309,18 +309,6 @@ export default function FarmAnalysis() {
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 py-8 max-w-7xl">
-        {/* Header */}
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-8"
-        >
-          <h1 className="text-5xl mb-2 text-cyan-400">
-            Digital Twin Farm System
-          </h1>
-        </motion.div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start mb-6">
           {/* Control Panel */}
           <motion.div

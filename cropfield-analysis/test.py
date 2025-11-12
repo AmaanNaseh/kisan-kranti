@@ -5,7 +5,7 @@ import pandas as pd
 model = joblib.load("farm_model.joblib")
 features = ["temperature", "humidity", "tds", "soil_moisture", "ph", "N", "P", "K"]
 
-print("🌱 Enter sensor values manually:")
+print("Enter sensor values manually:")
 values = {}
 for f in features:
     values[f] = float(input(f"{f}: "))

@@ -23,7 +23,7 @@ import CropReportPage from "./Pages/CropReport.Page";
 import CropPricePage from "./Pages/CropPrice.Page";
 import WeatherForecastPage from "./Pages/WeatherForecast.Page";
 import NotDeployedPage from "./Pages/NotDeployed.Page";
-import FarmAnalysis from "./Pages/FarmAnalysis";
+import CropfieldAnalysis from "./Pages/CropfieldAnalysis";
 
 // EDukaan
 import EDukaanHomePage from "./Pages/EDukaan/Home.Page";
@@ -196,12 +196,13 @@ const App = () => {
               <Route path="/crop-selection" element={<CropSelectionPage />} />
               <Route path="/schemes" element={<SchemesPage />} />
               <Route path="/organic-farming" element={<OrganicFarmingPage />} />
+              <Route
+                path="/cropfield-analysis"
+                element={<CropfieldAnalysis />}
+              />
               <Route path="/complaints" element={<ComplaintsPage />} />
               <Route path="/faqs" element={<FAQPage />} />
               <Route path="/not-deployed" element={<NotDeployedPage />} />
-              <Route path="/farm-analysis" element={<FarmAnalysis />} />
-
-              {/* EDukaan */}
             </Routes>
           </div>
 
