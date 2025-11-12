@@ -39,7 +39,7 @@ export default function CropfieldAnalysis() {
   const handleSubmit = async () => {
     setIsAnalyzing(true);
     try {
-      const res = await axios.post(Farm_Backend_API, form);
+      const res = await axios.post(`${Farm_Backend_API}/api/predict`, form);
       setPrediction(res.data.prediction);
     } catch (err) {
       console.error(err);
