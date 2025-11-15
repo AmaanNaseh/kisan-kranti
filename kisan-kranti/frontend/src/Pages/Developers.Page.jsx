@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import AmaanImg from "../Assets/DevelopersPage/Amaan.jpg";
 import PriyanshuImg from "../Assets/DevelopersPage/Priyanshu.jpg";
@@ -16,6 +17,15 @@ const DevelopersPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Kisan Kranti Developer Resources & API Documentation</title>
+        <meta
+          name="description"
+          content="Explore developer guides, AI architecture, APIs, and integration resources to build agriculture-focused applications with Kisan Kranti platform."
+        />
+        <link rel="canonical" href="https://www.kisankranti.tech/developers" />
+      </Helmet>
+
       <div className="flex flex-col items-center justify-center md:px-10 mx-10 my-20">
         {/* Amaan */}
         <div className="bg-[#0F8922] w-full relative my-12 flex flex-col items-center">

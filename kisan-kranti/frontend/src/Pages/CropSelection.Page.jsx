@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import { Barley } from "../Dataset/Barley";
 import { Chickpea } from "../Dataset/Chickpea";
 import { Maize } from "../Dataset/Maize";
@@ -21,6 +23,18 @@ const CropSelectionPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Crop Selection Insights | Best Crops for Your Region</title>
+        <meta
+          name="description"
+          content="AI-driven crop selection guidance, plant inventory, and growth insights to help farmers choose the most profitable crops."
+        />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/crop-selection"
+        />
+      </Helmet>
+
       <div className="flex flex-col justify-center items-center my-12 md:my-20">
         <IndiaMap />
       </div>

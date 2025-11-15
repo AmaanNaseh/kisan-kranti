@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 import TopArrow from "../Assets/FAQ/TopArrow.png";
 
@@ -36,6 +37,18 @@ const CropPricePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Live Crop Prices in India | Kisan Kranti Market Insights</title>
+        <meta
+          name="description"
+          content="Check real-time crop prices across Indian states to make informed decisions for selling crops through Kisan Kranti."
+        />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/live-crop-price"
+        />
+      </Helmet>
+
       <div className="min-h-[75vh] my-10 py-10 px-12" name="cropPricePageTop">
         <div className="flex flex-col items-center justify-center">
           <button

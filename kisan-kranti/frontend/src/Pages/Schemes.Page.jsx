@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import SchemesPoster from "../Assets/Schemes_Page/Schemes Poster.jpg";
 import SchemesImg from "../Assets/Schemes_Page/Schemes.jpg";
@@ -12,6 +13,15 @@ const SchemesPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Government & NGO Schemes for Farmers | Loans & Insurance</title>
+        <meta
+          name="description"
+          content="Explore Kisan Kranti’s collection of government and non-government schemes including PM-KISAN, KCC, crop insurance, NABARD programs, and more."
+        />
+        <link rel="canonical" href="https://www.kisankranti.tech/schemes" />
+      </Helmet>
+
       <div className=" w-full h-[300px] flex flex-col justify-center items-center p-4 py-8 my-10">
         <img src={SchemesPoster} alt="..." className=" w-full h-full" />
       </div>

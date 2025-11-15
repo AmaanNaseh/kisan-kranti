@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import TemperatureIcon from "../Assets/Climate_Page/Temperature.png";
 import RainfallIcon from "../Assets/Climate_Page/Rainfall.png";
@@ -42,6 +43,18 @@ const WeatherForecastPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Weather Forecast for Farmers | AI-Powered Local Updates</title>
+        <meta
+          name="description"
+          content="Get accurate weather forecasts for crops up to 15 days ahead with AI-powered insights for irrigation, protection, and field planning."
+        />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/weather-forecast"
+        />
+      </Helmet>
+
       <div className="min-h-[75vh] my-20">
         <div className="flex flex-col items-center justify-center my-8">
           <button

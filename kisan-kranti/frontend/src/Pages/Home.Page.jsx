@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 import { Flask_Backend_API } from "../Config/Config";
 
@@ -59,6 +60,17 @@ const HomePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Kisan Kranti – AI Farming Solutions, Crop Insights & E-Dukaan
+        </title>
+        <meta
+          name="description"
+          content="Kisan Kranti empowers Indian farmers with AI-driven crop disease prediction, crop health reports, weather forecasts, live crop prices, e-dukaan marketplace, organic farming tutorials, and government schemes."
+        />
+        <link rel="canonical" href="https://www.kisankranti.tech/" />
+      </Helmet>
+
       {/* Hero Section - Split Screen Design */}
       <div className="w-full min-h-[650px] lg:min-h-[750px] bg-gradient-to-br from-[#0d5c2a] via-[#1B7D3A] to-[#2a9d4e] relative overflow-hidden">
         {/* Animated Bubble Effects */}

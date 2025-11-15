@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import { CropDataset } from "../Dataset/CropDataset";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
@@ -1788,6 +1790,18 @@ const CropReportPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>AI Crop Report Generator | Disease & Health Insights</title>
+        <meta
+          name="description"
+          content="Generate detailed crop health reports with AI-driven disease prediction, precautions, remedies, and chemical/organic treatment recommendations."
+        />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/crop-report-generator"
+        />
+      </Helmet>
+
       <div className="min-h-[75vh] my-16">
         <div className="flex flex-col md:flex-row flex-wrap items-center justify-evenly gap-10 my-12">
           <div>

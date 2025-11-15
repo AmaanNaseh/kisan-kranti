@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import ChatbotIcon from "../Assets/FAQ/Chatbot_Icon.png";
 import BackArrow from "../Assets/FAQ/BackArrow.png";
 
@@ -19,7 +21,16 @@ const FAQPage = () => {
 
   return (
     <>
-      <div className="bg-[#c6ffd2] p-10 md:px-20 min-h-[100vh] my-12">
+      <Helmet>
+        <title>FAQs | Kisan Kranti Farming Solutions Support</title>
+        <meta
+          name="description"
+          content="Get answers to frequently asked questions about AI crop disease prediction, e-dukaan, crop health reports, weather forecasts, and farming solutions."
+        />
+        <link rel="canonical" href="https://www.kisankranti.tech/faqs" />
+      </Helmet>
+
+      <div className="p-10 md:px-20 min-h-[100vh] my-12">
         <div>
           <div className="flex flex-col items-center">
             <h1 className="text-3xl bg-[#0a6419] py-4 px-2 md:text-5xl text-center w-52 md:w-[300px] lg:w-[415px] font-bold text-white">

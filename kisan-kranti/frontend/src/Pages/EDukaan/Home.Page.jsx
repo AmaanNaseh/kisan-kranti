@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import { useProductStore } from "../../Stores/useProductStore";
 import CategoryItem from "../../Components/EDukaan/CategoryItem";
@@ -30,26 +31,36 @@ const HomePage = () => {
   }, [fetchFeaturedProducts]);
 
   return (
-    <div className="relative min-h-screen text-white overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-center text-5xl sm:text-6xl font-bold text-emerald-400 mb-4">
-          Explore Our Categories
-        </h1>
-        <p className="text-center text-xl text-gray-300 mb-12">
-          Discover the latest Farm Freindly items...
-        </p>
+    <>
+      <Helmet>
+        <title>Kisan E-Dukaan | Buy & Sell Farming Products Online</title>
+        <meta
+          name="description"
+          content="A digital marketplace for farmers to sell crops, by-products, and recycled waste products. Integrated with Razorpay for secure transactions."
+        />
+        <link rel="canonical" href="https://www.kisankranti.tech/edukaan" />
+      </Helmet>
+      <div className="relative min-h-screen text-white overflow-hidden">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h1 className="text-center text-5xl sm:text-6xl font-bold text-emerald-400 mb-4">
+            Explore Our Categories
+          </h1>
+          <p className="text-center text-xl text-gray-300 mb-12">
+            Discover the latest Farm Freindly items...
+          </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {categories.map((category) => (
-            <CategoryItem category={category} key={category.name} />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {categories.map((category) => (
+              <CategoryItem category={category} key={category.name} />
+            ))}
+          </div>
+
+          {!isLoading && products.length > 0 && (
+            <FeaturedProducts featuredProducts={products} />
+          )}
         </div>
-
-        {!isLoading && products.length > 0 && (
-          <FeaturedProducts featuredProducts={products} />
-        )}
       </div>
-    </div>
+    </>
   );
 };
 export default HomePage;

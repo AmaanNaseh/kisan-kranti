@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 import { AIArchitectureDataset } from "../Dataset/AIArchitectureDataset";
 
@@ -727,6 +728,18 @@ const AIArchitecturePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>AI Architecture | Smart Farming, Crop Disease Prediction</title>
+        <meta
+          name="description"
+          content="Learn about Kisan Kranti’s AI-powered crop disease prediction, crop health reporting, and neural network models for 26 crops."
+        />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/ai-architecture"
+        />
+      </Helmet>
+
       <div className="flex items-center justify-center my-10">
         <h1 className="bg-[#436F29] text-white px-4 py-2 rounded-lg font-bold text-2xl md:text-3xl lg:tex-5xl mt-4">
           Leaf

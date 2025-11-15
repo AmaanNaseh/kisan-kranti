@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import ReactPlayer from "react-player";
 
 const OrganicFarmingPage = () => {
@@ -13,6 +15,18 @@ const OrganicFarmingPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Organic Farming Tutorials | Sustainable Agriculture Tips</title>
+        <meta
+          name="description"
+          content="Learn sustainable organic farming practices with tutorials, soil management techniques, and eco-friendly crop care methods."
+        />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/organic-farming"
+        />
+      </Helmet>
+
       <div className="min-h-[100vh] my-12 md:my-20">
         <div>
           <h1 className="font-bold text-5xl text-center my-2">
