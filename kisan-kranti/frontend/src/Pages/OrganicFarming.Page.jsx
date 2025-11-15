@@ -21,8 +21,10 @@ const OrganicFarmingPage = () => {
           name="description"
           content="Learn sustainable organic farming practices with tutorials, soil management techniques, and eco-friendly crop care methods."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/organic-farming"
+        />
       </Helmet>
 
       <div className="min-h-[100vh] my-12 md:my-20">

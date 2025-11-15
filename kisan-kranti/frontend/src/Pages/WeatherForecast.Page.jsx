@@ -49,8 +49,10 @@ const WeatherForecastPage = () => {
           name="description"
           content="Get accurate weather forecasts for crops up to 15 days ahead with AI-powered insights for irrigation, protection, and field planning."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/weather-forecast"
+        />
       </Helmet>
 
       <div className="min-h-[75vh] my-20">

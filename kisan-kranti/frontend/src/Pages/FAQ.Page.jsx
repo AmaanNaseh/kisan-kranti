@@ -27,8 +27,7 @@ const FAQPage = () => {
           name="description"
           content="Get answers to frequently asked questions about AI crop disease prediction, e-dukaan, crop health reports, weather forecasts, and farming solutions."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.kisankranti.tech/faqs" />
       </Helmet>
 
       <div className="p-10 md:px-20 min-h-[100vh] my-12">

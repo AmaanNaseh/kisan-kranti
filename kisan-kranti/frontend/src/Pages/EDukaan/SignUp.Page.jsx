@@ -32,8 +32,10 @@ const SignUpPage = () => {
           name="description"
           content="Create an account on Kisan E-Dukaan to sell or buy farming products securely through our digital marketplace."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/edukaan/signup"
+        />
       </Helmet>
       <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <motion.div

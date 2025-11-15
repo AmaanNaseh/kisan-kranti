@@ -29,8 +29,10 @@ const CropSelectionPage = () => {
           name="description"
           content="AI-driven crop selection guidance, plant inventory, and growth insights to help farmers choose the most profitable crops."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/crop-selection"
+        />
       </Helmet>
 
       <div className="flex flex-col justify-center items-center my-12 md:my-20">

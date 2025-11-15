@@ -19,8 +19,7 @@ const SchemesPage = () => {
           name="description"
           content="Explore Kisan Kranti’s collection of government and non-government schemes including PM-KISAN, KCC, crop insurance, NABARD programs, and more."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.kisankranti.tech/schemes" />
       </Helmet>
 
       <div className=" w-full h-[300px] flex flex-col justify-center items-center p-4 py-8 my-10">

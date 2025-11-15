@@ -29,8 +29,10 @@ const LoginPage = () => {
           name="description"
           content="Access your Kisan E-Dukaan account to manage your products, orders, and marketplace activities for agriculture sales."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech" />
-        <meta name="robots" content="noindex, follow" />
+        <link
+          rel="canonical"
+          href="https://www.kisankranti.tech/edukaan/login"
+        />
       </Helmet>
       <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <motion.div
