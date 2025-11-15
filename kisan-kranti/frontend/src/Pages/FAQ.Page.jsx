@@ -30,13 +30,8 @@ const FAQPage = () => {
         <link rel="canonical" href="https://www.kisankranti.tech/faqs" />
       </Helmet>
 
-      <div className="p-10 md:px-20 min-h-[100vh] my-12">
+      <div className="mx-auto my-10">
         <div>
-          <div className="flex flex-col items-center">
-            <h1 className="text-3xl bg-[#0a6419] py-4 px-2 md:text-5xl text-center w-52 md:w-[300px] lg:w-[415px] font-bold text-white">
-              Kisan-Mate FAQs
-            </h1>
-          </div>
           {selectedFAQ > 0 ? (
             <>
               <div
@@ -55,6 +50,7 @@ const FAQPage = () => {
             ""
           )}
         </div>
+
         <div className="flex flex-col items-center">
           {/* FAQ Layers */}
           {isFAQSelected && FAQLayerOne && (
@@ -284,7 +280,7 @@ const FAQPage = () => {
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
 
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -313,7 +309,7 @@ const FAQPage = () => {
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
 
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -338,7 +334,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -366,7 +362,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -390,7 +386,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -419,7 +415,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -448,7 +444,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -476,7 +472,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -504,7 +500,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -531,7 +527,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -559,7 +555,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -586,7 +582,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -614,7 +610,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -642,7 +638,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -728,7 +724,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Yellow Dwarf Virus</p>
@@ -752,7 +748,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Ascochyta Blight</p>
@@ -779,7 +775,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Corn Smut</p>
@@ -809,7 +805,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Red Rot</p>
@@ -842,7 +838,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Black Chaff</p>
@@ -897,7 +893,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     PM Kisan is a Central Sector scheme with full funding from
                     Government of India. It has become operational from
@@ -936,7 +932,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     Crop Insurance is an integrated IT solution and a web-based
                     ecosystem to speed up service delivery, unify fragmented
@@ -984,7 +980,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     Kisan Credit Card is a dedicated blog that shares valuable
                     updates, news, and information about Kisan Credit Cards,
@@ -1002,7 +998,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     NABARD is India’s apex development bank, established in 1982
                     under an Act of Parliament to promote sustainable and
@@ -1020,7 +1016,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#f5f5f5] p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>

@@ -204,7 +204,7 @@ const IndiaMap = () => {
             Karnataka
           </button>
         </div>
-        <div className="w-[250px] h-[350px] bg-[#F5F5F5] px-2 flex flex-col gap-1 md:w-[300px] md:h-[300px]">
+        <div className="w-[250px] h-[350px] md:w-[300px] md:h-[300px] bg-[#ffffff] rounded shadow-lg z-20 p-4 flex flex-col gap-1">
           <h1 className="font-semibold text-1xl md:text-2xl text-center">
             State-wise Crop data of
           </h1>
@@ -226,7 +226,7 @@ const IndiaMap = () => {
                 setCrops("Please click any state name to see details");
                 setSoil("Please click any state name to see details");
               }}
-              className="p-2 w-16 text-white text-md font-bold bg-blue-500 rounded-lg md:w-24 md:text-1xl mb-2"
+              className="p-2 w-16 text-white text-md font-bold bg-green-500 rounded-lg md:w-24 md:text-1xl mb-2"
             >
               Reset
             </button>

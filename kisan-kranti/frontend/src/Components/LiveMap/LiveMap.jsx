@@ -102,7 +102,7 @@ function LiveMap() {
         <button
           onClick={getLocation}
           disabled={loading}
-          className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-xl font-semibold text-base transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+          className="bg-green-500 hover:bg-green-600 cursor-pointer text-white px-6 py-3 rounded-xl font-semibold text-base transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
         >
           Fetch Location
         </button>

@@ -52,7 +52,7 @@ const ComplaintsPage = () => {
                 href="https://egramswaraj.gov.in/addProfileReport.do"
                 target="_blank"
                 rel="noreferrer"
-                className="font-semibold text-blue-500 hover:text-2xl ml-4"
+                className="font-semibold text-blue-500 hover:underline ml-4"
               >
                 eGramSwaraj
               </a>
@@ -73,21 +73,13 @@ const ComplaintsPage = () => {
               }}
             />
             <p className="pl-52">{textCount}/2500 characters used</p>
-            <hr />
           </div>
 
-          <div className="flex flex-row gap-12">
-            <input
-              type="submit"
-              value={"Submit"}
-              className="font-bold text-2xl p-3 bg-green-500 hover:bg-green-300 rounded-lg w-28 my-3"
-            />
-            <input
-              type="reset"
-              value={"Reset"}
-              className="font-bold text-2xl p-3 bg-red-600 hover:bg-red-400 rounded-lg w-28 my-3"
-            />
-          </div>
+          <input
+            type="submit"
+            value={"Submit"}
+            className="bg-green-500 hover:bg-green-600 rounded text-white text-xl cursor-pointer px-8 py-2 font-bold"
+          />
         </form>
       </div>
     </>

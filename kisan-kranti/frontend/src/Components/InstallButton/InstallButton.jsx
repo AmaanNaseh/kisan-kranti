@@ -40,7 +40,7 @@ const InstallButton = () => {
   return (
     <button
       onClick={handleInstallClick}
-      className="text-white lg:border-gray-400 lg:border lg:rounded-full py-2 px-4 hover:bg-green-500 cursor-pointer"
+      className="bg-green-500 hover:bg-green-600 rounded text-white text-sm cursor-pointer px-4 py-2 font-bold"
     >
       Download App
     </button>

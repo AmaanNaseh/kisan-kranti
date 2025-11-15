@@ -52,7 +52,7 @@ const CropPricePage = () => {
       <div className="min-h-[75vh] my-10 py-10 px-12" name="cropPricePageTop">
         <div className="flex flex-col items-center justify-center">
           <button
-            className="p-4 bg-green-500 text-white font-bold text-2xl rounded-lg hover:bg-green-400 hover:animate-zoomAnimation"
+            className="bg-green-500 hover:bg-green-600 rounded text-white cursor-pointer px-4 py-2 font-bold text-2xl hover:animate-zoomAnimation"
             onClick={fetchData}
           >
             Fetch Live Price Data
@@ -82,11 +82,11 @@ const CropPricePage = () => {
 
         {priceData !== null ? (
           <>
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-x-4 gap-y-8 mt-4">
+            <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-x-4 gap-y-8 mt-16">
               {priceData.records.map((record) => {
                 return (
                   <>
-                    <div className="flex flex-col items-start justify-center bg-[#FFA3A3] px-5 py-3">
+                    <div className="flex flex-col items-start justify-center bg-[#ffffff] shadow-xl z-20 p-5">
                       <p>
                         <span className="font-bold mr-1">State:</span>{" "}
                         {record.state}

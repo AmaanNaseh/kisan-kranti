@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Sprout, ArrowRight, Play, Leaf } from "lucide-react";
+
 import { Helmet } from "react-helmet";
 
 import { Flask_Backend_API } from "../Config/Config";
 
-import heroPoster from "../Assets/Homepage/KisanBg1.jpg";
+import heroPoster from "../Assets/Homepage/HeroPoster.jpg";
 import SoilHealthIcon from "../Assets/Homepage/Soil_Health_Icon.png";
 import ClimateIcon from "../Assets/Homepage/Climate_Icon.png";
 import CheckupIcon from "../Assets/Homepage/Crop_Health_Icon.png";
@@ -22,7 +24,6 @@ import DevelopersIcon from "../Assets/Homepage/Developers.png";
 import AIArchitectureIcon from "../Assets/Homepage/AIArchitecture.png";
 import SignupIcon from "../Assets/Homepage/SignupIcon.png";
 import LoginIcon from "../Assets/Homepage/LoginIcon.png";
-import MsgIcon from "../Assets/Homepage/MsgIcon.png";
 import CropReportIcon from "../Assets/Homepage/ReportIcon.png";
 import CropFieldIcon from "../Assets/Homepage/CropField.png";
 import BuyFertilizerIcon from "../Assets/Homepage/Buy_Fertilizer_Icon.png";
@@ -71,50 +72,289 @@ const HomePage = () => {
         <link rel="canonical" href="https://www.kisankranti.tech/" />
       </Helmet>
 
-      {/* Hero Section - Split Screen Design */}
-      <div className="w-full min-h-[650px] lg:min-h-[750px] bg-gradient-to-br from-[#0d5c2a] via-[#1B7D3A] to-[#2a9d4e] relative overflow-hidden">
-        {/* Animated Bubble Effects */}
+      {/* Hero Section - Modern Design */}
+      <div className="w-full min-h-[700px] bg-white relative overflow-hidden">
+        {/* Decorative Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(15)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute rounded-full bg-white/10 animate-float"
+          {/* Animated Gradient Orbs */}
+          <motion.div
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-green-100/40 via-emerald-50/30 to-transparent rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              opacity: [0.4, 0.6, 0.4],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-green-50/50 via-lime-50/30 to-transparent rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.3, 1],
+              opacity: [0.5, 0.7, 0.5],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1,
+            }}
+          />
+          <motion.div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-emerald-100/30 via-green-100/20 to-lime-100/30 rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.4, 1],
+              rotate: [0, 180, 360],
+              opacity: [0.3, 0.5, 0.3],
+            }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+
+          {/* Floating Particles */}
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={`particle-${i}`}
+              className="absolute rounded-full"
               style={{
-                width: `${Math.random() * 100 + 50}px`,
-                height: `${Math.random() * 100 + 50}px`,
+                width: `${Math.random() * 12 + 4}px`,
+                height: `${Math.random() * 12 + 4}px`,
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 4}s`,
-                animationDuration: `${Math.random() * 6 + 8}s`,
+                backgroundColor:
+                  i % 4 === 0
+                    ? "#86efac"
+                    : i % 4 === 1
+                    ? "#4ade80"
+                    : i % 4 === 2
+                    ? "#22c55e"
+                    : "#10b981",
+                opacity: 0.15,
+              }}
+              animate={{
+                y: [0, -40, 0],
+                x: [0, Math.random() * 20 - 10, 0],
+                opacity: [0.1, 0.3, 0.1],
+                scale: [1, 1.5, 1],
+              }}
+              transition={{
+                duration: Math.random() * 5 + 5,
+                repeat: Infinity,
+                delay: Math.random() * 3,
+                ease: "easeInOut",
               }}
             />
           ))}
+
+          {/* Animated Leaf Icons */}
+          {[...Array(8)].map((_, i) => (
+            <motion.div
+              key={`leaf-${i}`}
+              className="absolute"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                y: [0, -60, 0],
+                rotate: [0, 360],
+                opacity: [0.05, 0.15, 0.05],
+              }}
+              transition={{
+                duration: Math.random() * 8 + 10,
+                repeat: Infinity,
+                delay: Math.random() * 3,
+                ease: "easeInOut",
+              }}
+            >
+              <Leaf className="w-8 h-8 text-green-500" />
+            </motion.div>
+          ))}
+
+          {/* Animated Sprout Icons */}
+          {[...Array(6)].map((_, i) => (
+            <motion.div
+              key={`sprout-${i}`}
+              className="absolute"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                y: [0, -50, 0],
+                scale: [0.8, 1.2, 0.8],
+                opacity: [0.06, 0.12, 0.06],
+              }}
+              transition={{
+                duration: Math.random() * 7 + 8,
+                repeat: Infinity,
+                delay: Math.random() * 2,
+                ease: "easeInOut",
+              }}
+            >
+              <Sprout className="w-10 h-10 text-emerald-500" />
+            </motion.div>
+          ))}
+
+          {/* Animated Grid Pattern */}
+          <motion.div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `radial-gradient(circle at center, transparent 0%, transparent 50%, rgba(34, 197, 94, 0.03) 50%, rgba(34, 197, 94, 0.03) 100%)`,
+              backgroundSize: "50px 50px",
+            }}
+            animate={{
+              opacity: [0.3, 0.6, 0.3],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* Animated Waves */}
+          <motion.div
+            className="absolute bottom-0 left-0 right-0 h-32"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(34, 197, 94, 0.05), transparent)",
+            }}
+            animate={{
+              opacity: [0.5, 0.8, 0.5],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* Pulsing Rings */}
+          {[...Array(3)].map((_, i) => (
+            <motion.div
+              key={`ring-${i}`}
+              className="absolute top-1/4 right-1/4 w-64 h-64 border-2 border-green-300/20 rounded-full"
+              animate={{
+                scale: [1, 2, 1],
+                opacity: [0.3, 0, 0.3],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                delay: i * 1.5,
+                ease: "easeOut",
+              }}
+            />
+          ))}
+
+          {/* Floating Bubbles */}
+          {[...Array(15)].map((_, i) => (
+            <motion.div
+              key={`bubble-${i}`}
+              className="absolute rounded-full border-2 border-green-200/30"
+              style={{
+                width: `${Math.random() * 60 + 30}px`,
+                height: `${Math.random() * 60 + 30}px`,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                y: [0, -100, 0],
+                x: [0, Math.random() * 30 - 15, 0],
+                scale: [1, 1.3, 1],
+                opacity: [0.1, 0.25, 0.1],
+              }}
+              transition={{
+                duration: Math.random() * 8 + 8,
+                repeat: Infinity,
+                delay: Math.random() * 4,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
+
+          {/* Decorative Lines with Animation */}
+          <motion.div
+            className="absolute top-20 left-10 w-32 h-32 border-l-2 border-t-2 border-green-200/30 rounded-tl-3xl"
+            animate={{
+              opacity: [0.3, 0.6, 0.3],
+              scale: [1, 1.05, 1],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute bottom-20 right-10 w-32 h-32 border-r-2 border-b-2 border-green-200/30 rounded-br-3xl"
+            animate={{
+              opacity: [0.3, 0.6, 0.3],
+              scale: [1, 1.05, 1],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 2,
+            }}
+          />
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
+        {/* Subtle Top Border */}
+        <motion.div
+          className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"
+          animate={{
+            opacity: [0.5, 1, 0.5],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[650px]">
             {/* Left Content */}
             <motion.div
-              className="flex flex-col justify-center space-y-8 lg:space-y-10 text-left z-10"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex flex-col items-center justify-center space-y-10 text-left"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
             >
+              {/* Badge */}
+              <motion.div
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200/50 px-4 py-2 rounded-full"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+              >
+                <Sprout className="w-4 h-4 text-green-600" />
+                <span className="text-green-700">AI-Powered Agriculture</span>
+              </motion.div>
+
               {/* Main Heading */}
               <motion.div
-                className="space-y-6"
-                initial={{ opacity: 0, y: 30 }}
+                className="space-y-6 text-center"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.8 }}
+                transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <h1 className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-white text-center leading-none tracking-tight">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl text-gray-900 leading-none tracking-tight">
                   किसान
                   <br />
-                  <span className="italic font-light text-white/95">
+                  <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-green-700 bg-clip-text text-transparent italic">
                     Kranti
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl lg:text-3xl text-white text-center leading-relaxed max-w-2xl font-normal">
+                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-xl">
                   Revolutionizing Agriculture with AI-Powered Solutions for
                   Better Yields and Sustainable Farming
                 </p>
@@ -122,83 +362,75 @@ const HomePage = () => {
 
               {/* CTA Buttons */}
               <motion.div
-                className="flex flex-col items-center justify-center md:flex-row gap-5 lg:justify-start lg:items-start"
+                className="flex flex-col sm:flex-row gap-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                <motion.a
+                  href="/crop-selection"
+                  className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-xl hover:shadow-green-500/30"
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <Link
-                    to="/crop-selection"
-                    className="inline-flex items-center justify-center gap-3 bg-white text-[#1B7D3A] px-10 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-all duration-300 shadow-xl hover:shadow-2xl group"
-                  >
-                    Get Started
-                    <svg
-                      className="w-6 h-6 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2.5}
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
-                  </Link>
-                </motion.div>
-                <a
+                  Get Started
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </motion.a>
+
+                <motion.a
                   href="https://youtu.be/Tqrw3qK2Pe4"
                   target="_blank"
                   rel="noreferrer"
+                  className="group inline-flex items-center justify-center gap-3 bg-white text-gray-800 px-8 py-4 rounded-xl border-2 border-gray-200 hover:border-green-300 hover:bg-green-50/50 transition-all duration-300 shadow-sm hover:shadow-md"
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <motion.button
-                    className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/15 transition-all duration-300"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <svg
-                      className="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                    </svg>
-                    Watch Demo
-                  </motion.button>
-                </a>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-green-500/30">
+                    <Play className="w-4 h-4 text-white fill-white ml-0.5" />
+                  </div>
+                  Watch Demo
+                </motion.a>
               </motion.div>
             </motion.div>
 
             {/* Right Image */}
             <motion.div
               className="relative flex items-center justify-center lg:justify-end"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
             >
-              <motion.div
-                className="relative w-full max-w-[700px] lg:max-w-[800px] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/10"
-                whileHover={{ scale: 1.02, rotate: 1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img
-                  src={heroPoster}
-                  alt="Indian Farmer with Ox"
-                  className="w-full h-[400px] lg:h-[500px] object-cover"
-                />
-              </motion.div>
+              {/* Image Container with Enhanced Styling */}
+              <div className="relative w-full max-w-[600px] lg:max-w-[650px]">
+                {/* Decorative Elements Around Image */}
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-400/20 to-emerald-400/20 rounded-3xl blur-2xl" />
+                <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-gradient-to-tr from-lime-400/20 to-green-400/20 rounded-3xl blur-2xl" />
+
+                {/* Main Image Card */}
+                <motion.div
+                  className="relative rounded-3xl overflow-hidden shadow-2xl shadow-green-900/10 border border-green-100/50 bg-white p-3"
+                  whileHover={{ y: -8 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="relative rounded-2xl overflow-hidden">
+                    {/* Replace with your actual image */}
+                    <img
+                      src={heroPoster}
+                      alt="Poster"
+                      className="w-full h-[450px] object-cover"
+                    />
+
+                    {/* Overlay Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-green-900/10 via-transparent to-transparent" />
+                  </div>
+                </motion.div>
+              </div>
             </motion.div>
           </div>
         </div>
       </div>
 
       {/* What We Provide */}
-
       <h2 className="mt-20 hidden lg:block text-3xl font-bold text-[#163A1C] text-center">
         We provide end-to-end solution for a crop in 4 stages
       </h2>
@@ -209,44 +441,44 @@ const HomePage = () => {
 
         {/* Arrows */}
         <div className="absolute left-[48%] flex flex-col items-center justify-center gap-[110px]">
-          <div className="w-[300px] h-[4px] bg-[#389347] relative">
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
+          <div className="w-[300px] h-[4px] bg-green-600 relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute right-0 top-[50%] translate-y-[-50%]"></div>
           </div>
 
-          <div className="w-[300px] h-[4px] bg-[#389347] relative">
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
+          <div className="w-[300px] h-[4px] bg-green-600 relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute right-0 top-[50%] translate-y-[-50%]"></div>
           </div>
 
-          <div className="w-[300px] h-[4px] bg-[#389347] relative">
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
+          <div className="w-[300px] h-[4px] bg-green-600 relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute right-0 top-[50%] translate-y-[-50%]"></div>
           </div>
 
-          <div className="w-[300px] h-[4px] bg-[#389347] relative">
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute left-0 top-[50%] translate-y-[-50%]"></div>
-            <div className="w-[20px] h-[20px] rounded-full bg-[#389347] absolute right-0 top-[50%] translate-y-[-50%]"></div>
+          <div className="w-[300px] h-[4px] bg-green-600 relative">
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute left-0 top-[50%] translate-y-[-50%]"></div>
+            <div className="w-[20px] h-[20px] rounded-full bg-green-600 absolute right-0 top-[50%] translate-y-[-50%]"></div>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-center gap-5 lg:gap-10 text-lg md:text-2xl lg:text-4xl font-bold text-white">
-          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+          <div className="group bg-green-600 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
             <h3 className="text-center text-base font-semibold text-white">
               Crop Selection
             </h3>
           </div>
-          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+          <div className="group bg-green-600 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
             <h3 className="text-center text-base font-semibold text-white">
               Crop Growth
             </h3>
           </div>
-          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+          <div className="group bg-green-600 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
             <h3 className="text-center text-base font-semibold text-white">
               Crop Treatment
             </h3>
           </div>
-          <div className="group bg-[#389347] p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
+          <div className="group bg-green-600 p-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 min-w-[200px]">
             <h3 className="text-center text-base font-semibold text-white">
               Crop Marketing
             </h3>
@@ -607,26 +839,9 @@ const HomePage = () => {
             Connect with Us
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Info Section */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="flex items-center gap-4 mb-6">
-                <img src={MsgIcon} className="w-16 h-16" alt="message icon" />
-                <h3 className="text-2xl md:text-3xl font-bold text-[#163A1C]">
-                  Send us a message
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed text-justify">
-                We warmly invite you to connect with us through our contact form
-                or the details provided below. Your insights, inquiries, and
-                suggestions are deeply valued, inspiring us to continually
-                enhance our services and better serve the needs of our vibrant
-                community.
-              </p>
-            </div>
-
+          <div className="flex items-center justify-center">
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-green-100">
+            <div className="bg-white w-[325px] md:w-[500px] p-8 rounded-2xl shadow-lg">
               <form onSubmit={onSubmit} className="space-y-6">
                 <div>
                   <label
@@ -677,7 +892,7 @@ const HomePage = () => {
                 </div>
 
                 <button
-                  className="w-full bg-[#163A1C] hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
+                  className="w-full bg-green-500 hover:bg-green-600 rounded text-white cursor-pointer px-4 py-2 font-bold"
                   type="submit"
                 >
                   Send Message

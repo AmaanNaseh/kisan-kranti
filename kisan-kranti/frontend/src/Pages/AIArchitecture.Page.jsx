@@ -741,13 +741,13 @@ const AIArchitecturePage = () => {
       </Helmet>
 
       <div className="flex items-center justify-center my-10">
-        <h1 className="bg-[#436F29] text-white px-4 py-2 rounded-lg font-bold text-2xl md:text-3xl lg:tex-5xl mt-4">
+        <h1 className="px-4 py-2 font-bold text-2xl md:text-3xl lg:tex-5xl">
           Leaf
         </h1>
       </div>
       <div className="my-10 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(250px,400px))] gap-10 p-4 md:px-20 md:py-10">
         {/* Apple */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={appleIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -807,7 +807,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Banana */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={bananaIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -867,7 +867,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Cassava */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cassavaIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -928,7 +928,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Cherry */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cherryIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -988,7 +988,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Corn */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cornIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1048,7 +1048,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Cucumber */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cucumberIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1109,7 +1109,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Eggplant */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={eggplantIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1170,7 +1170,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Grapes */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={grapesIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1230,7 +1230,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Moneyplant */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img
               src={moneyplantIcon}
@@ -1296,7 +1296,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Peach */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={peachIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1356,7 +1356,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Pepper */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={pepperIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1416,7 +1416,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Potato */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={potatoIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1476,7 +1476,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Strawberry */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img
               src={strawberryIcon}
@@ -1542,7 +1542,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Sugarcane */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img
               src={sugarcaneIcon}
@@ -1608,7 +1608,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Tomato */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={tomatoIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1668,7 +1668,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Watermelon */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img
               src={watermelonIcon}
@@ -1734,7 +1734,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Wheat */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={wheatIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1796,14 +1796,14 @@ const AIArchitecturePage = () => {
       </div>
 
       <div className="flex items-center justify-center my-10">
-        <h1 className="bg-[#436F29] text-white px-4 py-2 rounded-lg font-bold text-2xl md:text-3xl lg:tex-5xl mt-4">
+        <h1 className="px-4 py-2 font-bold text-2xl md:text-3xl lg:tex-5xl">
           Pest
         </h1>
       </div>
 
       <div className="my-10 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(250px,400px))] gap-10 p-4 md:px-20 md:py-10">
         {/* Banana */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={bananaIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1863,7 +1863,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Cashew */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cashewIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1923,7 +1923,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Corn */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cornIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -1983,7 +1983,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Cotton */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cottonIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -2043,7 +2043,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Eggplant */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={eggplantIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -2104,7 +2104,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Potato */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={potatoIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -2164,7 +2164,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Wheat */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={wheatIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -2226,14 +2226,14 @@ const AIArchitecturePage = () => {
       </div>
 
       <div className="flex items-center justify-center my-10">
-        <h1 className="bg-[#436F29] text-white px-4 py-2 rounded-lg font-bold text-2xl md:text-3xl lg:tex-5xl mt-4">
+        <h1 className="px-4 py-2 font-bold text-2xl md:text-3xl lg:tex-5xl">
           Seed
         </h1>
       </div>
 
       <div className="my-10 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(250px,400px))] gap-10 p-4 md:px-20 md:py-10">
         {/* Corn */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={cornIcon} className="w-full h-full cover" alt="..." />
           </div>
@@ -2293,7 +2293,7 @@ const AIArchitecturePage = () => {
           </div>
         </div>
         {/* Soybean */}
-        <div className="flex flex-col items-center gap-4 bg-[#88C273] min-w-[300px] max-w-[450px] px-5 py-8">
+        <div className="flex flex-col items-center gap-4 bg-[#ffffff] shadow-xl z-20 min-w-[300px] max-w-[450px] px-5 py-8">
           <div className="w-[100px]">
             <img src={soybeanIcon} className="w-full h-full cover" alt="..." />
           </div>

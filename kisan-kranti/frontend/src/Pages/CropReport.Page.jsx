@@ -1807,7 +1807,7 @@ const CropReportPage = () => {
           <div>
             <select
               onChange={handlePartChange}
-              className="text-lg font-semibold py-2 px-3 cursor-pointer min-w-[218px]"
+              className="text-lg font-semibold py-2 px-3 cursor-pointer min-w-[218px] border-black border-[2px]"
             >
               <option value="Select Plant Part">Select Plant Part</option>
               <option value="Leaf">Leaf</option>
@@ -1818,7 +1818,7 @@ const CropReportPage = () => {
           <div>
             <select
               onChange={handleCategoryChange}
-              className={`text-lg font-semibold py-2 px-3 min-w-[218px] ${
+              className={`text-lg font-semibold py-2 px-3 min-w-[218px] border-black border-[2px] ${
                 plantPart === "Select Plant Part"
                   ? "cursor-no-drop"
                   : "cursor-pointer"
@@ -1877,7 +1877,7 @@ const CropReportPage = () => {
             <select
               id="cropCategoryId"
               onChange={handleDiseaseChange}
-              className={`text-lg font-semibold py-2 px-3 min-w-[218px] ${
+              className={`text-lg font-semibold py-2 px-3 min-w-[218px] border-black border-[2px] ${
                 cropCategory === "Select Crop Category"
                   ? "cursor-no-drop"
                   : "cursor-pointer"
@@ -2243,7 +2243,7 @@ const CropReportPage = () => {
           <div>
             <button
               onClick={handleGenerateButton}
-              className={`px-4 py-2 text-white text-2xl font-bold rounded-lg bg-[#0F8922] ${
+              className={`bg-green-500 hover:bg-green-600 rounded text-white cursor-pointer px-4 py-2 font-bold text-2xl hover:scale-[1.05] ${
                 cropDisease === "Select Crop Disease"
                   ? "cursor-no-drop"
                   : "cursor-pointer"
@@ -2365,14 +2365,16 @@ const CropReportPage = () => {
             </p>
           </div>
         </div>
+
+        {/* Download Button */}
         <div
-          className={`flex flex-col items-center justify-center gap-4 my-10 ${
+          className={`flex flex-col items-center justify-center gap-4 my-10 mb-20 ${
             isVisible ? "" : "hidden"
           }`}
         >
           <button
             onClick={downloadPDF}
-            className="px-4 py-2 bg-[#0F8922] hover:bg-[#13AE2B] hover:scale-[1.05] text-2xl font-bold text-white rounded-lg"
+            className="bg-green-500 hover:bg-green-600 rounded text-white cursor-pointer px-4 py-2 font-bold text-2xl hover:scale-[1.05]"
           >
             Download Report
           </button>
@@ -2381,19 +2383,21 @@ const CropReportPage = () => {
             className="w-12 h-12 border-[4px] border-gray-300 border-t-[4px] border-t-blue-500 rounded-full animate-spin hidden"
           ></div>
         </div>
-        <div className={`my-10 ${isVisible ? "" : "hidden"}`}>
+
+        {/* Online Stores */}
+        <div className={`my-20 ${isVisible ? "" : "hidden"}`}>
           <h3 className="text-center font-bold text-lg my-5">
             You can buy the items suggested in our report from the websites
             below:
           </h3>
-          <div className="flex flex-col md:flex-row flex-wrap items-center gap-8 mx-12 my-8">
+          <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 mx-12 my-8">
             <a
               href="https://agribegri.com"
               target="_blank"
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 Agriberi
               </button>
             </a>
@@ -2403,7 +2407,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 BigHaat
               </button>
             </a>
@@ -2413,7 +2417,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 IndiaMART
               </button>
             </a>
@@ -2423,7 +2427,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 Amazon
               </button>
             </a>
@@ -2433,7 +2437,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 Amazon Kisan Store
               </button>
             </a>
@@ -2443,7 +2447,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 Bulkagrochem
               </button>
             </a>
@@ -2453,7 +2457,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 Krishi Bazaar
               </button>
             </a>
@@ -2463,7 +2467,7 @@ const CropReportPage = () => {
               rel="noreferrer"
               className="text-white font-bold"
             >
-              <button className="bg-[#0077b5] hover:bg-[#0092DE] px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
+              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 hover:scale-[1.05] rounded-lg min-w-[183px]">
                 Blinkit
               </button>
             </a>

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import SchemesPoster from "../Assets/Schemes_Page/Schemes Poster.jpg";
 import SchemesImg from "../Assets/Schemes_Page/Schemes.jpg";
 import DonationImg from "../Assets/Schemes_Page/Donation.png";
 import BankImg from "../Assets/Schemes_Page/Bank.png";
@@ -22,9 +21,6 @@ const SchemesPage = () => {
         <link rel="canonical" href="https://www.kisankranti.tech/schemes" />
       </Helmet>
 
-      <div className=" w-full h-[300px] flex flex-col justify-center items-center p-4 py-8 my-10">
-        <img src={SchemesPoster} alt="..." className=" w-full h-full" />
-      </div>
       <div className="flex flex-row flex-wrap gap-4 px-4 py-2 my-10 mb-12">
         <div className="md:w-[32%]">
           <div className=" flex flex-col justify-center items-center my-1">
@@ -34,13 +30,13 @@ const SchemesPage = () => {
               className="rounded-full w-[100px] h-[100px] "
             />
           </div>
-          <hr className="my-2" />
+          <div className="w-full h-[2px] bg-[#BDCBDD] my-4 mb-8"></div>
 
           <h1 className="text-center font-bold text-2xl my-1 mb-2">
             Government Schemes
           </h1>
 
-          <div className="bg-[#F5F5F5] px-3 py-2">
+          <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
             <h3 className="font-bold text-1xl my-1">
               Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
             </h3>
@@ -81,7 +77,7 @@ const SchemesPage = () => {
               rel="noreferrer"
               className="decoration-none text-white"
             >
-              <button className="font-bold text-1xl bg-green-500 hover:bg-green-300 rounded-lg ml-[50%] translate-x-[-50%] p-3 my-2 mt-3">
+              <button className="bg-green-500 hover:bg-green-600 rounded text-white text-sm cursor-pointer px-4 py-2 font-bold">
                 Apply
               </button>
             </a>
@@ -98,11 +94,11 @@ const SchemesPage = () => {
               className="rounded-full w-[100px] h-[100px] "
             />
           </div>
-          <hr className="my-2" />
+          <div className="w-full h-[2px] bg-[#BDCBDD] my-4 mb-8"></div>
 
           <h1 className="text-center font-bold text-2xl my-1 mb-2">Loans</h1>
           <div className="flex flex-col gap-8 flex-wrap">
-            <div className="bg-[#F5F5F5] px-3 py-2">
+            <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
               <h3 className="font-bold text-1xl my-1">
                 Kisan Credit Card (KCC) Scheme
               </h3>
@@ -115,14 +111,12 @@ const SchemesPage = () => {
                 href="https://www.myscheme.gov.in/schemes/kcc"
                 target="_blank"
                 rel="noreferrer"
-                className="decoration-none text-white"
+                className="decoration-none text-white bg-green-500 hover:bg-green-600 rounded text-sm cursor-pointer px-4 py-2 font-bold"
               >
-                <button className="font-bold text-1xl bg-green-500 hover:bg-green-300 rounded-lg ml-[50%] translate-x-[-50%] p-3 my-2 mt-3">
-                  Apply
-                </button>
+                Apply
               </a>
             </div>
-            <div className="bg-[#F5F5F5] px-3 py-2">
+            <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
               <h3 className="font-bold text-1xl my-1">
                 National Bank for Ariculture and Rural Deveopment (NABARD)
               </h3>
@@ -143,11 +137,9 @@ const SchemesPage = () => {
                 href="https://www.nabard.org/"
                 target="_blank"
                 rel="noreferrer"
-                className="decoration-none text-white"
+                className="decoration-none text-white bg-green-500 hover:bg-green-600 rounded text-sm cursor-pointer px-4 py-2 font-bold"
               >
-                <button className="font-bold text-1xl bg-green-500 hover:bg-green-300 rounded-lg ml-[50%] translate-x-[-50%] p-3 my-2 mt-3">
-                  Apply
-                </button>
+                Apply
               </a>
             </div>
           </div>
@@ -163,14 +155,14 @@ const SchemesPage = () => {
               className="rounded-full w-[100px] h-[100px] "
             />
           </div>
-          <hr className="my-2" />
+          <div className="w-full h-[2px] bg-[#BDCBDD] my-4 mb-8"></div>
 
           <h1 className="text-center font-bold text-2xl my-1 mb-2">
             Crop Insuarance
           </h1>
 
           <div className="flex flex-col gap-8 flex-wrap">
-            <div className="bg-[#F5F5F5] px-3 py-2">
+            <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
               <h3 className="font-bold text-1xl my-1">
                 Pradhan Mantri Fasal Bima Yojana (PMFBY)
               </h3>
@@ -200,11 +192,9 @@ const SchemesPage = () => {
                 href="https://pmfby.gov.in/"
                 target="_blank"
                 rel="noreferrer"
-                className="decoration-none text-white"
+                className="decoration-none text-white bg-green-500 hover:bg-green-600 rounded text-sm cursor-pointer px-4 py-2 font-bold"
               >
-                <button className="font-bold text-1xl bg-green-500 hover:bg-green-300 rounded-lg ml-[50%] translate-x-[-50%] p-3 my-2 mt-3">
-                  Apply
-                </button>
+                Apply
               </a>
             </div>
           </div>

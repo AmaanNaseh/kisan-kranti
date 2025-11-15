@@ -58,7 +58,7 @@ const WeatherForecastPage = () => {
       <div className="min-h-[75vh] my-20">
         <div className="flex flex-col items-center justify-center my-8">
           <button
-            className="p-4 bg-green-500 text-white font-bold text-2xl rounded-lg hover:bg-green-400 hover:animate-zoomAnimation"
+            className="bg-green-500 hover:bg-green-600 hover:animate-zoomAnimation rounded text-white cursor-pointer px-4 py-2 font-bold text-2xl"
             onClick={() => {
               getLocation();
             }}

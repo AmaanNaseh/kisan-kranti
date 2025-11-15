@@ -35,17 +35,17 @@ const CropSelectionPage = () => {
         />
       </Helmet>
 
-      <div className="flex flex-col justify-center items-center my-12 md:my-20">
+      <LiveMap />
+
+      <div className="flex flex-col justify-center items-center my-20">
         <IndiaMap />
       </div>
 
-      <LiveMap />
-
-      <h1 className="my-12 mt-24 md:mt-40 md:my-20 text-center font-bold text-3xl lg:text-5xl">
+      <h1 className="my-20 text-center font-bold text-3xl lg:text-5xl">
         Plant Inventory for Botanists
       </h1>
 
-      <div className="flex flex-row items-center justify-center flex-wrap md:flex-nowrap gap-20 my-10">
+      <div className="flex flex-row items-center justify-center flex-wrap gap-20 my-10">
         <div className="flex flex-col items-center justify-center">
           <img
             src={BarleyCircle}
@@ -92,7 +92,7 @@ const CropSelectionPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-row flex-wrap gap-12 mx-12 my-10">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-12 my-10">
         {/* Barley*/}
         {Barley.map((barley) => {
           return (

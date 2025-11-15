@@ -306,7 +306,7 @@ function MedicineCalculator() {
   };
 
   return (
-    <div className="max-w-3xl mx-5 md:mx-auto bg-green-400 p-8 rounded-lg shadow-lg">
+    <div className="max-w-3xl mx-5 md:mx-auto bg-[#ffffff] shadow-lg z-20 p-8 rounded-lg">
       <h1 className="text-2xl font-bold mb-4 text-center">
         Crop Disease Dosage Calculator
       </h1>
@@ -902,7 +902,7 @@ function MedicineCalculator() {
       <div className="mb-4 flex items-center justify-center">
         <button
           onClick={calculateDosage}
-          className="w-fit px-5 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-500 focus:outline-none"
+          className="w-fit bg-green-500 hover:bg-green-600 rounded text-white cursor-pointer px-4 py-2 font-bold hover:scale-[1.05] shadow-md focus:outline-none"
         >
           Calculate Dosage
         </button>

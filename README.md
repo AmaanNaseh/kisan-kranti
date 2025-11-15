@@ -154,6 +154,14 @@ npm run dev
 
 ---
 
+## 🎨 Colors Theme
+
+- Background Color: #ffffff
+- Border Color: black, #bdcbdd
+- Buttons: bg-green-500, hover:bg-green-600, text-white, text-black, #ffffff shadow-lg/xl z-20,
+
+---
+
 ## 🎯 Future Plans
 
 - We will build a hardware for farmers to install it in their farm lands for real-time insights

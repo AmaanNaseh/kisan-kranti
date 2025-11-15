@@ -24,14 +24,14 @@ const BrochurePage = () => {
           <a
             href={BrochureEnglish}
             download
-            className="bg-green-500 px-4 py-2 rounded-md"
+            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-md"
           >
             Download Brochure (English)
           </a>
           <a
             href={BrochureHindi}
             download
-            className="bg-green-500 px-4 py-2 rounded-md"
+            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-md"
           >
             Download Brochure (Hindi)
           </a>

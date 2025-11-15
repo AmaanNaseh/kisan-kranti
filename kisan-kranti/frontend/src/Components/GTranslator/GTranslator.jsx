@@ -32,10 +32,10 @@ export default function GTranslator() {
       <div id="google_translate_element" className="hidden"></div>
 
       {/* Compact toggle-style buttons */}
-      <div className="flex flex-col md:flex-row text-sm md:text-lg border border-gray-300 rounded-lg md:rounded-full overflow-hidden">
+      <div className="flex flex-col md:flex-row text-sm md:text-lg border border-gray-300 rounded-lg overflow-hidden">
         <button
           onClick={() => switchLang("en")}
-          className={`px-4 py-2 font-medium transition-colors duration-200 ${
+          className={`p-2 font-medium text-sm transition-colors duration-200 ${
             lang === "en"
               ? "bg-blue-600 text-white"
               : "bg-gray-100 text-gray-800 hover:bg-gray-200"
@@ -46,7 +46,7 @@ export default function GTranslator() {
 
         <button
           onClick={() => switchLang("hi")}
-          className={`px-4 py-2 font-medium transition-colors duration-200 ${
+          className={`p-2 font-medium text-sm transition-colors duration-200 ${
             lang === "hi"
               ? "bg-orange-500 text-white"
               : "bg-gray-100 text-gray-800 hover:bg-gray-200"
