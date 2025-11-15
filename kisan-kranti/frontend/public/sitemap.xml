@@ -4,13 +4,75 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://www.kisankranti.tech/</loc>
-  <lastmod>2025-11-03T14:47:36+00:00</lastmod>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
 </url>
 
+<url>
+  <loc>https://www.kisankranti.tech/brochure</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/developers</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/ai-architecture</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/crop-report-generator</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/live-crop-price</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/weather-forecast</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/crop-selection</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/schemes</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/faqs</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/organic-farming</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/edukaan</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/edukaan/signup</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
+
+<url>
+  <loc>https://www.kisankranti.tech/edukaan/login</loc>
+  <lastmod>2025-11-15T16:30:09.032064Z</lastmod>
+</url>
 
 </urlset>
