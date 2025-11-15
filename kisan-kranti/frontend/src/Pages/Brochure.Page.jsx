@@ -16,7 +16,8 @@ const BrochurePage = () => {
           name="description"
           content="Get the official Kisan Kranti brochure to explore all features, AI tools, crop disease prediction, weather forecasts, e-dukaan, and government schemes for farmers."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech/brochure" />
+        <link rel="canonical" href="https://www.kisankranti.tech" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="my-10 mb-24 flex flex-col items-center justify-center gap-16">

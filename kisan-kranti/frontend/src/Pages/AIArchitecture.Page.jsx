@@ -734,10 +734,8 @@ const AIArchitecturePage = () => {
           name="description"
           content="Learn about Kisan Kranti’s AI-powered crop disease prediction, crop health reporting, and neural network models for 26 crops."
         />
-        <link
-          rel="canonical"
-          href="https://www.kisankranti.tech/ai-architecture"
-        />
+        <link rel="canonical" href="https://www.kisankranti.tech" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="flex items-center justify-center my-10">

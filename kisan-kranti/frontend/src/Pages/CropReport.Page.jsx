@@ -1796,10 +1796,8 @@ const CropReportPage = () => {
           name="description"
           content="Generate detailed crop health reports with AI-driven disease prediction, precautions, remedies, and chemical/organic treatment recommendations."
         />
-        <link
-          rel="canonical"
-          href="https://www.kisankranti.tech/crop-report-generator"
-        />
+        <link rel="canonical" href="https://www.kisankranti.tech" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div className="min-h-[75vh] my-16">

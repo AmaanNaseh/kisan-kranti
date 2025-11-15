@@ -38,7 +38,8 @@ const HomePage = () => {
           name="description"
           content="A digital marketplace for farmers to sell crops, by-products, and recycled waste products. Integrated with Razorpay for secure transactions."
         />
-        <link rel="canonical" href="https://www.kisankranti.tech/edukaan" />
+        <link rel="canonical" href="https://www.kisankranti.tech" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
       <div className="relative min-h-screen text-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
