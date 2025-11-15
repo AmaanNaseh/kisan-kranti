@@ -22,6 +22,10 @@ of crop diseases, treatment and management along with commercialization of their
 
 ---
 
+<img width="1865" height="1436" alt="Image" src="https://github.com/user-attachments/assets/fc341f20-fbc0-4b6a-85e2-3652d6b690da" />
+
+---
+
 ## 📱 Project Overview/Features
 
 ### Crop Selection Phase
