@@ -233,50 +233,6 @@ const Navbar = () => {
               </ul>
             </div>
             <InstallButton />
-
-            {/* <div className="group text-sm">
-              <p className="block py-2 px-4 hover:bg-green-500">About</p>
-              <ul className="bg-white text-black shadow-lg mt-2 rounded-lg p-2 space-y-1 text-sm">
-                <a
-                  href="https://youtu.be/QwbhA1V4NrI"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    How to Use? (Hindi)
-                  </li>
-                </a>
-                <a
-                  href="https://youtu.be/LVCE_83GQlY"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    How to Use? (English)
-                  </li>
-                </a>
-                <a
-                  href={BrochureHindi}
-                  download="Kisan_Kranti_Brochure_Hindi.pdf"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    Download Brochure (Hindi)
-                  </li>
-                </a>
-                <a
-                  href={BrochureEnglish}
-                  download="Kisan_Kranti_Brochure_English.pdf"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    Download Brochure (English)
-                  </li>
-                </a>
-              </ul>
-            </div> */}
           </div>
 
           {/* Large Screens Menu */}
@@ -455,26 +411,26 @@ const Navbar = () => {
                         </li>
                       </a>
 
-                      {/* <a
-                  href="https://youtu.be/QwbhA1V4NrI"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    How to Use? (Hindi)
-                  </li>
-                </a>
-                <a
-                  href="https://youtu.be/LVCE_83GQlY"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="decoration-none text-black"
-                >
-                  <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
-                    How to Use? (English)
-                  </li>
-                </a> */}
+                      <a
+                        href="https://youtu.be/QwbhA1V4NrI"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="decoration-none text-black"
+                      >
+                        <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                          How to Use? (Hindi)
+                        </li>
+                      </a>
+                      <a
+                        href="https://youtu.be/LVCE_83GQlY"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="decoration-none text-black"
+                      >
+                        <li className="hover:bg-green-500 px-3 py-1 rounded-md text-sm">
+                          How to Use? (English)
+                        </li>
+                      </a>
                     </ul>
                   </div>
                   {/* About Kisan Kranti */}
