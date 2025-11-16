@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-12">
             {/* Brand Section */}
             <motion.div
-              className="flex flex-col items-start space-y-6"
+              className="flex flex-col items-center md:items-start space-y-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -46,7 +46,7 @@ const Footer = () => {
 
             {/* About Us */}
             <motion.div
-              className="flex flex-col items-start space-y-4"
+              className="flex flex-col items-center md:items-start space-y-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -77,7 +77,7 @@ const Footer = () => {
 
             {/* Resources */}
             <motion.div
-              className="flex flex-col items-start space-y-4"
+              className="flex flex-col items-center md:items-start space-y-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -113,7 +113,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <motion.div
-              className="flex flex-col items-start space-y-4"
+              className="flex flex-col items-center md:items-start space-y-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

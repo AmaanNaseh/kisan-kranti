@@ -35,7 +35,9 @@ const CropSelectionPage = () => {
         />
       </Helmet>
 
-      <LiveMap />
+      <div className="mx-5">
+        <LiveMap />
+      </div>
 
       <div className="flex flex-col justify-center items-center my-20">
         <IndiaMap />
@@ -92,7 +94,7 @@ const CropSelectionPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-row flex-wrap items-center justify-center gap-12 my-10">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-12 my-10 mx-4">
         {/* Barley*/}
         {Barley.map((barley) => {
           return (
