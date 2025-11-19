@@ -11,7 +11,9 @@ body {
 }
 
 body {
-  background-color: #fbf8ef;
+  background-color: #ffffff;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
 }
 
 a {
@@ -19,51 +21,8 @@ a {
   color: black;
 }
 
-nav {
-  background-color: #0b6419;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0;
-}
-
-#google_translate_element {
-  background-color: #88c273;
-  padding: 8px 20px;
-  border-radius: 12px;
-  color: #fff;
-  font-size: large;
-  font-weight: 600;
-  display: none;
-}
-
-.hero__poster {
-  width: 100%;
-  height: 112px;
-  position: relative;
-}
-
-.hero__poster img {
-  width: 100%;
-  height: 100%;
-}
-
-.hero__poster h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: rgba(22, 58, 28, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  font-size: 24px;
-  text-align: center;
-  border-radius: 8px;
-  max-width: fit-content;
+.main__box {
+  padding: 25px 0;
 }
 
 .leaf__box,
@@ -73,8 +32,8 @@ nav {
 }
 
 .title {
-  background: #163a1c;
-  color: #fff;
+  background: #22c55e;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,10 +42,10 @@ nav {
   margin-left: 40px;
   border-radius: 8px;
   max-width: fit-content;
+  margin: auto;
 }
 
 .crop__box {
-  background-color: #88c273;
   margin: 10px 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
@@ -96,6 +55,10 @@ nav {
   gap: 24px;
   padding: 24px 32px;
   border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 8px 0 rgba(34, 197, 94, 1);
 }
 
 .crop__card {
@@ -109,14 +72,14 @@ nav {
 }
 
 .crop__card:hover {
-  scale: 1.1;
-  border: 2px solid black;
+  scale: 105%;
+  border: 3px solid #22c55e;
 }
 
 .crop__img__container {
   width: 100px;
   height: 100px;
-  background: #9edf9c;
+  background: #22c55e;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -128,13 +91,8 @@ nav {
   width: 85%;
 }
 
-@media (min-width: 768px) {
-  .hero__poster {
-    height: 320px;
-  }
-
-  .hero__poster h1 {
-    font-size: 50px;
-    padding: 20px;
+@media (min-width: 1024px) {
+  .crop__box {
+    justify-content: start;
   }
 }

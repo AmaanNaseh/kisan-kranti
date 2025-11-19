@@ -88,35 +88,3 @@ async function handleSubmit(event) {
   document.getElementById("loaderImg").style.display = "none";
   document.getElementById("result").load();
 }
-
-var count = 0;
-const speak = (descId) => {
-  var text = document.querySelector(`.${descId}`).textContent;
-
-  var utterance = new SpeechSynthesisUtterance(text);
-  const voices = speechSynthesis.getVoices();
-  utterance.voice = voices[0];
-  speechSynthesis.speak(utterance);
-
-  speakInHindi(text);
-
-  count = count + 1;
-  console.log(count);
-
-  if (count % 2 === 0) {
-    speechSynthesis.cancel();
-    utterance = new SpeechSynthesisUtterance("Stopped");
-    speechSynthesis.speak(utterance);
-  }
-};
-
-const speakInHindi = (text) => {
-  var utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "hi-IN";
-  const voices = speechSynthesis.getVoices();
-  const hindiVoice = voices.find((voice) => voice.lang === "hi-IN");
-  if (hindiVoice) {
-    utterance.voice = hindiVoice;
-    speechSynthesis.speak(utterance);
-  }
-};

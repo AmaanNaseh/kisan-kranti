@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { Farm_Backend_API } from "../Config/Config";
 
-export default function CropfieldAnalysis() {
+export default function CropfieldAnalysisPage() {
   const [form, setForm] = useState({
     temperature: "",
     humidity: "",

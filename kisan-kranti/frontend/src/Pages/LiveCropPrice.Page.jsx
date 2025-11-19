@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import TopArrow from "../Assets/FAQ/TopArrow.png";
 
-const CropPricePage = () => {
+const LiveCropPricePage = () => {
   const [priceData, setPriceData] = useState(null);
   const [isArrowVisible, setIsArrowVisible] = useState(false);
 
@@ -49,7 +49,10 @@ const CropPricePage = () => {
         />
       </Helmet>
 
-      <div className="min-h-[75vh] my-10 py-10 px-12" name="cropPricePageTop">
+      <div
+        className="min-h-[75vh] my-10 py-10 px-12"
+        name="LiveCropPricePageTop"
+      >
         <div className="flex flex-col items-center justify-center">
           <button
             className="bg-green-500 hover:bg-green-600 rounded text-white cursor-pointer px-4 py-2 font-bold text-2xl hover:animate-zoomAnimation"
@@ -65,7 +68,7 @@ const CropPricePage = () => {
 
         {isArrowVisible ? (
           <Link
-            to="cropPricePageTop"
+            to="LiveCropPricePageTop"
             smooth={true}
             duration={700}
             offset={-150}
@@ -129,4 +132,4 @@ const CropPricePage = () => {
   );
 };
 
-export default CropPricePage;
+export default LiveCropPricePage;

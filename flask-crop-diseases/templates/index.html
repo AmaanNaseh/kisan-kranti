@@ -10,16 +10,7 @@
 </head>
 
 <body>
-    <nav>
-        <div id="google_translate_element"></div>
-    </nav>
-
-    <div class="hero__poster">
-        <img src="../static/assets/MainPoster.png" alt="poster">
-        <h1>Crop Disease Prediction</h1>
-    </div>
-
-    <div>
+    <div class="main__box">
         <div class="leaf__box">
             <h1 class="title">Leaf</h1>
             <div class="crop__box">
@@ -161,8 +152,9 @@
                 </a>
             </div>
         </div>
+
         <div class="pest__box">
-            <h1 class="title">Pest/Insects/Nematodes</h1>
+            <h1 class="title">Pest/Insects</h1>
             <div class="crop__box">
                 <a href="/pest/banana">
                     <div class="crop__card">
@@ -225,6 +217,8 @@
                 </a>
             </div>
         </div>
+
+
         <div class="seed__box">
             <h1 class="title">Seed</h1>
             <div class="crop__box">
@@ -247,19 +241,6 @@
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'en', includedLanguages: 'hi,en' },
-                'google_translate_element'
-            );
-            document.getElementById('google_translate_element').style.display = 'block';
-        } 
-    </script>
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

@@ -20,10 +20,10 @@ import BrochurePage from "./Pages/Brochure.Page";
 import Developers from "./Pages/Developers.Page";
 import AIArchitecturePage from "./Pages/AIArchitecture.Page";
 import CropReportPage from "./Pages/CropReport.Page";
-import CropPricePage from "./Pages/CropPrice.Page";
+import LiveCropPricePage from "./Pages/LiveCropPrice.Page";
 import WeatherForecastPage from "./Pages/WeatherForecast.Page";
 import NotDeployedPage from "./Pages/NotDeployed.Page";
-import CropfieldAnalysis from "./Pages/CropfieldAnalysis";
+import CropfieldAnalysisPage from "./Pages/CropfieldAnalysis.Page";
 
 // EDukaan
 import EDukaanHomePage from "./Pages/EDukaan/Home.Page";
@@ -188,7 +188,7 @@ const App = () => {
                 path="/crop-report-generator"
                 element={<CropReportPage />}
               />
-              <Route path="/live-crop-price" element={<CropPricePage />} />
+              <Route path="/live-crop-price" element={<LiveCropPricePage />} />
               <Route
                 path="/weather-forecast"
                 element={<WeatherForecastPage />}
@@ -198,7 +198,7 @@ const App = () => {
               <Route path="/organic-farming" element={<OrganicFarmingPage />} />
               <Route
                 path="/cropfield-analysis"
-                element={<CropfieldAnalysis />}
+                element={<CropfieldAnalysisPage />}
               />
               <Route path="/complaints" element={<ComplaintsPage />} />
               <Route path="/faqs" element={<FAQPage />} />
