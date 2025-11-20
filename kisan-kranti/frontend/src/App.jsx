@@ -201,7 +201,10 @@ const App = () => {
 
           <div className="min-h-[75vh]">
             <Routes>
-              <Route path="/" element={<HomePage darkMode={darkMode} />} />
+              <Route
+                path="/"
+                element={<HomePage language={language} darkMode={darkMode} />}
+              />
               <Route path="/brochure" element={<BrochurePage />} />
               <Route path="/developers" element={<Developers />} />
               <Route path="/ai-architecture" element={<AIArchitecturePage />} />

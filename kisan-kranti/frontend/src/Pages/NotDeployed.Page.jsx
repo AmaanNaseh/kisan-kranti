@@ -4,10 +4,10 @@ const NotDeployedPage = () => {
   return (
     <>
       <div className="flex flex-col my-10 items-center justify-center">
-        <p className="text-justify m-10 text-red-700 font-bold text-xl">
+        <p className="text-justify m-10 font-bold text-xl">
           Sorry the requested content is not deployed due to technological
           constraints, please see the video demonstration of requested feature
-          in "About" section or below.
+          below.
         </p>
         <div className="w-[325px] h-[200px] md:w-[500px] md:h-[300px] lg:w-[750px] lg:h-[400px] mb-10">
           <iframe

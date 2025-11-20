@@ -28,7 +28,7 @@ import CropReportIcon from "../Assets/Homepage/ReportIcon.png";
 import CropFieldIcon from "../Assets/Homepage/CropField.png";
 import BuyFertilizerIcon from "../Assets/Homepage/Buy_Fertilizer_Icon.png";
 
-const HomePage = ({ darkMode }) => {
+const HomePage = ({ language, darkMode }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -371,18 +371,25 @@ const HomePage = ({ darkMode }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                <motion.a
-                  href="/crop-selection"
+                <Link
+                  to={"/crop-selection"}
                   className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-xl hover:shadow-green-500/30"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
                 >
-                  Get Started
+                  <motion.div
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Get Started
+                  </motion.div>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </motion.a>
+                </Link>
 
                 <motion.a
-                  href="https://youtu.be/Tqrw3qK2Pe4"
+                  href={
+                    language === "en"
+                      ? "https://youtu.be/LVCE_83GQlY"
+                      : "https://youtu.be/QwbhA1V4NrI"
+                  }
                   target="_blank"
                   rel="noreferrer"
                   className="group inline-flex items-center justify-center gap-3 bg-white text-gray-800 px-8 py-4 rounded-xl border-2 border-gray-200 hover:border-green-300 hover:bg-green-50/50 transition-all duration-300 shadow-sm hover:shadow-md"
@@ -846,7 +853,7 @@ const HomePage = ({ darkMode }) => {
           <div className="flex items-center justify-center">
             {/* Contact Form */}
             <div className="bg-white w-[325px] md:w-[500px] p-8 rounded-2xl shadow-lg">
-              <form onSubmit={onSubmit} className="space-y-6">
+              <form onSubmit={onSubmit} className="space-y-6 text-black">
                 <div>
                   <label
                     className="block text-base font-semibold text-gray-700 mb-2"
