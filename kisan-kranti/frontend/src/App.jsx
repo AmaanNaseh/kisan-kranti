@@ -226,7 +226,10 @@ const App = () => {
               />
               <Route path="/complaints" element={<ComplaintsPage />} />
               <Route path="/faqs" element={<FAQPage darkMode={darkMode} />} />
-              <Route path="/not-deployed" element={<NotDeployedPage />} />
+              <Route
+                path="/not-deployed"
+                element={<NotDeployedPage language={language} />}
+              />
             </Routes>
           </div>
 

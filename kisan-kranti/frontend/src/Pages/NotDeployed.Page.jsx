@@ -1,6 +1,6 @@
 import React from "react";
 
-const NotDeployedPage = () => {
+const NotDeployedPage = ({ language }) => {
   return (
     <>
       <div className="flex flex-col my-10 items-center justify-center">
@@ -11,7 +11,11 @@ const NotDeployedPage = () => {
         </p>
         <div className="w-[325px] h-[200px] md:w-[500px] md:h-[300px] lg:w-[750px] lg:h-[400px] mb-10">
           <iframe
-            src="https://www.youtube.com/embed/3dOvQQYMEvE"
+            src={
+              language === "en"
+                ? "https://www.youtube.com/embed/mdJCL5r8xAU?si=J0fQ1bkC7XtID54V&amp;start=178"
+                : "https://www.youtube.com/embed/D9RCpcXUhTY?si=03ZcUqCe1n3qjE1g&amp;start=180"
+            }
             title="Crop Disease Prediction Page of Kisan Kranti"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

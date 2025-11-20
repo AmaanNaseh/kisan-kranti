@@ -387,8 +387,8 @@ const HomePage = ({ language, darkMode }) => {
                 <motion.a
                   href={
                     language === "en"
-                      ? "https://youtu.be/LVCE_83GQlY"
-                      : "https://youtu.be/QwbhA1V4NrI"
+                      ? "https://youtu.be/mdJCL5r8xAU"
+                      : "https://youtu.be/D9RCpcXUhTY"
                   }
                   target="_blank"
                   rel="noreferrer"

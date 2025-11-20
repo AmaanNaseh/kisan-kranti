@@ -17,8 +17,8 @@ of crop diseases, treatment and management along with commercialization of their
 
 ## 🎬 Youtube Video (Project Demonstration) :
 
-- English : [**https://youtu.be/LVCE_83GQlY**](https://youtu.be/LVCE_83GQlY)
-- Hindi : [**https://youtu.be/QwbhA1V4NrI**](https://youtu.be/QwbhA1V4NrI)
+- English : [**https://youtu.be/mdJCL5r8xAU**](https://youtu.be/mdJCL5r8xAU)
+- Hindi : [**https://youtu.be/D9RCpcXUhTY**](https://youtu.be/D9RCpcXUhTY)
 
 ---
 

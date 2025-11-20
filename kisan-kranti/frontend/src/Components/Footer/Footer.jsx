@@ -103,7 +103,7 @@ const Footer = ({ darkMode }) => {
               </a>
 
               <a
-                href="https://youtu.be/QwbhA1V4NrI"
+                href="https://youtu.be/D9RCpcXUhTY"
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm hover:underline"
@@ -112,7 +112,7 @@ const Footer = ({ darkMode }) => {
               </a>
 
               <a
-                href="https://youtu.be/LVCE_83GQlY"
+                href="https://youtu.be/mdJCL5r8xAU"
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm hover:underline"
