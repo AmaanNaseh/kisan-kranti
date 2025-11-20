@@ -14,7 +14,7 @@ const IndiaMap = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-20">
+      <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-20 text-black">
         <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] relative">
           <img
             src={IndiaMapImg}

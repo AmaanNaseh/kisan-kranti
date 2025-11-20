@@ -89,7 +89,7 @@ const LiveCropPricePage = () => {
               {priceData.records.map((record) => {
                 return (
                   <>
-                    <div className="flex flex-col items-start justify-center bg-[#ffffff] shadow-xl z-20 p-5">
+                    <div className="flex flex-col items-start justify-center bg-[#ffffff] text-black shadow-xl z-20 p-5">
                       <p>
                         <span className="font-bold mr-1">State:</span>{" "}
                         {record.state}

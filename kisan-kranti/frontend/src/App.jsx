@@ -45,6 +45,17 @@ import EdukaanUserDashboardPage from "./Pages/EDukaan/UserDashboard.Page";
 const App = () => {
   const [isShortcutsMenuVisible, setIsShortcutsMenuVisible] = useState(false);
   const [language, setLanguage] = useState("en");
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.style.backgroundColor = "#000";
+      document.body.style.color = "#ffffff";
+    } else {
+      document.body.style.backgroundColor = "#ffffff";
+      document.body.style.color = "#000";
+    }
+  }, [darkMode]);
 
   const location = useLocation();
   useEffect(() => {
@@ -184,11 +195,13 @@ const App = () => {
             setIsShortcutsMenuVisible={setIsShortcutsMenuVisible}
             language={language}
             setLanguage={setLanguage}
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
           />
 
           <div className="min-h-[75vh]">
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<HomePage darkMode={darkMode} />} />
               <Route path="/brochure" element={<BrochurePage />} />
               <Route path="/developers" element={<Developers />} />
               <Route path="/ai-architecture" element={<AIArchitecturePage />} />
@@ -209,12 +222,12 @@ const App = () => {
                 element={<CropfieldAnalysisPage />}
               />
               <Route path="/complaints" element={<ComplaintsPage />} />
-              <Route path="/faqs" element={<FAQPage />} />
+              <Route path="/faqs" element={<FAQPage darkMode={darkMode} />} />
               <Route path="/not-deployed" element={<NotDeployedPage />} />
             </Routes>
           </div>
 
-          <Footer />
+          <Footer darkMode={darkMode} />
         </>
       )}
 

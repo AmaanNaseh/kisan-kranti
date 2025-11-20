@@ -93,7 +93,7 @@ function LiveMap() {
   };
 
   return (
-    <div className="min-h-[50vh] my-10 max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+    <div className="min-h-[50vh] my-10 max-w-7xl mx-auto bg-white text-black rounded-3xl shadow-2xl overflow-hidden">
       <div className="bg-gray-50 border-b border-gray-200 py-5 px-6 flex items-center justify-center gap-4 flex-wrap">
         <p className="font-semibold text-lg">
           Fetch Your Location to know about suitable crops to grow

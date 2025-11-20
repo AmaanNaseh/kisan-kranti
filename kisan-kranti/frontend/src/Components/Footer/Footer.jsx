@@ -7,13 +7,15 @@ import BrochureHindi from "../../Assets/Brochure/Brochure_Hindi.pdf";
 import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
 import InstallButton from "../InstallButton/InstallButton";
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
   var currentYear = new Date().getFullYear();
 
   return (
     <>
       <footer
-        className="w-full bg-[#ffffff] border-t-[2px] border-t-[#BDCBDD] relative overflow-hidden"
+        className={`w-full border-t-[2px] border-t-[#BDCBDD] relative overflow-hidden ${
+          darkMode ? "bg-[#000]" : "bg-[#ffffff]"
+        }`}
         id="#About"
       >
         <motion.div

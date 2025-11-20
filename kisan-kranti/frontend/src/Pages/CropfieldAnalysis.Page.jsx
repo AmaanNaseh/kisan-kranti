@@ -276,8 +276,8 @@ export default function CropfieldAnalysisPage() {
           className="absolute inset-0"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px)
+              linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: "50px 50px",
           }}
@@ -289,7 +289,7 @@ export default function CropfieldAnalysisPage() {
         {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-cyan-400 rounded-full"
+            className="absolute w-2 h-2 bg-green-400 rounded-full"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
@@ -317,8 +317,8 @@ export default function CropfieldAnalysisPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="md:col-span-1 col-span-1"
           >
-            <div className="bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-cyan-500/30">
-              <h2 className="text-xl mb-4 text-cyan-400 flex items-center gap-2">
+            <div className="bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-green-500/30">
+              <h2 className="text-xl mb-4 text-green-400 flex items-center gap-2">
                 <FlaskConical className="w-5 h-5" />
                 Sensor Data Input
               </h2>
@@ -332,7 +332,7 @@ export default function CropfieldAnalysisPage() {
                     transition={{ duration: 0.5, delay: idx * 0.03 }}
                     className="relative"
                   >
-                    <label className="mb-1.5 text-xs text-cyan-300 flex items-center gap-2">
+                    <label className="mb-1.5 text-xs text-green-300 flex items-center gap-2">
                       <div
                         className={`p-1 rounded-md bg-gradient-to-r ${field.color}`}
                       >
@@ -347,7 +347,7 @@ export default function CropfieldAnalysisPage() {
                       onChange={handleChange}
                       min={RANGES[field.name]?.[0]}
                       max={RANGES[field.name]?.[1]}
-                      className="w-full px-3 py-2 rounded-lg border border-cyan-500/30 bg-slate-900/50 text-cyan-100 text-sm focus:border-cyan-400 focus:outline-none transition-all placeholder-cyan-700"
+                      className="w-full px-3 py-2 rounded-lg border border-green-500/30 bg-slate-900/50 text-green-100 text-sm focus:border-green-400 focus:outline-none transition-all placeholder-green-700"
                       placeholder={`Range: ${RANGES[field.name]?.[0]} - ${
                         RANGES[field.name]?.[1]
                       }`}
@@ -371,7 +371,7 @@ export default function CropfieldAnalysisPage() {
                 disabled={isAnalyzing}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full mt-4 px-4 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-lg shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm"
+                className="w-full mt-4 px-4 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-green-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm"
               >
                 {isAnalyzing ? (
                   <>
@@ -400,13 +400,13 @@ export default function CropfieldAnalysisPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="mt-6 bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-cyan-500/30"
+                  className="mt-6 bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-green-500/30"
                 >
-                  <h2 className="text-xl mb-2 text-cyan-400 flex items-center gap-2">
+                  <h2 className="text-xl mb-2 text-green-400 flex items-center gap-2">
                     <Leaf className="w-5 h-5" />
                     AI Predicted Output
                   </h2>
-                  <p className="text-lg text-cyan-100">{prediction}</p>
+                  <p className="text-lg text-green-100">{prediction}</p>
                 </motion.div>
               )}
             </div>
@@ -419,14 +419,14 @@ export default function CropfieldAnalysisPage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="md:col-span-2 col-span-1"
           >
-            <div className="bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-cyan-500/30 min-h-[500px] relative overflow-hidden">
+            <div className="bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-green-500/30 min-h-[500px] relative overflow-hidden">
               {/* 3D Field Grid */}
               <div
                 className="absolute inset-0"
                 style={{
                   backgroundImage: `
-                    linear-gradient(rgba(6, 182, 212, 0.15) 2px, transparent 2px),
-                    linear-gradient(90deg, rgba(6, 182, 212, 0.15) 2px, transparent 2px)
+                    linear-gradient(rgba(34, 197, 94, 0.15) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(34, 197, 94, 0.15) 2px, transparent 2px)
                   `,
                   backgroundSize: "40px 40px",
                   transform: "perspective(500px) rotateX(60deg)",
@@ -438,7 +438,7 @@ export default function CropfieldAnalysisPage() {
 
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl text-cyan-400 flex items-center gap-2">
+                  <h2 className="text-xl text-green-400 flex items-center gap-2">
                     <Sprout className="w-5 h-5" />
                     Live Field Simulation
                   </h2>
@@ -448,7 +448,7 @@ export default function CropfieldAnalysisPage() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
-                      className="+bg-cyan-700/50 px-4 py-2 rounded-full text-cyan-100 text-sm shadow-lg"
+                      className="bg-green-700/50 px-4 py-2 rounded-full text-green-100 text-sm shadow-lg"
                     >
                       {visualMessage}
                     </motion.div>
@@ -484,7 +484,7 @@ export default function CropfieldAnalysisPage() {
                         className="absolute inset-0 pointer-events-none flex items-center justify-center"
                       >
                         <motion.div
-                          className="w-44 h-44 rounded-full border-4 border-cyan-400/60 bg-cyan-500/10 flex items-center justify-center text-cyan-300 text-lg font-semibold shadow-xl shadow-cyan-500/20"
+                          className="w-44 h-44 rounded-full border-4 border-green-400/60 bg-green-500/10 flex items-center justify-center text-green-300 text-lg font-semibold shadow-xl shadow-green-500/20"
                           animate={{
                             scale: [0.8, 1.1, 1],
                             rotate: [0, 10, -10, 0],
@@ -547,9 +547,9 @@ export default function CropfieldAnalysisPage() {
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  className="bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-cyan-500/30"
+                  className="bg-slate-800/80 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-green-500/30"
                 >
-                  <h2 className="text-xl mb-4 text-cyan-400 flex items-center gap-2">
+                  <h2 className="text-xl mb-4 text-green-400 flex items-center gap-2">
                     <Zap className="w-5 h-5" />
                     Farm Action Controls
                   </h2>
@@ -566,8 +566,8 @@ export default function CropfieldAnalysisPage() {
                           className={`relative group overflow-hidden p-3 rounded-lg text-sm border transition-all
                     ${
                       active
-                        ? "border-cyan-400 bg-gradient-to-br from-cyan-900/80 to-blue-900/60 shadow-lg shadow-cyan-500/30"
-                        : "border-cyan-500/20 bg-slate-900/40 hover:border-cyan-500/40"
+                        ? "border-green-400 bg-gradient-to-br from-green-900/80 to-emerald-900/60 shadow-lg shadow-green-500/30"
+                        : "border-green-500/20 bg-slate-900/40 hover:border-green-500/40"
                     }`}
                         >
                           <div
@@ -576,12 +576,12 @@ export default function CropfieldAnalysisPage() {
                           <div className="flex flex-col items-center gap-1 relative z-10">
                             <Icon
                               className={`w-5 h-5 ${
-                                active ? "text-cyan-300" : "text-cyan-500"
+                                active ? "text-green-300" : "text-green-500"
                               }`}
                             />
                             <span
                               className={`text-xs ${
-                                active ? "text-cyan-100" : "text-cyan-400"
+                                active ? "text-green-100" : "text-green-400"
                               }`}
                             >
                               {action.label}
@@ -589,7 +589,7 @@ export default function CropfieldAnalysisPage() {
                           </div>
                           {active && (
                             <motion.div
-                              className="absolute inset-0 rounded-lg border border-cyan-400/50"
+                              className="absolute inset-0 rounded-lg border border-green-400/50"
                               animate={{ opacity: [0.3, 1, 0.3] }}
                               transition={{ duration: 1.5, repeat: Infinity }}
                             />
@@ -610,7 +610,7 @@ export default function CropfieldAnalysisPage() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "linear-gradient(transparent 0%, rgba(6, 182, 212, 0.05) 50%, transparent 100%)",
+            "linear-gradient(transparent 0%, rgba(34, 197, 94, 0.05) 50%, transparent 100%)",
           height: "100px",
         }}
         animate={{ y: ["-100px", "100vh"] }}

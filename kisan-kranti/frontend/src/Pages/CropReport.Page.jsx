@@ -1807,7 +1807,7 @@ const CropReportPage = () => {
           <div>
             <select
               onChange={handlePartChange}
-              className="text-lg font-semibold py-2 px-3 cursor-pointer min-w-[218px] border-black border-[2px]"
+              className="text-black text-lg font-semibold py-2 px-3 cursor-pointer min-w-[218px] border-black border-[2px]"
             >
               <option value="Select Plant Part">Select Plant Part</option>
               <option value="Leaf">Leaf</option>
@@ -1818,7 +1818,7 @@ const CropReportPage = () => {
           <div>
             <select
               onChange={handleCategoryChange}
-              className={`text-lg font-semibold py-2 px-3 min-w-[218px] border-black border-[2px] ${
+              className={`text-black text-lg font-semibold py-2 px-3 min-w-[218px] border-black border-[2px] ${
                 plantPart === "Select Plant Part"
                   ? "cursor-no-drop"
                   : "cursor-pointer"
@@ -1877,7 +1877,7 @@ const CropReportPage = () => {
             <select
               id="cropCategoryId"
               onChange={handleDiseaseChange}
-              className={`text-lg font-semibold py-2 px-3 min-w-[218px] border-black border-[2px] ${
+              className={`text-black text-lg font-semibold py-2 px-3 min-w-[218px] border-black border-[2px] ${
                 cropCategory === "Select Crop Category"
                   ? "cursor-no-drop"
                   : "cursor-pointer"
@@ -2256,7 +2256,7 @@ const CropReportPage = () => {
         <div
           id="report"
           ref={pdfRef}
-          className={`flex flex-col gap-5 mx-4 px-4 md:mx-20 md:px-10 py-5 bg-green-200 ${
+          className={`flex flex-col gap-5 mx-4 px-4 md:mx-20 md:px-10 py-5 bg-green-200 text-black ${
             isVisible ? "" : "hidden"
           }`}
         >

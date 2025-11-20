@@ -28,7 +28,7 @@ import CropReportIcon from "../Assets/Homepage/ReportIcon.png";
 import CropFieldIcon from "../Assets/Homepage/CropField.png";
 import BuyFertilizerIcon from "../Assets/Homepage/Buy_Fertilizer_Icon.png";
 
-const HomePage = () => {
+const HomePage = ({ darkMode }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -73,7 +73,11 @@ const HomePage = () => {
       </Helmet>
 
       {/* Hero Section - Modern Design */}
-      <div className="w-full min-h-[700px] bg-white relative overflow-hidden">
+      <div
+        className={`w-full min-h-[700px] relative overflow-hidden ${
+          darkMode ? "bg-emerald-900" : "bg-white"
+        }`}
+      >
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Animated Gradient Orbs */}
@@ -347,14 +351,14 @@ const HomePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <h1 className="text-6xl md:text-7xl lg:text-8xl text-gray-900 leading-none tracking-tight">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight">
                   किसान
                   <br />
                   <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-green-700 bg-clip-text text-transparent italic">
                     Kranti
                   </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-xl">
+                <p className="text-xl md:text-2xl leading-relaxed max-w-xl">
                   Revolutionizing Agriculture with AI-Powered Solutions for
                   Better Yields and Sustainable Farming
                 </p>
@@ -431,7 +435,7 @@ const HomePage = () => {
       </div>
 
       {/* What We Provide */}
-      <h2 className="mt-20 hidden lg:block text-3xl font-bold text-[#163A1C] text-center">
+      <h2 className="mt-20 hidden lg:block text-3xl font-bold text-center">
         We provide end-to-end solution for a crop in 4 stages
       </h2>
       <div className="hidden lg:flex items-center justify-center gap-60 relative">
@@ -491,7 +495,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* About Section - Sidebar */}
           <div className="lg:col-span-1">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#163A1C] mb-6 text-center lg:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center lg:text-left">
               About Us
             </h2>
             <div className="flex flex-col gap-4">
@@ -544,7 +548,7 @@ const HomePage = () => {
 
           {/* Farmer's Corner - Main Content */}
           <div className="lg:col-span-3">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#163A1C] mb-6 text-center lg:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center lg:text-left">
               Farmer's Corner
             </h2>
 
@@ -681,7 +685,7 @@ const HomePage = () => {
       {/* Kisan Seva Kendra Section */}
       <div className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#163A1C] mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
             Kisan Seva Kendra
           </h2>
 
@@ -771,7 +775,7 @@ const HomePage = () => {
 
       {/* Kisan E-Dukaan Section */}
       <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#163A1C] mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
           Kisan E-Dukaan
         </h2>
 
@@ -835,7 +839,7 @@ const HomePage = () => {
       {/* Connect with Us Section */}
       <div className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#163A1C] mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
             Connect with Us
           </h2>
 

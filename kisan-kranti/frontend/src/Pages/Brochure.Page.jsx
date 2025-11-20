@@ -36,7 +36,7 @@ const BrochurePage = () => {
             Download Brochure (Hindi)
           </a>
         </div>
-        <div className="w-[350px] md:w-[700px] lg:w-[1200px] border-[3px] border-black">
+        <div className="w-[350px] md:w-[700px] lg:w-[1200px] border-[3px] border-green-500">
           <img src={Brochure} alt="Brochure" className="w-full" />
         </div>
       </div>

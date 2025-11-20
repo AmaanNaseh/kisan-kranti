@@ -94,7 +94,7 @@ const CropSelectionPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-row flex-wrap items-center justify-center gap-12 my-10 mx-4">
+      <div className="text-black flex flex-row flex-wrap items-center justify-center gap-12 my-10 mx-4">
         {/* Barley*/}
         {Barley.map((barley) => {
           return (

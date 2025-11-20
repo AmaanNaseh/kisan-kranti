@@ -28,7 +28,7 @@ const DevelopersPage = () => {
 
       <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 my-20">
         {/* Amaan */}
-        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] shadow-xl w-[325px] lg:w-[400px]">
+        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] text-black shadow-xl w-[325px] lg:w-[400px]">
           <div className="w-[150px]">
             <img
               src={AmaanImg}
@@ -66,7 +66,7 @@ const DevelopersPage = () => {
         </div>
 
         {/* Teena */}
-        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] shadow-xl w-[325px] lg:w-[400px]">
+        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] text-black shadow-xl w-[325px] lg:w-[400px]">
           <div className="w-[150px]">
             <img
               src={TeenaImg}
@@ -103,7 +103,7 @@ const DevelopersPage = () => {
         </div>
 
         {/* Priyanshu */}
-        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] shadow-xl w-[325px] lg:w-[400px]">
+        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] text-black shadow-xl w-[325px] lg:w-[400px]">
           <div className="w-[150px]">
             <img
               src={PriyanshuImg}
@@ -141,7 +141,7 @@ const DevelopersPage = () => {
         </div>
 
         {/* Dhruv */}
-        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] shadow-xl w-[325px] lg:w-[400px]">
+        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] text-black shadow-xl w-[325px] lg:w-[400px]">
           <div className="w-[150px]">
             <img
               src={DhruvImg}
@@ -179,7 +179,7 @@ const DevelopersPage = () => {
         </div>
 
         {/* Aditya */}
-        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] shadow-xl w-[325px] lg:w-[400px]">
+        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] text-black shadow-xl w-[325px] lg:w-[400px]">
           <div className="w-[150px]">
             <img
               src={AdityaImg}
@@ -217,7 +217,7 @@ const DevelopersPage = () => {
         </div>
 
         {/* Ankit */}
-        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] shadow-xl w-[325px] lg:w-[400px]">
+        <div className="flex flex-col items-center justify-center gap-5 p-4 bg-[#ffffff] text-black shadow-xl w-[325px] lg:w-[400px]">
           <div className="w-[150px]">
             <img
               src={AnkitImg}

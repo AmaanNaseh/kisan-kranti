@@ -161,7 +161,7 @@ const WeatherForecastPage = () => {
                 <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-10">
                   16-Day Weather Forecast
                 </h1>
-                <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-x-5 gap-y-8 my-5">
+                <div className="text-black grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-x-5 gap-y-8 my-5">
                   {liveWeather.daily.time.map((time, index) => {
                     return (
                       <>

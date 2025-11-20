@@ -306,7 +306,7 @@ function MedicineCalculator() {
   };
 
   return (
-    <div className="max-w-3xl mx-5 md:mx-auto bg-[#ffffff] shadow-lg z-20 p-8 rounded-lg">
+    <div className="max-w-3xl mx-5 md:mx-auto bg-[#ffffff] text-black shadow-lg z-20 p-8 rounded-lg">
       <h1 className="text-2xl font-bold mb-4 text-center">
         Crop Disease Dosage Calculator
       </h1>

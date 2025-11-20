@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import ChatbotIcon from "../Assets/FAQ/Chatbot_Icon.png";
 import BackArrow from "../Assets/FAQ/BackArrow.png";
 
-const FAQPage = () => {
+const FAQPage = ({ darkMode }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,7 +43,11 @@ const FAQPage = () => {
                   setSelectedFAQ(0);
                 }}
               >
-                <img src={BackArrow} alt="..." />
+                <img
+                  src={BackArrow}
+                  alt="..."
+                  className={`${darkMode ? "bg-green-500 rounded-full" : ""}`}
+                />
               </div>
             </>
           ) : (
@@ -65,7 +69,7 @@ const FAQPage = () => {
                     setFAQLayerTwo(true);
                     setSelectedFAQ(1);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   State-wise Crop Info
                 </button>
@@ -75,7 +79,7 @@ const FAQPage = () => {
                     setFAQLayerTwo(true);
                     setSelectedFAQ(2);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Crop Disease Info
                 </button>
@@ -85,7 +89,7 @@ const FAQPage = () => {
                     setFAQLayerTwo(true);
                     setSelectedFAQ(3);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Government Schemes
                 </button>
@@ -95,7 +99,7 @@ const FAQPage = () => {
                     setFAQLayerTwo(true);
                     setSelectedFAQ(4);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Crop Insuarance Schemes
                 </button>
@@ -105,7 +109,7 @@ const FAQPage = () => {
                     setFAQLayerTwo(true);
                     setSelectedFAQ(5);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Loan Schemes
                 </button>
@@ -115,7 +119,7 @@ const FAQPage = () => {
                     setFAQLayerTwo(true);
                     setSelectedFAQ(6);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Steps of Organic Farming
                 </button>
@@ -134,7 +138,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.1);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Jammu and Kashmir
                 </button>
@@ -144,7 +148,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.2);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Himachal Pradesh
                 </button>
@@ -154,7 +158,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.3);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Punjab
                 </button>
@@ -164,7 +168,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.4);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Haryana
                 </button>
@@ -174,7 +178,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.5);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Rajasthan
                 </button>
@@ -184,7 +188,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.6);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Uttar Pradesh
                 </button>
@@ -194,7 +198,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.7);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Bihar
                 </button>
@@ -204,7 +208,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.8);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Gujarat
                 </button>
@@ -214,7 +218,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.9);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Madhya Pradesh
                 </button>
@@ -224,7 +228,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.101);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Jharkhand
                 </button>
@@ -234,7 +238,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.11);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Chattisgarh
                 </button>
@@ -244,7 +248,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.12);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   West Bengal
                 </button>
@@ -254,7 +258,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.13);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Maharashtra
                 </button>
@@ -264,7 +268,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(1.14);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Karnataka
                 </button>
@@ -280,7 +284,7 @@ const FAQPage = () => {
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
 
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -309,7 +313,7 @@ const FAQPage = () => {
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
 
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -334,7 +338,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -362,7 +366,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -386,7 +390,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -415,7 +419,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -444,7 +448,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -472,7 +476,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -500,7 +504,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -527,7 +531,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -555,7 +559,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -582,7 +586,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -610,7 +614,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -638,7 +642,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>
@@ -669,7 +673,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(2.1);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Barley
                 </button>
@@ -679,7 +683,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(2.2);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Chickpea
                 </button>
@@ -689,7 +693,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(2.3);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Maize
                 </button>{" "}
@@ -699,7 +703,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(2.4);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Sugarcane
                 </button>{" "}
@@ -709,7 +713,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(2.5);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Wheat
                 </button>
@@ -724,7 +728,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Yellow Dwarf Virus</p>
@@ -748,7 +752,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Ascochyta Blight</p>
@@ -775,7 +779,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Corn Smut</p>
@@ -805,7 +809,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Red Rot</p>
@@ -838,7 +842,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>Black Chaff</p>
@@ -878,7 +882,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(3.1);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   PM Kisan Yojna
                 </button>
@@ -893,7 +897,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     PM Kisan is a Central Sector scheme with full funding from
                     Government of India. It has become operational from
@@ -917,7 +921,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(4.1);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Pradhan Mantri Fasal Bima Yojana (PMFBY)
                 </button>
@@ -932,7 +936,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     Crop Insurance is an integrated IT solution and a web-based
                     ecosystem to speed up service delivery, unify fragmented
@@ -955,7 +959,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(5.1);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   Kisan Credit Card (KCC) Scheme
                 </button>
@@ -965,7 +969,7 @@ const FAQPage = () => {
                     setFAQLayerThree(true);
                     setSelectedFAQ(5.2);
                   }}
-                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-black hover:animate-zoomAnimation"
+                  className="text-md md:text-1xl p-1 md:p-2 border-[1px] font-semibold border-green-500 hover:animate-zoomAnimation"
                 >
                   National Bank for Ariculture and Rural Deveopment (NABARD)
                 </button>
@@ -980,7 +984,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     Kisan Credit Card is a dedicated blog that shares valuable
                     updates, news, and information about Kisan Credit Cards,
@@ -998,7 +1002,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <p>
                     NABARD is India’s apex development bank, established in 1982
                     under an Act of Parliament to promote sustainable and
@@ -1016,7 +1020,7 @@ const FAQPage = () => {
                   alt="..."
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
                 />
-                <div className="flex flex-col items-center justify-center bg-[#ffffff] shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
+                <div className="flex flex-col items-center justify-center bg-[#ffffff] text-black shadow-lg z-20 p-4 m-4 md:p-10 md:m-8">
                   <ul className="text-justify">
                     <li className="my-3">
                       <p>

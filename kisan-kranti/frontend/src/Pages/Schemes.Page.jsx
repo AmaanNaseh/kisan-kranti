@@ -36,7 +36,7 @@ const SchemesPage = () => {
             Government Schemes
           </h1>
 
-          <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
+          <div className="bg-[#ffffff] text-black shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
             <h3 className="font-bold text-1xl my-1">
               Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
             </h3>
@@ -98,7 +98,7 @@ const SchemesPage = () => {
 
           <h1 className="text-center font-bold text-2xl my-1 mb-2">Loans</h1>
           <div className="flex flex-col gap-8 flex-wrap">
-            <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
+            <div className="bg-[#ffffff] text-black shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
               <h3 className="font-bold text-1xl my-1">
                 Kisan Credit Card (KCC) Scheme
               </h3>
@@ -116,7 +116,7 @@ const SchemesPage = () => {
                 Apply
               </a>
             </div>
-            <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
+            <div className="bg-[#ffffff] text-black shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
               <h3 className="font-bold text-1xl my-1">
                 National Bank for Ariculture and Rural Deveopment (NABARD)
               </h3>
@@ -162,7 +162,7 @@ const SchemesPage = () => {
           </h1>
 
           <div className="flex flex-col gap-8 flex-wrap">
-            <div className="bg-[#ffffff] shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
+            <div className="bg-[#ffffff] text-black shadow-xl z-20 px-3 py-5 flex flex-col items-center justify-center gap-5">
               <h3 className="font-bold text-1xl my-1">
                 Pradhan Mantri Fasal Bima Yojana (PMFBY)
               </h3>
