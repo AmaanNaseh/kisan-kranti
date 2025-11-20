@@ -154,7 +154,7 @@ npm run dev
 
 ---
 
-## 🎨 Colors Theme
+## 🎨 Color Theme
 
 - Background Color: #ffffff
 - Border Color: black, #bdcbdd
