@@ -158,7 +158,7 @@ npm run dev
 
 - Background Color: #ffffff
 - Border Color: black, #bdcbdd
-- Buttons: bg-green-500, hover:bg-green-600, text-white, text-black, #ffffff shadow-lg/xl z-20,
+- Buttons: bg-green-500 (#22c55e), hover:bg-green-600 (#16a34a), text-white, text-black, #ffffff shadow-lg/xl z-20,
 
 ---
 

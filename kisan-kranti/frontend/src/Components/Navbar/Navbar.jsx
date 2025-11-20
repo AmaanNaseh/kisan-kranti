@@ -12,7 +12,12 @@ import BrochureEnglish from "../../Assets/Brochure/Brochure_English.pdf";
 import PhoneIcon from "../../Assets/Navbar/Phone.png";
 import GTranslator from "../GTranslator/GTranslator";
 
-const Navbar = () => {
+const Navbar = ({
+  isShortcutsMenuVisible,
+  setIsShortcutsMenuVisible,
+  language,
+  setLanguage,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -263,6 +268,23 @@ const Navbar = () => {
                       </a>
                     </ul>
                   </div>
+
+                  {/* Shortcuts */}
+                  <div className="flex flex-col justify-center gap-4">
+                    <h1 className="text-sm font-semibold border-b-[2px] border-black text-center">
+                      Shortcuts
+                    </h1>
+                    <ul className="flex flex-col justify-center gap-2">
+                      <li
+                        onClick={() => {
+                          setIsShortcutsMenuVisible(!isShortcutsMenuVisible);
+                        }}
+                        className="hover:bg-green-500 hover:text-white px-3 py-1 rounded-md text-sm cursor-pointer"
+                      >
+                        {isShortcutsMenuVisible ? "De-Activate" : "Activate"}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-5">
@@ -281,7 +303,7 @@ const Navbar = () => {
             <InstallButton />
           </div>
 
-          <GTranslator />
+          <GTranslator language={language} setLanguage={setLanguage} />
 
           {/* ----------------------------------------------------------------- */}
 
@@ -306,6 +328,7 @@ const Navbar = () => {
               <p className="block py-2 px-4 font-semibold text-lg text-center">
                 Features
               </p>
+
               <ul className="bg-white text-black text-sm shadow-lg mt-2 rounded-lg p-2 space-y-1">
                 <Link
                   to={"/crop-selection"}
@@ -476,6 +499,17 @@ const Navbar = () => {
                     FAQs
                   </li>
                 </Link>
+
+                <li
+                  onClick={() => {
+                    setIsShortcutsMenuVisible(!isShortcutsMenuVisible);
+                  }}
+                  className="hover:bg-green-500 hover:text-white px-3 py-1 rounded-md text-sm"
+                >
+                  {isShortcutsMenuVisible
+                    ? "De-Activate Shortcuts"
+                    : "Activate Shortcuts"}
+                </li>
               </ul>
             </div>
 

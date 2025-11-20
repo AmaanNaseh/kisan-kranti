@@ -55,7 +55,7 @@ const Footer = () => {
               <h3 className="text-xl font-bold mb-2">About Us</h3>
               <Link
                 to="/developers"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 Developers
               </Link>
@@ -63,13 +63,13 @@ const Footer = () => {
                 href="https://github.com/AmaanNaseh/kisan-kranti"
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 Software Repo
               </a>
               <Link
                 to="/ai-architecture"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 AI Architecture
               </Link>
@@ -84,11 +84,19 @@ const Footer = () => {
               transition={{ delay: 0.3, duration: 0.5 }}
             >
               <h3 className="text-xl font-bold mb-2">Resources</h3>
-              <a href={BrochureEnglish} download className="text-sm">
+              <a
+                href={BrochureEnglish}
+                download
+                className="text-sm hover:underline"
+              >
                 Brochure (English)
               </a>
 
-              <a href={BrochureHindi} download className="text-sm">
+              <a
+                href={BrochureHindi}
+                download
+                className="text-sm hover:underline"
+              >
                 Brochure (Hindi)
               </a>
 
@@ -96,7 +104,7 @@ const Footer = () => {
                 href="https://youtu.be/QwbhA1V4NrI"
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm"
+                className="text-sm hover:underline"
               >
                 How to Use? (Hindi)
               </a>
@@ -105,7 +113,7 @@ const Footer = () => {
                 href="https://youtu.be/LVCE_83GQlY"
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm"
+                className="text-sm hover:underline"
               >
                 How to Use? (English)
               </a>
@@ -123,7 +131,7 @@ const Footer = () => {
 
               <Link
                 to="/crop-selection"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 Crop Selection
               </Link>
@@ -132,21 +140,21 @@ const Footer = () => {
                 href={Flask_Backend_API}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 Crop Disease Prediction
               </a>
 
               <Link
                 to="/crop-report-generator"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 Crop Report Generation
               </Link>
 
               <Link
                 to="/edukaan"
-                className="text-sm transition-colors duration-300"
+                className="text-sm transition-colors duration-300 hover:underline"
               >
                 E-Dukaan
               </Link>

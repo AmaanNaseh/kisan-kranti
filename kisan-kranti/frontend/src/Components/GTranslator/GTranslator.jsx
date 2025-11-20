@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function GTranslator() {
-  const [lang, setLang] = useState("en");
-
+export default function GTranslator({ language, setLanguage }) {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
@@ -17,12 +15,12 @@ export default function GTranslator() {
     };
   }, []);
 
-  const switchLang = (target) => {
+  const switchLanguage = (target) => {
     const select = document.querySelector(".goog-te-combo");
     if (select) {
       select.value = target;
       select.dispatchEvent(new Event("change"));
-      setLang(target);
+      setLanguage(target);
     }
   };
 
@@ -34,9 +32,9 @@ export default function GTranslator() {
       {/* Compact toggle-style buttons */}
       <div className="flex flex-col md:flex-row text-sm md:text-lg border border-gray-300 rounded-lg overflow-hidden">
         <button
-          onClick={() => switchLang("en")}
+          onClick={() => switchLanguage("en")}
           className={`p-2 font-medium text-sm transition-colors duration-200 ${
-            lang === "en"
+            language === "en"
               ? "bg-blue-600 text-white"
               : "bg-gray-100 text-gray-800 hover:bg-gray-200"
           }`}
@@ -45,9 +43,9 @@ export default function GTranslator() {
         </button>
 
         <button
-          onClick={() => switchLang("hi")}
+          onClick={() => switchLanguage("hi")}
           className={`p-2 font-medium text-sm transition-colors duration-200 ${
-            lang === "hi"
+            language === "hi"
               ? "bg-orange-500 text-white"
               : "bg-gray-100 text-gray-800 hover:bg-gray-200"
           }`}

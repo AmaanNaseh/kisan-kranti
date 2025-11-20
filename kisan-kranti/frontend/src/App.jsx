@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 
 // Shortcut Components
-import IVRforNavigation from "./Components/Shortcuts/IVRforNavigation";
+import ShortcutsMenu from "./Components/Shortcuts/ShortcutsMenu";
 
 // Pages
 import HomePage from "./Pages/Home.Page";
@@ -43,6 +43,9 @@ import EDukaanLoadingSpinner from "./Components/EDukaan/LoadingSpinner";
 import EdukaanUserDashboardPage from "./Pages/EDukaan/UserDashboard.Page";
 
 const App = () => {
+  const [isShortcutsMenuVisible, setIsShortcutsMenuVisible] = useState(false);
+  const [language, setLanguage] = useState("en");
+
   const location = useLocation();
   useEffect(() => {
     const isEdukaanRoute = location.pathname.startsWith("/edukaan");
@@ -176,7 +179,12 @@ const App = () => {
         </>
       ) : (
         <>
-          <Navbar />
+          <Navbar
+            isShortcutsMenuVisible={isShortcutsMenuVisible}
+            setIsShortcutsMenuVisible={setIsShortcutsMenuVisible}
+            language={language}
+            setLanguage={setLanguage}
+          />
 
           <div className="min-h-[75vh]">
             <Routes>
@@ -211,7 +219,11 @@ const App = () => {
       )}
 
       {/* Common in All Pages */}
-      <IVRforNavigation />
+      <ShortcutsMenu
+        isShortcutsMenuVisible={isShortcutsMenuVisible}
+        setIsShortcutsMenuVisible={setIsShortcutsMenuVisible}
+        language={language}
+      />
     </>
   );
 };
