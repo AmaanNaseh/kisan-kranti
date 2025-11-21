@@ -173,7 +173,7 @@ npm run dev
 ## 👥 Developers
 
 - <a href="https://github.com/AmaanNaseh">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Amaan Naseh</a>
-- <a href="https://github.com/teena-718b732b9">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Teena</a>
+- <a href="https://github.com/TeenaSingh4640">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Teena</a>
 - <a href="https://github.com/priyanshu-git-hub">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Priyanshu</a>
 - <a href="https://github.com/dhruvtaneja19">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Dhruv Taneja</a>
 - <a href="https://github.com/Ad72828">![Image](https://github.com/user-attachments/assets/3e7065db-0216-4750-aee7-16aa86601e74) Aditya Choudhary</a>

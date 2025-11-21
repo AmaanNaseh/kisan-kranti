@@ -77,7 +77,7 @@ const DevelopersPage = () => {
 
           <div className="flex flex-wrap gap-8">
             <a
-              href="https://github.com/teena-718b732b9"
+              href="https://github.com/TeenaSingh4640"
               className="decoration-none hover:scale-110 p-2"
               target="_blank"
               rel="noreferrer"
@@ -85,7 +85,7 @@ const DevelopersPage = () => {
               <img src={GithubIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
             <a
-              href="https://linkedin.com/in/TeenaSingh4640"
+              href="https://linkedin.com/in/teena-singh-718b732b9"
               className="decoration-none hover:scale-110 p-2"
               target="_blank"
               rel="noreferrer"
@@ -122,7 +122,7 @@ const DevelopersPage = () => {
               <img src={GithubIcon} alt="..." className="w-[25px] h-[25px]" />
             </a>
             <a
-              href="https://linkedin.com/in/priyanshu-prajapati-366b90255"
+              href="https://www.linkedin.com/in/priyexec/"
               className="decoration-none hover:scale-110 p-2"
               target="_blank"
               rel="noreferrer"
