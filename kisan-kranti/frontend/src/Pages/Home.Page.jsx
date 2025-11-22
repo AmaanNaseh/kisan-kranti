@@ -42,6 +42,7 @@ const HomePage = ({ language, darkMode }) => {
     const formData = new FormData(event.target);
 
     formData.append("access_key", "8cad7eaf-eddb-494f-9a6c-97cef3d3eeb7");
+    formData.set("message", formData.get("message") + "\n\nFrom Kisan Kranti");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
