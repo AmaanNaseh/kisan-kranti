@@ -322,6 +322,7 @@ const Navbar = ({
                         className="hover:bg-green-500 hover:text-white px-3 py-1 rounded-md text-sm cursor-pointer"
                       >
                         {isShortcutsMenuVisible ? "De-Activate" : "Activate"}
+                        <span className="text-xs ml-1">(Alt + S)</span>
                       </li>
                     </ul>
                   </div>
