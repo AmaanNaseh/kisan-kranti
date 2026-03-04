@@ -183,6 +183,10 @@ npm run dev
 
 ## Project Preview
 
+Brochure: <a href="https://www.canva.com/design/DAGX4lPCx2U/gfJH1Fu2ISbwBLZWZF6vOw/edit?utm_content=DAGX4lPCx2U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva Design</a>
+
+UIUX Design: <a href="https://www.figma.com/design/d2HGrevVUInPJuW9Cz2xQQ/Kisan-Kranti-UIUX-Design?node-id=0-1&t=ikaeZt5XpRoIs9dr-1">Figma Design</a>
+
 <img width="1919" height="863" alt="Image" src="https://github.com/user-attachments/assets/406c6495-46ea-4da8-9695-131193880158" />
 
 <br />
