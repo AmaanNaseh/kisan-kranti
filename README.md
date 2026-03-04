@@ -15,6 +15,12 @@ of crop diseases, treatment and management along with commercialization of their
 
 ---
 
+## 📝 Research Work
+
+We have published research paper on the machine learning based approach of this project. For more details, check <a href="https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P8.html">IJSRED-V9I2P8</a>
+
+---
+
 ## 🎬 Youtube Video (Project Demonstration) :
 
 - English : [**https://youtu.be/mdJCL5r8xAU**](https://youtu.be/mdJCL5r8xAU)

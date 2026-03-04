@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 
 import { AIArchitectureDataset } from "../Dataset/AIArchitectureDataset";
 
+import research_paper from "../Assets/AIModelPage/IJSRED-V9I2P8.pdf";
+
 import appleIcon from "../Assets/AIModelPage/apple.png";
 import bananaIcon from "../Assets/AIModelPage/banana.png";
 import cassavaIcon from "../Assets/AIModelPage/cassava.png";
@@ -740,6 +742,33 @@ const AIArchitecturePage = () => {
         />
       </Helmet>
 
+      <div className="flex flex-col items-center justify-center gap-4 my-10">
+        <p className="text-xl md:text-2xl lg:text-3xl px-4">
+          We have published a research paper on this topic. For more
+          information, please check:
+        </p>
+        <div className="flex items-center justify-center flex-wrap gap-4">
+          <a
+            href="https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P8.html"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-1 bg-green-500 hover:bg-green-600 rounded text-white text-xl cursor-pointer px-8 py-2 font-bold"
+          >
+            Publication URL
+          </a>
+
+          <a
+            href={research_paper}
+            target="_blank"
+            rel="noreferrer"
+            download
+            className="mx-1 bg-green-500 hover:bg-green-600 rounded text-white text-xl cursor-pointer px-8 py-2 font-bold"
+          >
+            Download
+          </a>
+        </div>
+      </div>
+
       <div className="flex items-center justify-center my-10">
         <h1 className="px-4 py-2 font-bold text-2xl md:text-3xl lg:tex-5xl">
           Leaf
@@ -773,7 +802,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -833,7 +862,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -894,7 +923,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -954,7 +983,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1014,7 +1043,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1075,7 +1104,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1136,7 +1165,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1196,7 +1225,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1262,7 +1291,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1322,7 +1351,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1382,7 +1411,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1442,7 +1471,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1508,7 +1537,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1574,7 +1603,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1634,7 +1663,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1700,7 +1729,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1760,7 +1789,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1829,7 +1858,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1889,7 +1918,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -1949,7 +1978,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -2009,7 +2038,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -2070,7 +2099,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -2130,7 +2159,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -2190,7 +2219,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -2259,7 +2288,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
@@ -2320,7 +2349,7 @@ const AIArchitecturePage = () => {
                       {trainingClass}
                     </li>
                   );
-                }
+                },
               )}
             </ul>
           </div>
