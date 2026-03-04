@@ -767,6 +767,10 @@ const AIArchitecturePage = () => {
             Download
           </a>
         </div>
+
+        <div className="mx-auto w-full md:max-w-[450px] h-[660px]">
+          <iframe src={research_paper} width={"100%"} height={"100%"}></iframe>
+        </div>
       </div>
 
       <div className="flex items-center justify-center my-10">
