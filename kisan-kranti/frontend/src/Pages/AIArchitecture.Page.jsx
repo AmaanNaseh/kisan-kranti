@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import { AIArchitectureDataset } from "../Dataset/AIArchitectureDataset";
 
-import research_paper from "../Assets/AIModelPage/IJSRED-V9I2P8.pdf";
+import research_paper from "../Assets/AIModelPage/IJSRED-V9I2P8.pdf?url";
 
 import appleIcon from "../Assets/AIModelPage/apple.png";
 import bananaIcon from "../Assets/AIModelPage/banana.png";
@@ -742,19 +742,19 @@ const AIArchitecturePage = () => {
         />
       </Helmet>
 
-      <div className="flex flex-col items-center justify-center gap-4 my-10">
-        <p className="text-xl md:text-2xl lg:text-3xl px-4">
+      <div className="flex flex-col items-center justify-center gap-4 my-10 px-4">
+        <p className="text-xl md:text-2xl lg:text-3xl">
           We have published a research paper on this topic. For more
           information, please check:
         </p>
         <div className="flex items-center justify-center flex-wrap gap-4">
           <a
-            href="https://www.ijsred.com/volume9/issue2/paper-details/IJSRED-V9I2P8.html"
+            href="https://doi.org/10.5281/zenodo.18871968"
             target="_blank"
             rel="noreferrer"
             className="mx-1 bg-green-500 hover:bg-green-600 rounded text-white text-xl cursor-pointer px-8 py-2 font-bold"
           >
-            Publication URL
+            Paper's DOI
           </a>
 
           <a
@@ -764,7 +764,7 @@ const AIArchitecturePage = () => {
             download
             className="mx-1 bg-green-500 hover:bg-green-600 rounded text-white text-xl cursor-pointer px-8 py-2 font-bold"
           >
-            Download
+            Download Paper
           </a>
         </div>
 
