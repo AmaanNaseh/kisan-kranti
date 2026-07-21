@@ -11,7 +11,7 @@ of crop diseases, treatment and management along with commercialization of their
 
 ## 🌐 Live Website:
 
-[**www.kisankranti.tech**](https://www.kisankranti.tech) or [**kisan-kranti.vercel.app**](https://kisan-kranti.vercel.app)
+[**kisan-kranti.vercel.app**](https://kisan-kranti.vercel.app)
 
 ---
 
